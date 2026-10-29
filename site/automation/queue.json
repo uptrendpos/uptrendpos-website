@@ -44,7 +44,8 @@
    "crockery-shop-pos-software",
    "electrical-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-10-29"
  },
  {
   "order": 4,
@@ -59,7 +60,8 @@
    "glass-shop-pos-software",
    "hardware-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-10-29"
  },
  {
   "order": 5,
