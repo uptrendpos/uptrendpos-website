@@ -310,7 +310,7 @@ def main():
                  'grocery-store-pos-software': 'POS Software for Grocery Store', 'pharmacy-pos-software': 'POS Software for Pharmacy & Medical Store', 'solar-shop-pos-software': 'POS Software for Solar Shop',
                  'tailor-shop-pos-software': 'tailor shop POS software', 'baby-store-pos-software': 'POS Software for Baby Store & Diaper Shop', 'electrical-store-pos-software': 'Electrical & LED Lighting', 'shoe-store-pos-software': 'POS Software for Shoe Store', 'vehicle-showroom-software': 'Vehicle Showroom Software', 'clothing-store-pos-software': 'POS Software for Clothing & Garment Store', 'cosmetics-store-pos-software': 'POS Software for Cosmetics & Beauty Store', 'pricing': 'POS Software Pricing Plans', 'privacy-policy': 'Privacy And Policy', 'support': 'Support', 'terms-and-conditions': 'Terms & Conditions'}
         for i, p, fn, c in rows:
-            wr.writerow([i, names[p['n']], 'https://uptrendpos.com' + p['url'], '2-pages/' + fn, p['title'], c['tlen'], p['desc'], c['dlen'], p['kw'], p['sec'], 'index', c['words'], f'{c["dens"]}%'])
+            wr.writerow([i, names.get(p['n']) or next((x['name'] for x in json.loads((SITE.parent / 'kit/uptrendpos-site-kit/data/industries.json').read_text())['types'] if x['slug'] == p['n']), p['n']), 'https://uptrendpos.com' + p['url'], '2-pages/' + fn, p['title'], c['tlen'], p['desc'], c['dlen'], p['kw'], p['sec'], 'index', c['words'], f'{c["dens"]}%'])
     return rows
 
 

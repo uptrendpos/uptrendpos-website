@@ -1,1 +1,132 @@
-[]
+[
+ {
+  "n": "hardware-store-pos-software",
+  "src": "pages/website_hardware_v1.html",
+  "url": "/industries/hardware-store-pos-software/",
+  "stage": "hardware",
+  "stage_items": [
+   [
+    "Customer waits while you search",
+    "search",
+    "b",
+    "Quick search",
+    "Any item in seconds",
+    "Quick search"
+   ],
+   [
+    "Bags, feet and boxes on one bill",
+    "ruler",
+    "g",
+    "Bag, foot, piece",
+    "Stock in the unit you sell",
+    "Units"
+   ],
+   [
+    "Quotes lost on paper",
+    "doc",
+    "y",
+    "A4 quotes",
+    "Send on WhatsApp, convert to a sale",
+    "A4 quotes"
+   ],
+   [
+    "Plumbers' udhaar in a diary",
+    "book",
+    "b",
+    "Udhaar khata",
+    "Statement on WhatsApp",
+    "Udhaar khata"
+   ],
+   [
+    "Many sizes of one fitting",
+    "layers",
+    "g",
+    "Size x type",
+    "Own stock for each size",
+    "Sizes"
+   ],
+   [
+    "Broken items never counted",
+    "shield",
+    "y",
+    "Damage entries",
+    "Stock and cost stay right",
+    "Damage"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Hardware Store POS Software in Pakistan | UpTrendPos",
+  "desc": "Hardware store POS software for hardware and sanitary shops in Pakistan: quick search, cement by the bag, pipe by the foot, A4 quotes and udhaar.",
+  "kw": "hardware store POS software",
+  "sec": "hardware shop software, sanitary store billing software, building material shop software",
+  "builder": "build_hardware.py",
+  "images": "gen_hardware.py"
+ },
+ {
+  "n": "auto-parts-pos-software",
+  "src": "pages/website_autoparts_v1.html",
+  "url": "/industries/auto-parts-pos-software/",
+  "stage": "autoparts",
+  "stage_items": [
+   [
+    "Mechanic waits while you search",
+    "search",
+    "b",
+    "Name or code search",
+    "Part, price and stock in seconds",
+    "Part search"
+   ],
+   [
+    "Fast parts run out",
+    "clock",
+    "g",
+    "Demand list",
+    "Reorder before it runs out",
+    "Demand list"
+   ],
+   [
+    "Supplier bills in a file",
+    "doc",
+    "y",
+    "Supplier ledger",
+    "PO, GRN and invoice",
+    "Suppliers"
+   ],
+   [
+    "Mechanics' udhaar in a diary",
+    "book",
+    "b",
+    "Udhaar khata",
+    "Statement on WhatsApp",
+    "Udhaar khata"
+   ],
+   [
+    "Boxes and drums sold loose",
+    "box",
+    "g",
+    "Box to piece",
+    "Drum to litre",
+    "Units"
+   ],
+   [
+    "Returns mess up stock",
+    "sync",
+    "y",
+    "Clean returns",
+    "Same invoice number",
+    "Returns"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Auto Parts POS Software in Pakistan | UpTrendPos",
+  "desc": "Auto parts POS software for car and bike spare parts shops in Pakistan: find parts by name or code, supplier ledger, udhaar for mechanics, demand list.",
+  "kw": "auto parts POS software",
+  "sec": "auto parts shop software, spare parts shop billing software, motorcycle parts shop software",
+  "builder": "build_autoparts.py",
+  "images": "gen_autoparts.py"
+ }
+]
