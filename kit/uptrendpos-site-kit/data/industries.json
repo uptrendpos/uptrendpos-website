@@ -1,0 +1,299 @@
+{
+ "_help": "Business types under /industries/. A type shows in the menu, footer and hub schema only when its page is published and set to index in Rank Math. Fields: name (menu/card name), audience (schema), group, icon (sprite id), line (one short line in the menu).",
+ "groups": [
+  {
+   "id": "daily",
+   "name": "Daily needs"
+  },
+  {
+   "id": "health",
+   "name": "Health and beauty"
+  },
+  {
+   "id": "fashion",
+   "name": "Fashion and accessories"
+  },
+  {
+   "id": "electronics",
+   "name": "Electronics and electrical"
+  },
+  {
+   "id": "hardware",
+   "name": "Hardware, auto and home"
+  },
+  {
+   "id": "gifts",
+   "name": "Gifts, stationery and sports"
+  },
+  {
+   "id": "agri",
+   "name": "Agri and veterinary"
+  }
+ ],
+ "types": [
+  {
+   "slug": "grocery-store-pos-software",
+   "name": "Grocery & Kiryana Store",
+   "audience": "Grocery and kiryana store owners",
+   "group": "daily",
+   "icon": "cart",
+   "line": "7,000 products ready, udhaar khata"
+  },
+  {
+   "slug": "meat-shop-pos-software",
+   "name": "Poultry, Meat & Seafood",
+   "audience": "Poultry, meat and seafood shop owners",
+   "group": "daily",
+   "icon": "meat",
+   "line": "Sell by kg, daily cash and udhaar"
+  },
+  {
+   "slug": "crockery-shop-pos-software",
+   "name": "Crockery & Household Shop",
+   "audience": "Crockery and household shop owners",
+   "group": "daily",
+   "icon": "cup",
+   "line": "Sets, cartons and single pieces"
+  },
+  {
+   "slug": "vape-shop-pos-software",
+   "name": "Vape & Pan Shop",
+   "audience": "Vape and pan shop owners",
+   "group": "daily",
+   "icon": "cloud",
+   "line": "Flavours and sizes as variants"
+  },
+  {
+   "slug": "pharmacy-pos-software",
+   "name": "Pharmacy & Medical Store",
+   "audience": "Pharmacy and medical store owners",
+   "group": "health",
+   "icon": "pill",
+   "line": "17,000+ medicines, batch and expiry"
+  },
+  {
+   "slug": "cosmetics-store-pos-software",
+   "name": "Cosmetics & Beauty Store",
+   "audience": "Cosmetics and beauty store owners",
+   "group": "health",
+   "icon": "spark",
+   "line": "Shades, brands and expiry dates"
+  },
+  {
+   "slug": "baby-store-pos-software",
+   "name": "Baby & Diaper Store",
+   "audience": "Baby and diaper store owners",
+   "group": "health",
+   "icon": "baby",
+   "line": "Pack or piece, with expiry alerts"
+  },
+  {
+   "slug": "perfume-shop-pos-software",
+   "name": "Perfume & Attar Shop",
+   "audience": "Perfume and attar shop owners",
+   "group": "health",
+   "icon": "drop",
+   "line": "Fragrances and bottle sizes"
+  },
+  {
+   "slug": "clothing-store-pos-software",
+   "name": "Clothing & Garments",
+   "audience": "Clothing and garment shop owners",
+   "group": "fashion",
+   "icon": "shirt",
+   "line": "Size and colour variants"
+  },
+  {
+   "slug": "shoe-store-pos-software",
+   "name": "Shoes & Footwear",
+   "audience": "Shoe and footwear shop owners",
+   "group": "fashion",
+   "icon": "shoe",
+   "line": "Every size and colour in view"
+  },
+  {
+   "slug": "tailor-shop-pos-software",
+   "name": "Tailoring & Boutique",
+   "audience": "Tailors and boutique owners",
+   "group": "fashion",
+   "icon": "scissors",
+   "line": "Sizes, orders and delivery dates"
+  },
+  {
+   "slug": "undergarments-shop-pos-software",
+   "name": "Undergarments & Hosiery",
+   "audience": "Undergarments and hosiery shop owners",
+   "group": "fashion",
+   "icon": "shirt",
+   "line": "Sizes, colours and pack billing"
+  },
+  {
+   "slug": "bag-shop-pos-software",
+   "name": "Bags & Luggage",
+   "audience": "Bag and luggage shop owners",
+   "group": "fashion",
+   "icon": "bag",
+   "line": "Models and colours as variants"
+  },
+  {
+   "slug": "watch-shop-pos-software",
+   "name": "Watch Shop",
+   "audience": "Watch shop owners",
+   "group": "fashion",
+   "icon": "watch",
+   "line": "Models and fast billing"
+  },
+  {
+   "slug": "jewellery-shop-pos-software",
+   "name": "Jewellery & Gold Shop",
+   "audience": "Jewellery and gold shop owners",
+   "group": "fashion",
+   "icon": "gem",
+   "line": "Gold rate and making charge"
+  },
+  {
+   "slug": "artificial-jewellery-shop-pos-software",
+   "name": "Artificial Jewellery Shop",
+   "audience": "Artificial jewellery shop owners",
+   "group": "fashion",
+   "icon": "gem",
+   "line": "Designs as variants, labels"
+  },
+  {
+   "slug": "electronics-store-pos-software",
+   "name": "Electronics, Appliances & CCTV",
+   "audience": "Electronics, home appliance and CCTV shop owners",
+   "group": "electronics",
+   "icon": "tv",
+   "line": "Serials, warranty lookup, CCTV quotes"
+  },
+  {
+   "slug": "solar-shop-pos-software",
+   "name": "Solar Shop",
+   "audience": "Solar shop and solar business owners",
+   "group": "electronics",
+   "icon": "sun",
+   "line": "Serials, warranty and solar on qist"
+  },
+  {
+   "slug": "electrical-store-pos-software",
+   "name": "Electrical & LED Lighting",
+   "audience": "Electrical and LED lighting shop owners",
+   "group": "electronics",
+   "icon": "bulb",
+   "line": "Cartons, packs and single pieces"
+  },
+  {
+   "slug": "mobile-shop-pos-software",
+   "name": "Mobile & Computer Shop",
+   "audience": "Mobile and computer shop owners",
+   "group": "electronics",
+   "icon": "phone",
+   "line": "IMEI from purchase to sale, qist"
+  },
+  {
+   "slug": "battery-shop-pos-software",
+   "name": "Battery Shop",
+   "audience": "Battery shop owners",
+   "group": "electronics",
+   "icon": "battery",
+   "line": "Warranty and qist for big sales"
+  },
+  {
+   "slug": "hardware-store-pos-software",
+   "name": "Hardware, Sanitary & Building Material",
+   "audience": "Hardware, sanitary and building material store owners",
+   "group": "hardware",
+   "icon": "hammer",
+   "line": "Thousands of items, quick search"
+  },
+  {
+   "slug": "paint-store-pos-software",
+   "name": "Paint Store",
+   "audience": "Paint store owners",
+   "group": "hardware",
+   "icon": "brush",
+   "line": "Shades and pack sizes"
+  },
+  {
+   "slug": "glass-shop-pos-software",
+   "name": "Glass & Aluminium Shop",
+   "audience": "Glass and aluminium shop owners",
+   "group": "hardware",
+   "icon": "window",
+   "line": "Quotations first, then the bill"
+  },
+  {
+   "slug": "furniture-shop-pos-software",
+   "name": "Furniture Shop",
+   "audience": "Furniture shop owners",
+   "group": "hardware",
+   "icon": "sofa",
+   "line": "Quotations, advance and qist"
+  },
+  {
+   "slug": "auto-parts-pos-software",
+   "name": "Auto Spare Parts",
+   "audience": "Auto spare parts shop owners",
+   "group": "hardware",
+   "icon": "car",
+   "line": "Find any part fast"
+  },
+  {
+   "slug": "tyre-shop-pos-software",
+   "name": "Tyre Shop",
+   "audience": "Tyre shop owners",
+   "group": "hardware",
+   "icon": "tyre",
+   "line": "Tyre sizes as variants"
+  },
+  {
+   "slug": "vehicle-showroom-software",
+   "name": "Vehicle Showroom (Bikes, Cars, EVs)",
+   "audience": "Motorcycle, electric bike, car and rickshaw showroom owners",
+   "group": "hardware",
+   "icon": "car",
+   "line": "Chassis, warranty and qist"
+  },
+  {
+   "slug": "toy-shop-pos-software",
+   "name": "Toys & Gift Shop",
+   "audience": "Toy and gift shop owners",
+   "group": "gifts",
+   "icon": "gift",
+   "line": "Barcode labels, fast billing"
+  },
+  {
+   "slug": "sports-shop-pos-software",
+   "name": "Sports Goods",
+   "audience": "Sports goods shop owners",
+   "group": "gifts",
+   "icon": "ball",
+   "line": "Sizes and colours for kits"
+  },
+  {
+   "slug": "stationery-shop-pos-software",
+   "name": "Stationery & Book Shop",
+   "audience": "Stationery and book shop owners",
+   "group": "gifts",
+   "icon": "book",
+   "line": "Pack and piece billing"
+  },
+  {
+   "slug": "fertilizer-shop-pos-software",
+   "name": "Agri Inputs (Seed, Fertilizer & Pesticides)",
+   "audience": "Seed, fertilizer and pesticide dealers",
+   "group": "agri",
+   "icon": "leaf",
+   "line": "Batch, expiry and season udhaar"
+  },
+  {
+   "slug": "veterinary-store-pos-software",
+   "name": "Veterinary Store",
+   "audience": "Veterinary store owners",
+   "group": "agri",
+   "icon": "paw",
+   "line": "Batch and expiry for animal medicines"
+  }
+ ]
+}

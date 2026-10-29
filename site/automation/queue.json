@@ -1,0 +1,317 @@
+[
+ {
+  "order": 1,
+  "slug": "hardware-store-pos-software",
+  "name": "Hardware, Sanitary & Building Material",
+  "focus": "hardware store POS software",
+  "catalog": 0,
+  "specials": "Thousands of items with quick search; units (bag, piece, ft/meter, box); A4 quotations for contractors; udhaar for contractors and plumbers",
+  "related": [
+   "paint-store-pos-software",
+   "glass-shop-pos-software",
+   "electrical-store-pos-software",
+   "furniture-shop-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 2,
+  "slug": "auto-parts-pos-software",
+  "name": "Auto Spare Parts",
+  "focus": "auto parts POS software",
+  "catalog": 0,
+  "specials": "Find any part fast by name, code or barcode; supplier bills (PO/GRN/PI) and vendor ledger; udhaar for mechanics; demand list. Do NOT claim vehicle-fitment search or part cross-reference",
+  "related": [
+   "tyre-shop-pos-software",
+   "battery-shop-pos-software",
+   "vehicle-showroom-software",
+   "hardware-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 3,
+  "slug": "paint-store-pos-software",
+  "name": "Paint Store",
+  "focus": "paint store POS software",
+  "catalog": 0,
+  "specials": "Shades and pack sizes as variants (variant generator); units (litre, gallon, drum); udhaar for painters and contractors; A4 quotations. Do NOT claim tinting machine or colour mixing formulas",
+  "related": [
+   "hardware-store-pos-software",
+   "glass-shop-pos-software",
+   "crockery-shop-pos-software",
+   "electrical-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 4,
+  "slug": "furniture-shop-pos-software",
+  "name": "Furniture Shop",
+  "focus": "furniture shop POS software",
+  "catalog": 0,
+  "specials": "A4 quotations then convert to sale; advance payments on the customer ledger; qist plans (Enterprise+); models and colours/finishes as variants. Delivery scheduling and carpenter job orders = Coming soon",
+  "related": [
+   "crockery-shop-pos-software",
+   "electronics-store-pos-software",
+   "glass-shop-pos-software",
+   "hardware-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 5,
+  "slug": "jewellery-shop-pos-software",
+  "name": "Jewellery & Gold Shop",
+  "focus": "jewellery shop POS software",
+  "catalog": 0,
+  "specials": "Daily gold rate and making charge on the bill (wording exactly like the hub card, no other gold-rate detail); weights in grams; designs as variants; udhaar and qist (Enterprise+). Do NOT claim karat purity testing, gold exchange/old gold valuation, or hallmarking",
+  "related": [
+   "artificial-jewellery-shop-pos-software",
+   "watch-shop-pos-software",
+   "perfume-shop-pos-software",
+   "cosmetics-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 6,
+  "slug": "battery-shop-pos-software",
+  "name": "Battery Shop",
+  "focus": "battery shop POS software",
+  "catalog": 0,
+  "specials": "Warranty notes and qist (Enterprise+) for big sales; serial number tracking and warranty lookup are NOT confirmed for this category: say 'warranty notes on the sale' only; old battery trade-in = Coming soon",
+  "related": [
+   "solar-shop-pos-software",
+   "auto-parts-pos-software",
+   "electrical-store-pos-software",
+   "tyre-shop-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 7,
+  "slug": "meat-shop-pos-software",
+  "name": "Poultry, Meat & Seafood",
+  "focus": "meat shop POS software",
+  "catalog": 0,
+  "specials": "Sell by kg and grams (UOM); weighing scale entry by typing weight; daily cash session and udhaar; damage entries for spoiled stock. Do NOT claim weighing-scale cable integration",
+  "related": [
+   "grocery-store-pos-software",
+   "crockery-shop-pos-software",
+   "fertilizer-shop-pos-software",
+   "veterinary-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 8,
+  "slug": "perfume-shop-pos-software",
+  "name": "Perfume & Attar Shop",
+  "focus": "perfume shop POS software",
+  "catalog": 0,
+  "specials": "Fragrances and bottle sizes as variants (variant generator); loose attar by ml (UOM); testers recorded as sample; barcode billing",
+  "related": [
+   "cosmetics-store-pos-software",
+   "jewellery-shop-pos-software",
+   "watch-shop-pos-software",
+   "bag-shop-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 9,
+  "slug": "watch-shop-pos-software",
+  "name": "Watch Shop",
+  "focus": "watch shop POS software",
+  "catalog": 0,
+  "specials": "Models as variants; warranty notes on the sale; barcode billing; udhaar. Serial tracking/warranty lookup NOT confirmed for this category; repair job cards = Coming soon",
+  "related": [
+   "jewellery-shop-pos-software",
+   "mobile-shop-pos-software",
+   "perfume-shop-pos-software",
+   "bag-shop-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 10,
+  "slug": "bag-shop-pos-software",
+  "name": "Bags & Luggage",
+  "focus": "bag shop POS software",
+  "catalog": 0,
+  "specials": "Models and colours as variants; barcode labels (Enterprise+); exchanges on the same bill; udhaar",
+  "related": [
+   "shoe-store-pos-software",
+   "clothing-store-pos-software",
+   "watch-shop-pos-software",
+   "sports-shop-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 11,
+  "slug": "crockery-shop-pos-software",
+  "name": "Crockery & Household Shop",
+  "focus": "crockery shop POS software",
+  "catalog": 0,
+  "specials": "Sets, cartons and single pieces in one stock (UOM); breakage recorded as damage; barcode billing; udhaar",
+  "related": [
+   "grocery-store-pos-software",
+   "furniture-shop-pos-software",
+   "toy-shop-pos-software",
+   "hardware-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 12,
+  "slug": "undergarments-shop-pos-software",
+  "name": "Undergarments & Hosiery",
+  "focus": "undergarments shop POS software",
+  "catalog": 0,
+  "specials": "Sizes and colours as variants; pack billing (pack of 3, dozen) via UOM; barcode labels (Enterprise+); exchanges on the same bill",
+  "related": [
+   "clothing-store-pos-software",
+   "shoe-store-pos-software",
+   "baby-store-pos-software",
+   "cosmetics-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 13,
+  "slug": "artificial-jewellery-shop-pos-software",
+  "name": "Artificial Jewellery Shop",
+  "focus": "artificial jewellery shop POS software",
+  "catalog": 0,
+  "specials": "Designs and colours as variants; barcode labels for small items (Enterprise+); fast billing; udhaar. No gold rate on this page (that is the gold jewellery page)",
+  "related": [
+   "jewellery-shop-pos-software",
+   "cosmetics-store-pos-software",
+   "perfume-shop-pos-software",
+   "bag-shop-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 14,
+  "slug": "tyre-shop-pos-software",
+  "name": "Tyre Shop",
+  "focus": "tyre shop POS software",
+  "catalog": 0,
+  "specials": "Tyre sizes as variants (width/ratio/rim); warranty notes on the sale; udhaar for transporters and mechanics; qist (Enterprise+) for big orders",
+  "related": [
+   "auto-parts-pos-software",
+   "battery-shop-pos-software",
+   "vehicle-showroom-software",
+   "hardware-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 15,
+  "slug": "toy-shop-pos-software",
+  "name": "Toys & Gift Shop",
+  "focus": "toy shop POS software",
+  "catalog": 0,
+  "specials": "Barcode labels (Enterprise+) and fast billing in rush season (Eid, birthdays); age groups as categories; gift sets as normal items",
+  "related": [
+   "baby-store-pos-software",
+   "stationery-shop-pos-software",
+   "sports-shop-pos-software",
+   "crockery-shop-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 16,
+  "slug": "sports-shop-pos-software",
+  "name": "Sports Goods",
+  "focus": "sports shop POS software",
+  "catalog": 0,
+  "specials": "Sizes and colours for kits and shoes (variants); school and club orders via A4 quotations; udhaar for schools/clubs",
+  "related": [
+   "shoe-store-pos-software",
+   "toy-shop-pos-software",
+   "bag-shop-pos-software",
+   "stationery-shop-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 17,
+  "slug": "stationery-shop-pos-software",
+  "name": "Stationery & Book Shop",
+  "focus": "stationery shop POS software",
+  "catalog": 0,
+  "specials": "Pack and piece billing for small items (UOM); barcode billing; school season rush; udhaar for schools and offices; A4 quotations for school orders",
+  "related": [
+   "toy-shop-pos-software",
+   "sports-shop-pos-software",
+   "crockery-shop-pos-software",
+   "grocery-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 18,
+  "slug": "glass-shop-pos-software",
+  "name": "Glass & Aluminium Shop",
+  "focus": "glass shop POS software",
+  "catalog": 0,
+  "specials": "Quotations first, then the final bill (A4 quote convert to sale); units by sq ft / ft / piece via UOM; advance payments on the ledger; udhaar for contractors. Do NOT claim size calculators or cutting optimisation",
+  "related": [
+   "hardware-store-pos-software",
+   "paint-store-pos-software",
+   "furniture-shop-pos-software",
+   "electrical-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 19,
+  "slug": "fertilizer-shop-pos-software",
+  "name": "Agri Inputs (Seed, Fertilizer & Pesticides)",
+  "focus": "fertilizer shop POS software",
+  "catalog": 0,
+  "specials": "Batch and expiry alerts for pesticides and seeds; bags and bottles via UOM; season-long udhaar for farmers (khata, statements on WhatsApp)",
+  "related": [
+   "veterinary-store-pos-software",
+   "meat-shop-pos-software",
+   "grocery-store-pos-software",
+   "hardware-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 20,
+  "slug": "veterinary-store-pos-software",
+  "name": "Veterinary Store",
+  "focus": "veterinary store POS software",
+  "catalog": 0,
+  "specials": "Batch and expiry alerts for animal medicines; box/strip/piece via UOM; udhaar for farmers. No human-medicine catalog claim; no Rx check claim (that is pharmacy)",
+  "related": [
+   "fertilizer-shop-pos-software",
+   "pharmacy-pos-software",
+   "meat-shop-pos-software",
+   "grocery-store-pos-software"
+  ],
+  "status": "queued"
+ },
+ {
+  "order": 21,
+  "slug": "vape-shop-pos-software",
+  "name": "Vape & Pan Shop",
+  "focus": "vape shop POS software",
+  "catalog": 0,
+  "specials": "Flavours and sizes as variants; pack/piece billing; fast billing and cash session. Keep the copy neutral (no health claims, no promotion to minors, mention 18+ sale only as the shop's own policy)",
+  "related": [
+   "grocery-store-pos-software",
+   "perfume-shop-pos-software",
+   "toy-shop-pos-software",
+   "crockery-shop-pos-software"
+  ],
+  "status": "queued"
+ }
+]
