@@ -128,5 +128,135 @@
   "sec": "auto parts shop software, spare parts shop billing software, motorcycle parts shop software",
   "builder": "build_autoparts.py",
   "images": "gen_autoparts.py"
+ },
+ {
+  "n": "paint-store-pos-software",
+  "src": "pages/website_paint_v1.html",
+  "url": "/industries/paint-store-pos-software/",
+  "stage": "paint",
+  "stage_items": [
+   [
+    "Which shade is left?",
+    "layers",
+    "b",
+    "Stock per shade",
+    "Low stock alerts in time",
+    "Shades"
+   ],
+   [
+    "Pack prices mixed up",
+    "tag",
+    "g",
+    "Quarter, gallon, drum",
+    "Own price for each pack",
+    "Pack sizes"
+   ],
+   [
+    "Quotes lost on paper",
+    "doc",
+    "y",
+    "A4 quotes",
+    "Send on WhatsApp, convert to a sale",
+    "A4 quotes"
+   ],
+   [
+    "Painters' udhaar in a diary",
+    "book",
+    "b",
+    "Udhaar khata",
+    "Statement on WhatsApp",
+    "Udhaar khata"
+   ],
+   [
+    "Hundreds of items to add",
+    "spark",
+    "g",
+    "Variant generator",
+    "All shades and sizes in one go",
+    "Variants"
+   ],
+   [
+    "Dented tins never counted",
+    "shield",
+    "y",
+    "Damage entries",
+    "Stock and cost stay right",
+    "Damage"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Paint Store POS Software in Pakistan | UpTrendPos",
+  "desc": "Paint store POS software for paint shops in Pakistan: every shade in every pack size, litre, gallon and drum, A4 quotes and udhaar for painters.",
+  "kw": "paint store POS software",
+  "sec": "paint shop software, paint shop billing software, paint dealer software",
+  "builder": "build_paint.py",
+  "images": "gen_paint.py"
+ },
+ {
+  "n": "furniture-shop-pos-software",
+  "src": "pages/website_furniture_v1.html",
+  "url": "/industries/furniture-shop-pos-software/",
+  "stage": "furniture",
+  "stage_items": [
+   [
+    "Quotes on a notepad",
+    "doc",
+    "b",
+    "A4 quotes",
+    "Convert to a sale in one tap",
+    "A4 quotes"
+   ],
+   [
+    "Advances on a slip",
+    "book",
+    "g",
+    "Advance on the ledger",
+    "Balance always clear",
+    "Advances"
+   ],
+   [
+    "Which finish is in stock?",
+    "layers",
+    "y",
+    "Model x finish",
+    "Own stock for each",
+    "Finishes"
+   ],
+   [
+    "Qist in a register",
+    "cal",
+    "b",
+    "Qist with guarantor",
+    "Enterprise and Custom",
+    "Qist"
+   ],
+   [
+    "No clean statement",
+    "wa",
+    "g",
+    "Statements",
+    "PDF, print or WhatsApp",
+    "Statements"
+   ],
+   [
+    "Damaged pieces never counted",
+    "shield",
+    "y",
+    "Damage entries",
+    "Stock and cost stay right",
+    "Damage"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Furniture Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Furniture shop POS software for showrooms in Pakistan: A4 quotes to sale in one tap, advances on the customer ledger, models in every finish and qist.",
+  "kw": "furniture shop POS software",
+  "sec": "furniture store software, furniture showroom software, furniture billing software",
+  "builder": "build_furniture.py",
+  "images": "gen_furniture.py"
  }
 ]
