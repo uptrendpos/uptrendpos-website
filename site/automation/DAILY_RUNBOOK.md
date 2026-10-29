@@ -9,9 +9,9 @@ You are the scheduled UpTrendPos website session. Abdul is NOT watching. Do not 
 - Max 2 pages per run. If fewer than 2 remain, do what remains. If none remain, report "Queue finished" and stop.
 
 ## 1. Workspace
-1. `add_repo` uptrendpos/uptrendpos-website (access push) and uptrendpos/uptrendpos-site-assets (access push); clone both into /home/claude/repo and /home/claude/assets.
-2. `ln -s /home/claude/repo/site /home/claude/site && ln -s /home/claude/repo/kit /home/claude/kit` (the builders use these paths).
-3. Read: repo/site/automation/FACTS.md, this runbook, repo/HANDOFF.md (sections 12-15), and two finished builders (site/build_electrical.py, site/build_baby.py) as the pattern.
+1. `add_repo` uptrendpos/uptrendpos-website (access push) and uptrendpos/uptrendpos-site-assets (access push); clone each (`git clone --depth 1`, 10-minute timeout, one at a time) into /home/claude/uptrendpos-website and /home/claude/uptrendpos-site-assets.
+2. `ln -s /home/claude/uptrendpos-website/site /home/claude/site && ln -s /home/claude/uptrendpos-website/kit /home/claude/kit && ln -s /home/claude/uptrendpos-site-assets /home/claude/assets` (the builders use these paths).
+3. Read: site/automation/FACTS.md, this runbook, HANDOFF.md in the website repo (sections 12-15), and two finished builders (site/build_electrical.py, site/build_baby.py) as the pattern.
 4. `python3 site/automation/daily.py next` -> today's 2 types.
 
 ## 2. Pre-flight and backup (WPVibe, site https://uptrendpos.com)
@@ -36,7 +36,7 @@ For each slug:
 3. For every item in `pages`: POST `/utpk/v1/page` body `{"slug":..., "html_url":..., "publish":true}`. The response must show status `publish`, robots `["index"]`, a keywords list starting with the focus keyword and a thumbnail id > 0.
 4. GET `/utpk/v1/status`: both slugs `live: true`.
 5. POST `/utpk/v1/media-cleanup` body `{"apply":true}`.
-6. `python3 site/automation/daily.py mark <published slugs>`, append a line to repo/LOG.md (date, slugs, words, density, URLs), commit and push.
+6. `python3 site/automation/daily.py mark <published slugs>`, append a line to LOG.md in the website repo (date, slugs, words, density, URLs), commit and push.
 
 ## 6. Final message (this is Abdul's notification, keep it short, Roman Urdu + English)
 "Aaj ke 2 pages live: <Name 1> <url>, <Name 2> <url>. Backup OK. Media clean (<n> removed). Queue: <k> pages baqi."
