@@ -12,7 +12,8 @@
    "electrical-store-pos-software",
    "furniture-shop-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-10-29"
  },
  {
   "order": 2,
@@ -27,7 +28,8 @@
    "vehicle-showroom-software",
    "hardware-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-10-29"
  },
  {
   "order": 3,
