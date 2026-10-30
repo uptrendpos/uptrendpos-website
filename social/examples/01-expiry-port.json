@@ -1,0 +1,14 @@
+{
+ "date": "example", "slug": "Expiry-Port", "badge": "EXPIRY ALERTS",
+ "head": "Catch Expiry <em>Before It Costs You.</em>",
+ "sub": "Batch and expiry alerts for medicines, food and cosmetics",
+ "c1": "#D64545", "c2": "#F07070",
+ "blocks": [
+  {"type": "table", "x": 20, "y": 70, "w": 912, "title": "Batch &amp; Expiry", "icon": "calendar-exclamation", "color": "red", "pad": 26,
+   "rows": [["Augmentin 625 mg", "Batch A2311", "Expires in 12 days", "bad"], ["Brufen Syrup 90 ml", "Batch B0954", "Expires in 26 days", "bad"],
+            ["Baby Formula 400 g", "Batch F7710", "Expires in 45 days", "warn"], ["Face Cream 50 g", "Batch C1208", "Expires in 60 days", "warn"],
+            ["Cooking Oil 1 L", "Batch K5521", "Expires in 5 months", "ok"]]},
+  {"type": "chip", "center": true, "y": 0, "text": "5 items expiring this month", "icon": "bell-ringing", "tone": "bad", "overlap": true}
+ ],
+ "tiles": [["calendar-exclamation", "Expiry alerts", "red"], ["list-numbers", "Batch numbers", "teal"], ["report-analytics", "Batch report", "green"]]
+}

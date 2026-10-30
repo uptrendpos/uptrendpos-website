@@ -1,0 +1,365 @@
+{
+ "_help": "Daily social post rotation (one entry per day, cycles forever). catalog = loaded-catalog count to highlight ('' = none, 'ALL' = full-catalog post). page = website page source under site/pages/ for facts. Vape & Pan is left out on purpose (Meta restricts vape content). Add/reorder entries freely; post.py next continues after the last logged key.",
+ "posts": [
+  {
+   "key": "pharmacy-catalog",
+   "name": "Pharmacy & Medical Store",
+   "site_slug": "pharmacy-pos-software",
+   "page": "site/pages/website_pharmacy_v1.html",
+   "catalog": "17,000+",
+   "angle": "catalog",
+   "idea": "17,000+ medicines pre-loaded: search by salt or brand, tick, set stock and price, sell"
+  },
+  {
+   "key": "clothing",
+   "name": "Clothing & Garments",
+   "site_slug": "clothing-store-pos-software",
+   "page": "site/pages/website_clothing_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Size x colour variants in one go, barcode labels, exchanges on the same bill"
+  },
+  {
+   "key": "grocery-catalog",
+   "name": "Grocery & Kiryana Store",
+   "site_slug": "grocery-store-pos-software",
+   "page": "site/pages/website_grocery_v2.html",
+   "catalog": "7,000+",
+   "angle": "catalog",
+   "idea": "7,000+ grocery products ready: pick what you sell, carton/pack/piece on one bill"
+  },
+  {
+   "key": "hardware",
+   "name": "Hardware, Sanitary & Building Material",
+   "site_slug": "hardware-store-pos-software",
+   "page": "site/pages/website_hardware_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Sell by bag, foot or piece; A4 quotations for contractors; contractor udhaar"
+  },
+  {
+   "key": "mobile-catalog",
+   "name": "Mobile & Computer Shop",
+   "site_slug": "mobile-shop-pos-software",
+   "page": "site/pages/website_mobile_shop_v1.html",
+   "catalog": "670+",
+   "angle": "catalog",
+   "idea": "670+ mobile and computer products ready; IMEI from purchase to sale"
+  },
+  {
+   "key": "full-catalog-1",
+   "name": "Full catalog (any shop)",
+   "site_slug": "",
+   "page": "",
+   "catalog": "ALL",
+   "angle": "full-catalog",
+   "idea": "A pharmacy adds grocery, baby diapers and store items from the full catalog by name or category"
+  },
+  {
+   "key": "shoes",
+   "name": "Shoes & Footwear",
+   "site_slug": "shoe-store-pos-software",
+   "page": "site/pages/website_shoes_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Every size and colour in view; low-stock per size; barcode billing"
+  },
+  {
+   "key": "cosmetics-catalog",
+   "name": "Cosmetics & Beauty Store",
+   "site_slug": "cosmetics-store-pos-software",
+   "page": "site/pages/website_cosmetics_v1.html",
+   "catalog": "5,000+",
+   "angle": "catalog",
+   "idea": "5,000+ makeup, skin and hair care products loaded; stock per shade; batch and expiry"
+  },
+  {
+   "key": "tailor",
+   "name": "Tailoring & Boutique",
+   "site_slug": "tailor-shop-pos-software",
+   "page": "site/pages/website_tailor_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Measurements saved forever, stitching orders with delivery date, advance and balance"
+  },
+  {
+   "key": "solar-catalog",
+   "name": "Solar Shop",
+   "site_slug": "solar-shop-pos-software",
+   "page": "site/pages/website_solar_v1.html",
+   "catalog": "1,100+",
+   "angle": "catalog",
+   "idea": "1,100+ solar, electronics and CCTV products loaded; serial, warranty lookup, qist"
+  },
+  {
+   "key": "auto-parts",
+   "name": "Auto Spare Parts",
+   "site_slug": "auto-parts-pos-software",
+   "page": "site/pages/website_autoparts_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Find any part fast by name, code or barcode; mechanic udhaar; demand list"
+  },
+  {
+   "key": "baby",
+   "name": "Baby & Diaper Store",
+   "site_slug": "baby-store-pos-software",
+   "page": "site/pages/website_baby_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Pack or piece billing; expiry alerts on formula and wipes"
+  },
+  {
+   "key": "electronics-catalog",
+   "name": "Electronics, Appliances & CCTV",
+   "site_slug": "electronics-store-pos-software",
+   "page": "site/pages/website_electronics_v1.html",
+   "catalog": "1,100+",
+   "angle": "catalog",
+   "idea": "1,100+ products loaded; serial numbers, warranty lookup, qist on big sales"
+  },
+  {
+   "key": "full-catalog-2",
+   "name": "Full catalog (any shop)",
+   "site_slug": "",
+   "page": "",
+   "catalog": "ALL",
+   "angle": "full-catalog",
+   "idea": "A grocery mart adds cosmetics, baby and household items from the full catalog"
+  },
+  {
+   "key": "vehicle",
+   "name": "Vehicle Showroom (Bikes, Cars, EVs)",
+   "site_slug": "vehicle-showroom-software",
+   "page": "site/pages/website_vehicle_showroom_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Chassis and engine record, warranty, sell on cash or easy qist with guarantor"
+  },
+  {
+   "key": "pharmacy-expiry",
+   "name": "Pharmacy & Medical Store",
+   "site_slug": "pharmacy-pos-software",
+   "page": "site/pages/website_pharmacy_v1.html",
+   "catalog": "17,000+",
+   "angle": "feature",
+   "idea": "Batch and expiry alerts, box/strip/tablet units, FBR invoice + QR (mention 17,000+ in a stat)"
+  },
+  {
+   "key": "electrical",
+   "name": "Electrical & LED Lighting",
+   "site_slug": "electrical-store-pos-software",
+   "page": "site/pages/website_electrical_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Cartons, packs and single pieces in one stock; electrician udhaar"
+  },
+  {
+   "key": "paint",
+   "name": "Paint Store",
+   "site_slug": "paint-store-pos-software",
+   "page": "site/pages/website_paint_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Shades and pack sizes as variants; litre/gallon/drum; painter udhaar"
+  },
+  {
+   "key": "jewellery",
+   "name": "Jewellery & Gold Shop",
+   "site_slug": "jewellery-shop-pos-software",
+   "page": "site/pages/website_jewellery_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Daily gold rate and making charge on the bill; weight in grams; udhaar and qist"
+  },
+  {
+   "key": "grocery-udhaar",
+   "name": "Grocery & Kiryana Store",
+   "site_slug": "grocery-store-pos-software",
+   "page": "site/pages/website_grocery_v2.html",
+   "catalog": "7,000+",
+   "angle": "feature",
+   "idea": "Udhaar khata with WhatsApp receipts and offline billing in load-shedding (mention 7,000+ in a stat)"
+  },
+  {
+   "key": "furniture",
+   "name": "Furniture Shop",
+   "site_slug": "furniture-shop-pos-software",
+   "page": "site/pages/website_furniture_v1.html",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "A4 quotation to sale in one tap; advance on the ledger; qist"
+  },
+  {
+   "key": "battery",
+   "name": "Battery Shop",
+   "site_slug": "battery-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Warranty notes on the sale; qist for big sales (no serial/warranty-lookup claim)"
+  },
+  {
+   "key": "mobile-qist",
+   "name": "Mobile & Computer Shop",
+   "site_slug": "mobile-shop-pos-software",
+   "page": "site/pages/website_mobile_shop_v1.html",
+   "catalog": "670+",
+   "angle": "feature",
+   "idea": "Qist plans with guarantor and warranty lookup by IMEI (mention 670+ in a stat)"
+  },
+  {
+   "key": "meat",
+   "name": "Poultry, Meat & Seafood",
+   "site_slug": "meat-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Sell by kg and grams; daily cash session; damage entry for spoiled stock (no scale-cable claim)"
+  },
+  {
+   "key": "perfume",
+   "name": "Perfume & Attar Shop",
+   "site_slug": "perfume-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Fragrances and bottle sizes as variants; loose attar by ml; testers as sample"
+  },
+  {
+   "key": "cosmetics-shades",
+   "name": "Cosmetics & Beauty Store",
+   "site_slug": "cosmetics-store-pos-software",
+   "page": "site/pages/website_cosmetics_v1.html",
+   "catalog": "5,000+",
+   "angle": "feature",
+   "idea": "Stock for every shade, batch and expiry (mention 5,000+ in a stat)"
+  },
+  {
+   "key": "full-catalog-3",
+   "name": "Full catalog (any shop)",
+   "site_slug": "",
+   "page": "",
+   "catalog": "ALL",
+   "angle": "full-catalog",
+   "idea": "A general store adds products from every category: search by name or category, tick, set own price"
+  },
+  {
+   "key": "watch",
+   "name": "Watch Shop",
+   "site_slug": "watch-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Models as variants; warranty notes on the sale; barcode billing"
+  },
+  {
+   "key": "bags",
+   "name": "Bags & Luggage",
+   "site_slug": "bag-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Models and colours as variants; exchanges on the same bill"
+  },
+  {
+   "key": "crockery",
+   "name": "Crockery & Household Shop",
+   "site_slug": "crockery-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Sets, cartons and single pieces in one stock; breakage as damage"
+  },
+  {
+   "key": "undergarments",
+   "name": "Undergarments & Hosiery",
+   "site_slug": "undergarments-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Sizes and colours; pack of 3 / dozen billing"
+  },
+  {
+   "key": "artificial-jewellery",
+   "name": "Artificial Jewellery Shop",
+   "site_slug": "artificial-jewellery-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Designs and colours as variants; labels for small items; fast billing"
+  },
+  {
+   "key": "tyre",
+   "name": "Tyre Shop",
+   "site_slug": "tyre-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Tyre sizes as variants; transporter and mechanic udhaar; qist for big orders"
+  },
+  {
+   "key": "toys",
+   "name": "Toys & Gift Shop",
+   "site_slug": "toy-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Fast billing in Eid and birthday rush; barcode labels; age groups as categories"
+  },
+  {
+   "key": "sports",
+   "name": "Sports Goods",
+   "site_slug": "sports-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Kit sizes and colours; school/club orders via A4 quotation; club udhaar"
+  },
+  {
+   "key": "stationery",
+   "name": "Stationery & Book Shop",
+   "site_slug": "stationery-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Pack and piece billing; school season rush; school/office udhaar"
+  },
+  {
+   "key": "glass",
+   "name": "Glass & Aluminium Shop",
+   "site_slug": "glass-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Quotation first, then the bill; sq ft / ft / piece units; advance payments"
+  },
+  {
+   "key": "agri",
+   "name": "Agri Inputs (Seed, Fertilizer & Pesticides)",
+   "site_slug": "fertilizer-shop-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Season-long farmer udhaar with WhatsApp statements; batch and expiry on pesticides; bag and bottle units"
+  },
+  {
+   "key": "veterinary",
+   "name": "Veterinary Store",
+   "site_slug": "veterinary-store-pos-software",
+   "page": "",
+   "catalog": "",
+   "angle": "feature",
+   "idea": "Batch and expiry on animal medicines; box/strip/piece; farmer udhaar (no Rx claim)"
+  },
+  {
+   "key": "solar-qist",
+   "name": "Solar Shop",
+   "site_slug": "solar-shop-pos-software",
+   "page": "site/pages/website_solar_v1.html",
+   "catalog": "1,100+",
+   "angle": "feature",
+   "idea": "Sell a full solar system on easy qist; serial and warranty lookup (mention 1,100+ in a stat)"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "date": "example", "slug": "Full-Catalog", "badge": "FULL PRODUCT CATALOG",
+ "head": "Sell More Than <em>One Category.</em>",
+ "sub": "Add any product from our full catalog by name or category",
+ "c1": "#1E8A43", "c2": "#47C683",
+ "blocks": [
+  {"type": "phone", "x": 40, "y": 0, "w": 380, "h": 700, "color": "mint", "title": "Full Catalog", "subtitle": "Search any category", "search": "diapers",
+   "rows": [{"icon": "check", "color": "green", "title": "Baby Diapers Size 4", "sub": "Baby &amp; Diaper · Pack", "end": "Added", "tone": "ok"},
+            {"icon": "check", "color": "green", "title": "Baby Wipes 80 pcs", "sub": "Baby &amp; Diaper · Pack", "end": "Added", "tone": "ok"},
+            {"icon": "check", "color": "green", "title": "Cooking Oil 1 L", "sub": "Grocery · Bottle", "end": "Added", "tone": "ok"},
+            {"color": "grey", "title": "Tea Pack 190 g", "sub": "Grocery · Pack", "end": "Add"},
+            {"color": "grey", "title": "Hand Wash 250 ml", "sub": "Household · Bottle", "end": "Add"}],
+   "button": "Add 3 to My Shop"},
+  {"type": "card", "x": 470, "y": 0, "w": 480, "icon": "category-plus", "color": "mint", "title": "Ready Catalogs", "sub": "Search, tick and add",
+   "rows": [["Medicines", "17,000+"], ["Grocery", "7,000+"], ["Beauty", "5,000+"], ["Solar &amp; electronics", "1,100+"], ["Mobile &amp; computer", "670+"]]},
+  {"type": "chip", "x": 470, "y": 410, "text": "A pharmacy can add grocery too", "icon": "building-store", "tone": "ok"},
+  {"type": "chip", "x": 470, "y": 500, "text": "Search by name or category", "icon": "list-search", "tone": "info"}
+ ],
+ "tiles": [["category-plus", "All categories", "mint"], ["list-search", "Name search", "blue"], ["edit", "Set your own price", "orange"]]
+}

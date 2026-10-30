@@ -1,0 +1,21 @@
+{
+ "date": "example", "slug": "Pharmacy", "badge": "PHARMACY &amp; MEDICAL STORE",
+ "head": "17,000+ Medicines <em>Pre-Loaded.</em>",
+ "sub": "Search by salt or brand, tick what you sell, start billing",
+ "c1": "#0A7FD0", "c2": "#3FD0C9",
+ "blocks": [
+  {"type": "phone", "x": 40, "y": 0, "w": 380, "h": 700, "color": "teal", "title": "Add from Catalog", "subtitle": "17,000+ medicines", "search": "paracetamol",
+   "rows": [{"icon": "check", "color": "green", "title": "Paracetamol 500 mg", "sub": "Tablet · Strip of 10", "end": "Added", "tone": "ok"},
+            {"icon": "check", "color": "green", "title": "Paracetamol Syrup", "sub": "120 ml bottle", "end": "Added", "tone": "ok"},
+            {"icon": "check", "color": "green", "title": "Paracetamol 650 mg", "sub": "Tablet · Strip of 10", "end": "Added", "tone": "ok"},
+            {"color": "grey", "title": "Paracetamol Drops", "sub": "15 ml bottle", "end": "Add"},
+            {"color": "grey", "title": "Paracetamol IV", "sub": "100 ml", "end": "Add"}],
+   "button": "Add 3 to My Shop"},
+  {"type": "stat", "x": 470, "y": 0, "num": "17,000+", "label": "medicines in the catalog"},
+  {"type": "card", "x": 470, "y": 160, "w": 480, "icon": "pill", "color": "teal", "title": "You Only Set", "sub": "No typing product names",
+   "rows": [["Stock and price", "Your shop"], ["Shelf number", "Your shop"], ["Low-stock alert", "On", "ok"]]},
+  {"type": "card", "x": 470, "y": 470, "w": 480, "icon": "calendar-exclamation", "color": "red", "title": "Batch &amp; Expiry", "sub": "",
+   "rows": [["Expiring this month", "5 items", "bad"], ["Batch-wise report", "Ready", "ok"]]}
+ ],
+ "tiles": [["search", "Salt &amp; brand search", "teal"], ["box", "Box, strip or tablet", "green"], ["wifi-off", "Works offline", "orange"]]
+}
