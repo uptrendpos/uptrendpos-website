@@ -26,7 +26,63 @@ add_action( 'rest_api_init', function () {
 	register_rest_route( $ns, '/page', array( 'methods' => 'POST', 'callback' => 'utpk_api_page', 'permission_callback' => 'utpk_api_can' ) );
 	register_rest_route( $ns, '/backup', array( 'methods' => 'POST', 'callback' => 'utpk_api_backup', 'permission_callback' => 'utpk_api_can' ) );
 	register_rest_route( $ns, '/media-cleanup', array( 'methods' => 'POST', 'callback' => 'utpk_api_cleanup', 'permission_callback' => 'utpk_api_can' ) );
+	register_rest_route( $ns, '/self-update', array( 'methods' => 'POST', 'callback' => 'utpk_api_self_update', 'permission_callback' => 'utpk_api_can_update' ) );
 } );
+
+/** Plugin self-update needs a real administrator (update_plugins + install_plugins). */
+function utpk_api_can_update() {
+	return current_user_can( 'update_plugins' ) && current_user_can( 'install_plugins' );
+}
+
+/**
+ * POST /self-update {version:"1.5.2"}
+ * Installs THIS plugin from <asset_source>plugin/uptrendpos-site-kit-<version>.zip only, and only a newer
+ * version. Same as Plugins > Upload > "Replace current with uploaded"; the plugin stays active.
+ */
+function utpk_api_self_update( WP_REST_Request $req ) {
+	$ver = (string) $req->get_param( 'version' );
+	if ( ! preg_match( '/^\d{1,2}\.\d{1,2}\.\d{1,3}$/', $ver ) ) {
+		return new WP_Error( 'utpk_version', 'version must look like 1.5.2', array( 'status' => 400 ) );
+	}
+	if ( version_compare( $ver, UTPK_VERSION, '<=' ) ) {
+		return new WP_Error( 'utpk_version', 'Version ' . $ver . ' is not newer than ' . UTPK_VERSION, array( 'status' => 409 ) );
+	}
+	$src = trim( (string) utpk_opt( 'asset_source' ) );
+	if ( ! preg_match( '#^https://raw\.githubusercontent\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/[A-Za-z0-9_./-]+/$#', $src ) ) {
+		return new WP_Error( 'utpk_source', 'Asset source is not set', array( 'status' => 400 ) );
+	}
+	$url = $src . 'plugin/uptrendpos-site-kit-' . $ver . '.zip';
+	require_once ABSPATH . 'wp-admin/includes/file.php';
+	require_once ABSPATH . 'wp-admin/includes/misc.php';
+	require_once ABSPATH . 'wp-admin/includes/plugin.php';
+	require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
+	$tmp = download_url( $url, 60 );
+	if ( is_wp_error( $tmp ) ) {
+		return new WP_Error( 'utpk_fetch', 'Could not download ' . $url, array( 'status' => 502 ) );
+	}
+	$zip = new ZipArchive();
+	$ok  = true === $zip->open( $tmp );
+	$top = $ok && $zip->numFiles ? strtok( (string) $zip->getNameIndex( 0 ), '/' ) : '';
+	$main = $ok ? (string) $zip->getFromName( 'uptrendpos-site-kit/uptrendpos-site-kit.php' ) : '';
+	if ( $ok ) {
+		$zip->close();
+	}
+	if ( 'uptrendpos-site-kit' !== $top || false === strpos( $main, "define( 'UTPK_VERSION', '" . $ver . "' )" ) ) {
+		@unlink( $tmp ); // phpcs:ignore
+		return new WP_Error( 'utpk_zip', 'Zip is not UpTrendPos Site Kit ' . $ver, array( 'status' => 422 ) );
+	}
+	$up  = new Plugin_Upgrader( new WP_Ajax_Upgrader_Skin() );
+	$res = $up->install( $tmp, array( 'overwrite_package' => true ) );
+	@unlink( $tmp ); // phpcs:ignore
+	if ( is_wp_error( $res ) || ! $res ) {
+		return new WP_Error( 'utpk_install', is_wp_error( $res ) ? $res->get_error_message() : 'Install failed', array( 'status' => 500 ) );
+	}
+	if ( ! is_plugin_active( 'uptrendpos-site-kit/uptrendpos-site-kit.php' ) ) {
+		activate_plugin( 'uptrendpos-site-kit/uptrendpos-site-kit.php' );
+	}
+	do_action( 'litespeed_purge_all' );
+	return array( 'installed' => $ver, 'from' => $url );
+}
 
 /* ---------------- helpers ---------------- */
 

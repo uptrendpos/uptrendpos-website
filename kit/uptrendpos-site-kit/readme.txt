@@ -34,7 +34,8 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 
 == Changelog ==
 = 1.5.1 (30 Oct 2026) =
-* Industries mega menu, mobile menu and footer now use a FIXED short list of 9 top business types (registry "menu"), in 3 columns. New business types no longer make the menu bigger; they show on Home, the Industries hub and "See all business types".
+* Industries mega menu, mobile menu and footer now use a FIXED short list of 9 top business types (registry "menu"), in 3 columns, centred under the header, with one "+N more business types" line. New business types no longer make the menu bigger; they show on Home, the Industries hub and "See all business types".
+* POST utpk/v1/self-update {version}: installs a newer Site Kit only from <asset source>plugin/uptrendpos-site-kit-<version>.zip (administrators only; zip and version are checked). Lets future plugin updates go live without a manual upload.
 
 = 1.5.0 (29 Oct 2026) =
 * REST layer for the daily automation (utpk/v1, admin login only): status, image upload (same file name is
