@@ -258,5 +258,70 @@
   "sec": "furniture store software, furniture showroom software, furniture billing software",
   "builder": "build_furniture.py",
   "images": "gen_furniture.py"
+ },
+ {
+  "n": "jewellery-shop-pos-software",
+  "src": "pages/website_jewellery_v1.html",
+  "url": "/industries/jewellery-shop-pos-software/",
+  "stage": "jewellery",
+  "stage_items": [
+   [
+    "Bills on a calculator",
+    "gem",
+    "y",
+    "Gold rate on the bill",
+    "Making charge on the bill too",
+    "Gold rate"
+   ],
+   [
+    "Weights in a register",
+    "ruler",
+    "b",
+    "Weights in grams",
+    "On item and bill",
+    "Grams"
+   ],
+   [
+    "Which size is in stock?",
+    "layers",
+    "g",
+    "Design x size",
+    "Own stock for each",
+    "Designs"
+   ],
+   [
+    "Udhaar in a khata",
+    "book",
+    "t",
+    "Udhaar on the ledger",
+    "Statement on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Qist in a register",
+    "cal",
+    "b",
+    "Qist with guarantor",
+    "Enterprise and Custom",
+    "Qist"
+   ],
+   [
+    "Bills changed by staff",
+    "shield",
+    "y",
+    "Own staff logins",
+    "Cash session per shift",
+    "Control"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Jewellery Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Jewellery shop POS software for gold shops in Pakistan: daily gold rate and making charge on the bill, weights in grams, designs in every size and qist.",
+  "kw": "jewellery shop POS software",
+  "sec": "jewellery shop software, gold shop software, jewellery billing software",
+  "builder": "build_jewellery.py",
+  "images": "gen_jewellery.py"
  }
 ]
