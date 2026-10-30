@@ -9,17 +9,49 @@ Read this file together with `site/automation/FACTS.md` (the website's allowed-f
 - Phone and WhatsApp: +92 319 2223292. Website: uptrendpos.com. Live app to try: live.uptrendpos.com.
 - Socials: facebook.com/uptrendpos, instagram.com/uptrendpos, linkedin.com/company/uptrendpos, tiktok.com/@uptrendpos, youtube.com/@UpTrendPos.
 
-## Loaded catalogs (highlight these whenever the business has one)
+## Loaded catalogs (Abdul, 30 Oct 2026: inserted in the system; highlight whenever the business has one)
+The catalogs hold no prices or stock. The owner sets stock and price.
+
+**Large catalogs (headline or stat):**
+
 | Business | Count | How to say it |
 |---|---|---|
-| Pharmacy & Medical Store | 17,000+ | "17,000+ medicines pre-loaded" (no prices in the catalog: the owner sets stock and price) |
+| Pharmacy & Medical Store | 17,000+ | "17,000+ medicines pre-loaded" |
 | Grocery & Kiryana | 7,000+ | "7,000+ grocery products ready" |
-| Cosmetics & Beauty | 5,000+ | "5,000+ makeup, skin and hair care products" |
+| Cosmetics & Beauty | 5,500+ | "5,500+ makeup, skin and hair care products" |
+| Crockery, Household & Plastic | 2,000+ | "2,000+ crockery and household products" |
 | Electronics, Solar, Appliances & CCTV | 1,100+ | one shared catalog: "1,100+ solar, electronics and CCTV products" |
-| Mobile & Computer | 670+ | "670+ mobile and computer products" |
+| Toys & Gift Shop | 1,000+ | "1,000+ toys and gift items" |
 
+**Mid-size catalogs (stat card or sub-line):**
+
+| Business | Count |
+|---|---|
+| Clothing & Garments | 950+ |
+| Mobile & Computer | 700+ |
+| Bags & Luggage | 680+ |
+| Undergarments & Hosiery | 400+ |
+| Baby & Diaper Store | 350+ |
+| Perfume & Attar | 300+ |
+| Sports Goods | 250+ |
+| Shoes & Footwear | 200+ |
+| Stationery & Book Shop | 200+ |
+| Watch Shop | 150+ |
+| Gift Shop (admin category) | 150+ |
+
+**Small starter catalogs (one small line only, never the headline):**
+
+| Business | Count |
+|---|---|
+| Furniture | 70+ |
+| LED Lighting | 50+ (the Electrical part has no confirmed count) |
+| Veterinary | 50+ |
+| Vape & Pan | 50+ (not posted) |
+
+- No count for: Tailoring, Hardware/Sanitary, Paint, Auto Parts, Tyre, Battery, Jewellery, Artificial Jewellery, Glass, Meat, Agri Inputs, Vehicle Showroom, Electrical (non-LED). Never invent one; use the type's own strengths (variants, units, udhaar, quotations, qist).
+- Never claim a TOTAL catalog size (for example "38,000+") until Abdul confirms the unique total. The categories may share items.
 - **Full catalog is LIVE (Abdul, 30 Oct 2026).** Any shop can search the whole UpTrendPos catalog by category or by name and add any product to its own shop. Example: a pharmacy also adds grocery, baby diapers and general-store items. Use this as the main message on `full-catalog` days, and as one line or chip on other days where it fits.
-- All other business types have no ready catalog. Never invent a count for them. Use the type's own strengths instead (variants, units, udhaar, quotations, qist and so on).
+- New counts: Abdul adds them in chat. Update this table and `calendar.json` when he does.
 - Flow wording: "search, tick, add to your shop, set your own stock and price".
 
 ## Product stage (30 Oct 2026)

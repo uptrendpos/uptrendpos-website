@@ -12,7 +12,7 @@
             {"color": "grey", "title": "Hand Wash 250 ml", "sub": "Household · Bottle", "end": "Add"}],
    "button": "Add 3 to My Shop"},
   {"type": "card", "x": 470, "y": 0, "w": 480, "icon": "category-plus", "color": "mint", "title": "Ready Catalogs", "sub": "Search, tick and add",
-   "rows": [["Medicines", "17,000+"], ["Grocery", "7,000+"], ["Beauty", "5,000+"], ["Solar &amp; electronics", "1,100+"], ["Mobile &amp; computer", "670+"]]},
+   "rows": [["Medicines", "17,000+"], ["Grocery", "7,000+"], ["Beauty", "5,500+"], ["Solar &amp; electronics", "1,100+"], ["Mobile &amp; computer", "700+"]]},
   {"type": "chip", "x": 470, "y": 410, "text": "A pharmacy can add grocery too", "icon": "building-store", "tone": "ok"},
   {"type": "chip", "x": 470, "y": 500, "text": "Search by name or category", "icon": "list-search", "tone": "info"}
  ],

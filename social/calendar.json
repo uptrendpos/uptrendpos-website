@@ -1,5 +1,5 @@
 {
- "_help": "Daily social post rotation (one entry per day, cycles forever). catalog = loaded-catalog count to highlight ('' = none, 'ALL' = full-catalog post). page = website page source under site/pages/ for facts. Vape & Pan is left out on purpose (Meta restricts vape content). Add/reorder entries freely; post.py next continues after the last logged key.",
+ "_help": "Daily social post rotation (one entry per day, cycles forever). catalog = loaded-catalog count to highlight ('' = none, 'ALL' = full-catalog post; counts under 150 are a small line only, never the headline). page = website page source under site/pages/ for facts. Vape & Pan is left out on purpose (Meta restricts vape content). Add/reorder entries freely; post.py next continues after the last logged key.",
  "posts": [
   {
    "key": "pharmacy-catalog",
@@ -15,8 +15,8 @@
    "name": "Clothing & Garments",
    "site_slug": "clothing-store-pos-software",
    "page": "site/pages/website_clothing_v1.html",
-   "catalog": "",
-   "angle": "feature",
+   "catalog": "950+",
+   "angle": "catalog",
    "idea": "Size x colour variants in one go, barcode labels, exchanges on the same bill"
   },
   {
@@ -42,9 +42,9 @@
    "name": "Mobile & Computer Shop",
    "site_slug": "mobile-shop-pos-software",
    "page": "site/pages/website_mobile_shop_v1.html",
-   "catalog": "670+",
+   "catalog": "700+",
    "angle": "catalog",
-   "idea": "670+ mobile and computer products ready; IMEI from purchase to sale"
+   "idea": "700+ mobile and computer products ready; IMEI from purchase to sale"
   },
   {
    "key": "full-catalog-1",
@@ -60,7 +60,7 @@
    "name": "Shoes & Footwear",
    "site_slug": "shoe-store-pos-software",
    "page": "site/pages/website_shoes_v1.html",
-   "catalog": "",
+   "catalog": "200+",
    "angle": "feature",
    "idea": "Every size and colour in view; low-stock per size; barcode billing"
   },
@@ -69,9 +69,9 @@
    "name": "Cosmetics & Beauty Store",
    "site_slug": "cosmetics-store-pos-software",
    "page": "site/pages/website_cosmetics_v1.html",
-   "catalog": "5,000+",
+   "catalog": "5,500+",
    "angle": "catalog",
-   "idea": "5,000+ makeup, skin and hair care products loaded; stock per shade; batch and expiry"
+   "idea": "5,500+ makeup, skin and hair care products loaded; stock per shade; batch and expiry"
   },
   {
    "key": "tailor",
@@ -105,7 +105,7 @@
    "name": "Baby & Diaper Store",
    "site_slug": "baby-store-pos-software",
    "page": "site/pages/website_baby_v1.html",
-   "catalog": "",
+   "catalog": "350+",
    "angle": "feature",
    "idea": "Pack or piece billing; expiry alerts on formula and wipes"
   },
@@ -150,7 +150,7 @@
    "name": "Electrical & LED Lighting",
    "site_slug": "electrical-store-pos-software",
    "page": "site/pages/website_electrical_v1.html",
-   "catalog": "",
+   "catalog": "50+ (LED, small: no headline)",
    "angle": "feature",
    "idea": "Cartons, packs and single pieces in one stock; electrician udhaar"
   },
@@ -186,7 +186,7 @@
    "name": "Furniture Shop",
    "site_slug": "furniture-shop-pos-software",
    "page": "site/pages/website_furniture_v1.html",
-   "catalog": "",
+   "catalog": "70+ (small: no headline)",
    "angle": "feature",
    "idea": "A4 quotation to sale in one tap; advance on the ledger; qist"
   },
@@ -204,9 +204,9 @@
    "name": "Mobile & Computer Shop",
    "site_slug": "mobile-shop-pos-software",
    "page": "site/pages/website_mobile_shop_v1.html",
-   "catalog": "670+",
+   "catalog": "700+",
    "angle": "feature",
-   "idea": "Qist plans with guarantor and warranty lookup by IMEI (mention 670+ in a stat)"
+   "idea": "Qist plans with guarantor and warranty lookup by IMEI (mention 700+ in a stat)"
   },
   {
    "key": "meat",
@@ -222,7 +222,7 @@
    "name": "Perfume & Attar Shop",
    "site_slug": "perfume-shop-pos-software",
    "page": "",
-   "catalog": "",
+   "catalog": "300+",
    "angle": "feature",
    "idea": "Fragrances and bottle sizes as variants; loose attar by ml; testers as sample"
   },
@@ -231,9 +231,9 @@
    "name": "Cosmetics & Beauty Store",
    "site_slug": "cosmetics-store-pos-software",
    "page": "site/pages/website_cosmetics_v1.html",
-   "catalog": "5,000+",
+   "catalog": "5,500+",
    "angle": "feature",
-   "idea": "Stock for every shade, batch and expiry (mention 5,000+ in a stat)"
+   "idea": "Stock for every shade, batch and expiry (mention 5,500+ in a stat)"
   },
   {
    "key": "full-catalog-3",
@@ -249,7 +249,7 @@
    "name": "Watch Shop",
    "site_slug": "watch-shop-pos-software",
    "page": "",
-   "catalog": "",
+   "catalog": "150+",
    "angle": "feature",
    "idea": "Models as variants; warranty notes on the sale; barcode billing"
   },
@@ -258,8 +258,8 @@
    "name": "Bags & Luggage",
    "site_slug": "bag-shop-pos-software",
    "page": "",
-   "catalog": "",
-   "angle": "feature",
+   "catalog": "680+",
+   "angle": "catalog",
    "idea": "Models and colours as variants; exchanges on the same bill"
   },
   {
@@ -267,8 +267,8 @@
    "name": "Crockery & Household Shop",
    "site_slug": "crockery-shop-pos-software",
    "page": "",
-   "catalog": "",
-   "angle": "feature",
+   "catalog": "2,000+",
+   "angle": "catalog",
    "idea": "Sets, cartons and single pieces in one stock; breakage as damage"
   },
   {
@@ -276,7 +276,7 @@
    "name": "Undergarments & Hosiery",
    "site_slug": "undergarments-shop-pos-software",
    "page": "",
-   "catalog": "",
+   "catalog": "400+",
    "angle": "feature",
    "idea": "Sizes and colours; pack of 3 / dozen billing"
   },
@@ -303,8 +303,8 @@
    "name": "Toys & Gift Shop",
    "site_slug": "toy-shop-pos-software",
    "page": "",
-   "catalog": "",
-   "angle": "feature",
+   "catalog": "1,000+",
+   "angle": "catalog",
    "idea": "Fast billing in Eid and birthday rush; barcode labels; age groups as categories"
   },
   {
@@ -312,7 +312,7 @@
    "name": "Sports Goods",
    "site_slug": "sports-shop-pos-software",
    "page": "",
-   "catalog": "",
+   "catalog": "250+",
    "angle": "feature",
    "idea": "Kit sizes and colours; school/club orders via A4 quotation; club udhaar"
   },
@@ -321,7 +321,7 @@
    "name": "Stationery & Book Shop",
    "site_slug": "stationery-shop-pos-software",
    "page": "",
-   "catalog": "",
+   "catalog": "200+",
    "angle": "feature",
    "idea": "Pack and piece billing; school season rush; school/office udhaar"
   },
@@ -348,7 +348,7 @@
    "name": "Veterinary Store",
    "site_slug": "veterinary-store-pos-software",
    "page": "",
-   "catalog": "",
+   "catalog": "50+ (small: no headline)",
    "angle": "feature",
    "idea": "Batch and expiry on animal medicines; box/strip/piece; farmer udhaar (no Rx claim)"
   },

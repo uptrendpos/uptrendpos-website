@@ -8,7 +8,7 @@ Write ONLY what is on this list or in the queue entry's `specials`. If a feature
 - Returns and bill edits keep the same invoice number.
 - Units (UOM): carton / box / pack / piece / kg / gram / meter / litre on one bill, stock always in the selling unit.
 - Variant generator: two dimensions (e.g. size x colour, shade x size, model x colour) make all items in one go, each with its own stock and price.
-- Categories and brands; add your own products. Catalog for the queue types = 0 (say "your shop starts with an empty list, you add only what you sell").
+- Categories and brands; add your own products. Ready catalog: use the queue entry's `catalog` value (Abdul, 30 Oct 2026). If it is a count (e.g. "300+"), say "<count> <trade> products already loaded: search, tick and add the ones you sell, then set your own stock and price" and follow the catalog wording pattern of site/build_cosmetics.py / build_mobile.py (counts under 150 = one line only, never in the H1, title or hero). If it is 0, say "your shop starts with an empty list, you add only what you sell". Any shop can also add products from the full UpTrendPos catalog by name or category (live). Never state a total catalog size.
 - Batch number and expiry date on purchase; expiring/expired alerts; batch-wise stock and expiry report (only where it fits the trade).
 - Low stock alerts; demand list (what to reorder).
 - Inventory movements: damage, sample, adjustment, stock audit.
