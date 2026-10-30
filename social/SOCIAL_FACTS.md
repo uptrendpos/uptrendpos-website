@@ -1,6 +1,6 @@
 # UpTrendPos daily social post: facts and rules (source of truth)
 
-One post a day, one business type, English image + English captions. The same image and structure go to Facebook, Instagram and LinkedIn. Abdul uploads it himself.
+One post a day, one business type: ONE English image + ONE English caption with ONE hashtag set. The same image, text and hashtags go to Facebook, Instagram and LinkedIn. Abdul uploads it himself.
 
 Read this file together with `site/automation/FACTS.md` (the website's allowed-features list). If a feature is in neither file, or in the calendar entry's `idea`, or in that business's website page (`page` in the calendar entry), leave it out.
 
@@ -103,25 +103,30 @@ The catalogs hold no prices or stock. The owner sets stock and price.
   3. **Two cards side by side:** left `x 40, w 560`; right `x 632, w 320`.
 - Examples to copy: `social/examples/*.json`. Icons are Tabler outline names. `post.py` stops with "ICON MISSING" if a name does not exist.
 
-## Captions (write `captions.md` with 3 sections)
-1. **Facebook:**
-   - Hook line and 3-5 short benefit lines (✅).
-   - One Roman Urdu line.
-   - CTA: "WhatsApp +92 319 2223292".
-   - **No links** (Facebook limits reach for them).
-   - 6-8 hashtags.
-2. **Instagram:**
-   - Same core text, with "Try it live: live.uptrendpos.com".
-   - The CTA phone.
-   - 12-15 hashtags at the end.
-3. **LinkedIn:**
-   - 3 short professional paragraphs: the problem for that business type, how UpTrendPos solves it, and the CTA.
-   - Link https://uptrendpos.com and live.uptrendpos.com.
-   - 3-5 hashtags.
+## Post content (ONE caption + ONE hashtag set for all 3 platforms; Abdul, 30 Oct 2026)
+Abdul posts the SAME image with the SAME text and the SAME hashtags on Facebook, Instagram and LinkedIn, so every account keeps one structure. Write `caption.md` in exactly this shape:
 
-Hashtags:
-- Always #UpTrendPos #POSSoftware #Pakistan.
-- Add trade tags (#PharmacyPakistan #KiryanaStore #SolarPakistan …) and the city mix #Sahiwal #Lahore #Karachi.
-- No competitor or brand tags.
+```
+<Hook line: the shop owner's pain or the big number, 1 line, one emoji max>
 
-Every caption ends with the same CTA phone. No prices.
+<1-2 short lines on what UpTrendPos does for this business>
+✅ <benefit 1>
+✅ <benefit 2>
+✅ <benefit 3>
+✅ <benefit 4 (optional)>
+
+<One Roman Urdu line, e.g. "Ab har dawai type karne ki zaroorat nahi.">
+
+📲 WhatsApp +92 319 2223292
+
+#UpTrendPos #POSSoftware #Pakistan <7-9 trade + city tags>
+```
+
+- No links in the text (Facebook cuts reach for links; uptrendpos.com is already on the image).
+- No "free demo", no prices, no plan names. If an Enterprise+ feature is shown, add one line before the CTA: "Available on Enterprise and Custom plans."
+- 10-12 hashtags in total, all on the last line:
+  - always #UpTrendPos #POSSoftware #Pakistan;
+  - trade tags (#PharmacyPakistan #KiryanaStore #SolarPakistan …);
+  - 2-3 city tags (#Sahiwal #Lahore #Karachi #Faisalabad #Multan);
+  - no competitor or brand tags.
+- About 80-130 words without the hashtags. Plain text that pastes cleanly into all 3 apps (no markdown, no bold).

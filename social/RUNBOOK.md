@@ -42,22 +42,20 @@ You are the scheduled UpTrendPos social-post session. Abdul is NOT watching. Do 
    Fix and re-render if anything is off.
 4. If it still fails after 5 rounds, render the closest working spec from `social/examples/` with today's date and business badge changed. Say so in the report.
 
-## 4. Captions
-Write `social/out/<date>/captions.md` as in SOCIAL_FACTS.md:
-- Facebook, then Instagram, then LinkedIn, each under its own `##` heading;
-- a short alt text line for the image at the top.
+## 4. Post content
+Write `social/out/<date>/caption.md` exactly in the shape given in SOCIAL_FACTS.md "Post content": ONE caption and ONE hashtag line, used as-is on Facebook, Instagram and LinkedIn. Nothing else goes in the file (no headings, no alt text, no notes).
 
 ## 5. Save and deliver
 1. `python3 social/post.py mark <key> <date> "<headline text>"`.
-2. `git add social/out/<date>/spec.json social/out/<date>/*.jpg social/out/<date>/captions.md social/log.json`.
+2. `git add social/out/<date>/spec.json social/out/<date>/*.jpg social/out/<date>/caption.md social/log.json`.
    - PNGs are gitignored.
    - `git fetch origin main && git rebase origin/main`, then commit "Social post <date>: <key>" ending with the attribution lines from the session, then push. If the push fails twice, continue: delivery matters more.
-3. Send with SendUserFile (status "proactive"):
-   - the `-1640x2048.png` (the upload file for Facebook, Instagram and LinkedIn);
-   - the `-4K.png` master;
-   - `captions.md`.
+3. Deliver in this order (Abdul copies straight from the chat, so the text must be visible, not only in a file):
+   1. SendUserMessage with the full caption text inside ONE plain code block (```text ... ```) so it copies in one tap, under the line "Post text (Facebook, Instagram, LinkedIn - same for all 3):". Nothing else in that message.
+   2. SendUserFile (status "proactive") with ONE file only: the `-1640x2048.png`. Do not send the 4K master or any other file.
+   3. If SendUserMessage is not available in the session, put the same code block at the top of the final message instead.
 
 ## 6. Final message (this becomes Abdul's notification: short, Roman Urdu + English)
-Example: "Aaj ka social post ready: Pharmacy - '17,000+ Medicines Pre-Loaded.' Image (1640x2048) + 4K + FB/IG/LinkedIn captions upar attached. Kal: Clothing & Garments."
+Example: "Aaj ka social post ready: Clothing & Garments - 'Every Size. Every Colour.' 1 image + post text + hashtags (FB, Insta, LinkedIn teeno ke liye same). Kal: Grocery (7,000+)."
 
 On failure, say which step stopped and what was or was not delivered.
