@@ -6,7 +6,7 @@ Read this file together with `site/automation/FACTS.md` (the website's allowed-f
 
 ## Brand and contact (never change)
 - Brand: **UpTrendPos**. Never write "UP Trend POS", "UptrendPOS", AGR or AGR Soft.
-- Phone and WhatsApp: +92 319 2223292. Website: uptrendpos.com. Free live demo: live.uptrendpos.com.
+- Phone and WhatsApp: +92 319 2223292. Website: uptrendpos.com. Live app to try: live.uptrendpos.com.
 - Socials: facebook.com/uptrendpos, instagram.com/uptrendpos, linkedin.com/company/uptrendpos, tiktok.com/@uptrendpos, youtube.com/@UpTrendPos.
 
 ## Loaded catalogs (highlight these whenever the business has one)
@@ -33,7 +33,7 @@ Read this file together with `site/automation/FACTS.md` (the website's allowed-f
 - Staff attendance and salary (payroll) is Custom only.
 
 ## Never write
-- "Free plan", "free forever", "ready-made", "One POS", "Smart", "certified", "FBR approved", "Pakistan's first/No. 1", "unlimited offline", iOS app, customer counts, competitor names, installation or setup fees.
+- "Free demo" (image or captions: the website already says it many times), "Free plan", "free forever", "ready-made", "One POS", "Smart", "certified", "FBR approved", "Pakistan's first/No. 1", "unlimited offline", iOS app, customer counts, competitor names, installation or setup fees.
 - Real brand names in mockups, for example Panadol or Pampers. Use generic names such as "Paracetamol 500 mg" or "Baby Diapers Size 4".
 - Health claims.
 - Fake buttons or "Swipe" UI, except an in-app phone button that is part of the mockup.
@@ -48,7 +48,7 @@ Read this file together with `site/automation/FACTS.md` (the website's allowed-f
   - One-line sub-line in grey. Use `<b>` for one key phrase.
   - Hero canvas of 952x700 with app-screen mockups.
   - 3 white icon tiles.
-  - Navy footer pill: "Free demo +92 319 2223292 | uptrendpos.com". This is automatic.
+  - Navy footer pill: WhatsApp icon + "+92 319 2223292 | uptrendpos.com". This is automatic. Never write "Free demo" anywhere in the image (Abdul, 30 Oct 2026).
 - Accent `c1`/`c2`: pick one colour family per post. Avoid repeating the previous day's accent.
   - Pharmacy: `#0A7FD0`/`#3FD0C9`.
   - Grocery and full catalog: `#1E8A43`/`#47C683`.
@@ -75,11 +75,11 @@ Read this file together with `site/automation/FACTS.md` (the website's allowed-f
 1. **Facebook:**
    - Hook line and 3-5 short benefit lines (✅).
    - One Roman Urdu line.
-   - CTA: "WhatsApp +92 319 2223292 for a free demo".
+   - CTA: "WhatsApp +92 319 2223292".
    - **No links** (Facebook limits reach for them).
    - 6-8 hashtags.
 2. **Instagram:**
-   - Same core text, with "Free live demo: live.uptrendpos.com".
+   - Same core text, with "Try it live: live.uptrendpos.com".
    - The CTA phone.
    - 12-15 hashtags at the end.
 3. **LinkedIn:**

@@ -12,7 +12,7 @@ UpTrendPos already has 17,000+ medicines loaded for your pharmacy.
 
 Ab har dawai type karne ki zaroorat nahi: search karein, tick karein, aur bechna shuru karein.
 
-📲 WhatsApp +92 319 2223292 for a free demo.
+📲 WhatsApp +92 319 2223292
 
 #UpTrendPos #PharmacyPOS #PharmacyPakistan #MedicalStore #POSSoftware #Pakistan #Sahiwal
 
@@ -28,8 +28,8 @@ UpTrendPos already has 17,000+ medicines loaded for your pharmacy.
 
 Ab har dawai type karne ki zaroorat nahi: search karein, tick karein, aur bechna shuru karein.
 
-🖥️ Free live demo: live.uptrendpos.com
-📲 WhatsApp +92 319 2223292 for a free demo.
+🖥️ Try it live: live.uptrendpos.com
+📲 WhatsApp +92 319 2223292
 
 #UpTrendPos #POSSoftware #PharmacyPOS #PharmacyPakistan #MedicalStore #PharmacySoftware #ChemistShop #RetailPakistan #SmallBusinessPakistan #ShopOwner #Pakistan #Lahore #Karachi #Sahiwal #Faisalabad
 
@@ -38,6 +38,6 @@ Setting up a pharmacy POS usually means days of typing product names, salts and 
 
 UpTrendPos comes with a catalog of 17,000+ medicines already loaded. The owner searches by salt or brand, ticks the products the store sells and adds them in one go, then sets only stock, price and shelf number. Batch and expiry alerts, box/strip/tablet units and offline cash billing are part of the same app on Android, Windows and the web.
 
-Book a free demo on WhatsApp at +92 319 2223292, or try it live at live.uptrendpos.com. More at https://uptrendpos.com
+WhatsApp +92 319 2223292, or try it live at live.uptrendpos.com. More at https://uptrendpos.com
 
 #UpTrendPos #PharmacySoftware #RetailTechnology #Pakistan #POSSoftware

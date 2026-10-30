@@ -272,7 +272,7 @@ def page(spec):
   <div class="s fit" data-max="952">{spec["sub"]}</div>
   <div class="vis"><div class="in">{vis}</div></div>
   <div class="tiles">{tl}</div>
-  <div class="foot"><div class="fp"><span class="wa">{icon("brand-whatsapp", 32, "#fff", 2)}</span><span><small>Free demo </small>{PHONE}</span><i></i><span>uptrendpos.com</span></div></div>
+  <div class="foot"><div class="fp"><span class="wa">{icon("brand-whatsapp", 32, "#fff", 2)}</span><span>{PHONE}</span><i></i><span>uptrendpos.com</span></div></div>
 </div>'''
     return (f'<!doctype html><html><head><meta charset="utf-8"><style>{FONT_CSS}:root{{{v}}}{css}</style></head>'
             f'<body>{deco}{body}{CHECK_JS}</body></html>')
@@ -281,7 +281,7 @@ def page(spec):
 # ---------------------------------------------------------------- spec gate (content rules)
 BANNED = [r'\bRs\.?\s?\d[\d,]*\s*(/|per)\s*(month|mo|year)', r'\bPKR\b', r'%\s*off', r'\bdiscount offer', r'free plan', r'free forever',
           r'certified', r'FBR approved', r'pakistan.?s (first|no\.? ?1)', r'\bAGR\b', r'ready-?made', r'\bone pos\b', r'\bsmart\b',
-          r'\biOS\b', r'\biPhone app\b', r'installation (fee|charge)', r'setup (fee|charge)', r'\bswipe\b', r'unlimited offline']
+          r'\biOS\b', r'\biPhone app\b', r'free demo', r'installation (fee|charge)', r'setup (fee|charge)', r'\bswipe\b', r'unlimited offline']
 
 
 def gate_spec(spec):
