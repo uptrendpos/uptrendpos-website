@@ -323,5 +323,70 @@
   "sec": "jewellery shop software, gold shop software, jewellery billing software",
   "builder": "build_jewellery.py",
   "images": "gen_jewellery.py"
+ },
+ {
+  "n": "battery-shop-pos-software",
+  "src": "pages/website_battery_v1.html",
+  "url": "/industries/battery-shop-pos-software/",
+  "stage": "battery",
+  "stage_items": [
+   [
+    "Which ampere is in stock?",
+    "layers",
+    "b",
+    "Ampere x type",
+    "Own stock for each",
+    "Ampere"
+   ],
+   [
+    "Warranty on a loose slip",
+    "doc",
+    "y",
+    "Warranty note on the bill",
+    "Bill on WhatsApp",
+    "Warranty"
+   ],
+   [
+    "Mechanics' udhaar in a khata",
+    "book",
+    "t",
+    "Udhaar on the ledger",
+    "Statement on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "UPS sets sold on qist",
+    "cal",
+    "g",
+    "Qist with guarantor",
+    "Enterprise and Custom",
+    "Qist"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ],
+   [
+    "Dead battery from supplier",
+    "box",
+    "y",
+    "Damage and returns",
+    "Supplier ledger stays right",
+    "Returns"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Battery Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Battery shop POS software for car, bike and UPS battery shops in Pakistan: stock for every ampere and type, warranty notes on the bill, udhaar and qist.",
+  "kw": "battery shop POS software",
+  "sec": "battery shop software, UPS battery shop software, battery dealer billing software",
+  "builder": "build_battery.py",
+  "images": "gen_battery.py"
  }
 ]
