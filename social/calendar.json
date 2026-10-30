@@ -51,9 +51,9 @@
    "name": "Full catalog (any shop)",
    "site_slug": "",
    "page": "",
-   "catalog": "ALL",
+   "catalog": "38,000+ total",
    "angle": "full-catalog",
-   "idea": "A pharmacy adds grocery, baby diapers and store items from the full catalog by name or category"
+   "idea": "38,000+ products in the full catalog. A pharmacy adds grocery, baby diapers and store items from the full catalog by name or category"
   },
   {
    "key": "shoes",
@@ -123,9 +123,9 @@
    "name": "Full catalog (any shop)",
    "site_slug": "",
    "page": "",
-   "catalog": "ALL",
+   "catalog": "38,000+ total",
    "angle": "full-catalog",
-   "idea": "A grocery mart adds cosmetics, baby and household items from the full catalog"
+   "idea": "38,000+ products in the full catalog. A grocery mart adds cosmetics, baby and household items from the full catalog"
   },
   {
    "key": "vehicle",
@@ -240,9 +240,9 @@
    "name": "Full catalog (any shop)",
    "site_slug": "",
    "page": "",
-   "catalog": "ALL",
+   "catalog": "38,000+ total",
    "angle": "full-catalog",
-   "idea": "A general store adds products from every category: search by name or category, tick, set own price"
+   "idea": "38,000+ products in the full catalog. A general store adds products from every category: search by name or category, tick, set own price"
   },
   {
    "key": "watch",

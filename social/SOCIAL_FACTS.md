@@ -49,7 +49,7 @@ The catalogs hold no prices or stock. The owner sets stock and price.
 | Vape & Pan | 50+ (not posted) |
 
 - No count for: Tailoring, Hardware/Sanitary, Paint, Auto Parts, Tyre, Battery, Jewellery, Artificial Jewellery, Glass, Meat, Agri Inputs, Vehicle Showroom, Electrical (non-LED). Never invent one; use the type's own strengths (variants, units, udhaar, quotations, qist).
-- Never claim a TOTAL catalog size (for example "38,000+") until Abdul confirms the unique total. The categories may share items.
+- **Full catalog total: 38,000+ products (confirmed by Abdul, 30 Oct 2026; more are coming).** Use "38,000+ products" as the headline or stat on full-catalog days, and in captions. Never round it up or invent a higher total; Abdul will give the new number.
 - **Full catalog is LIVE (Abdul, 30 Oct 2026).** Any shop can search the whole UpTrendPos catalog by category or by name and add any product to its own shop. Example: a pharmacy also adds grocery, baby diapers and general-store items. Use this as the main message on `full-catalog` days, and as one line or chip on other days where it fits.
 - New counts: Abdul adds them in chat. Update this table and `calendar.json` when he does.
 - Flow wording: "search, tick, add to your shop, set your own stock and price".

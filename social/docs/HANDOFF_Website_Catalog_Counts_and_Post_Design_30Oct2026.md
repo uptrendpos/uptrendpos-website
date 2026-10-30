@@ -13,7 +13,7 @@ This handoff covers two things for every website page:
 
 How the catalogs work:
 - They carry no prices and no stock. The owner searches, ticks the products the shop sells and adds them, then sets their own stock and price.
-- **Full catalog is LIVE.** Any shop can search the whole UpTrendPos catalog by name or by category and add any product. For example, a pharmacy can also add grocery, baby diapers and general-store items.
+- **Full catalog is LIVE: 38,000+ products in total** (confirmed by Abdul, 30 Oct 2026; more are coming). Any shop can search the whole UpTrendPos catalog by name or by category and add any product. For example, a pharmacy can also add grocery, baby diapers and general-store items.
 
 ### 1.1 Large catalogs (H1, hero stat and title are fine)
 
@@ -57,7 +57,7 @@ Tailoring, Hardware & Sanitary, Paint, Auto Parts, Tyre, Battery, Jewellery & Go
 
 ### 1.5 Rules
 - Write counts exactly as listed, with a "+".
-- Never write a total such as "38,000+ products". The categories may share items, so first confirm the unique total from the database.
+- The full-catalog total is **38,000+ products** (confirmed). Use exactly this until Abdul gives a new number; never round it up.
 - Abdul will post new or changed counts in chat. Update this table first, then the pages.
 
 ---
@@ -121,8 +121,9 @@ The 30 Oct posts work because of a few strict choices. Reuse them on the website
   - phone (search for a real trade word, e.g. "lawn suit", "school bag", "dinner set") plus the stat card plus the "You only set" card;
   - text: "<count> <trade> products already loaded. Search, tick, add, then set your own stock and price. Sell something new? Add it in seconds."
 - **"Full catalog" band on the Home page and the Industries hub:**
-  - headline "Sell More Than One Category.";
+  - headline "38,000+ Products. <em>Any Category.</em>" (or "Sell More Than One Category.");
   - sub-line "Add any product from the full UpTrendPos catalog by name or category";
+  - a yellow stat card "38,000+ products in the full catalog";
   - a grid of count chips (Medicines 17,000+, Grocery 7,000+, Beauty 5,500+, Crockery 2,000+, Solar & Electronics 1,100+, Toys 1,000+, Clothing 950+, Mobile 700+ …);
   - the example "a pharmacy adds diapers and grocery too".
 - **Count badges on hub cards:** a small yellow pill "950+ products" on each card that has a catalog (none for zero-catalog types).
@@ -139,6 +140,6 @@ The 30 Oct posts work because of a few strict choices. Reuse them on the website
 
 ### 3.5 Wording rules shared with the posts
 - Brand: UpTrendPos.
-- Never write: "ready-made", "Smart", "One POS", "Free plan", "certified", "FBR approved", "Pakistan's first", or a total catalog size.
+- Never write: "ready-made", "Smart", "One POS", "Free plan", "certified", "FBR approved", "Pakistan's first", or any total other than 38,000+.
 - Offline: "cash bills work offline; udhaar and qist need internet".
 - "Free demo" stays on the website (CTAs) but is NOT used inside social post images or captions (Abdul, 30 Oct 2026).
