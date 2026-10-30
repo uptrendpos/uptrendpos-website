@@ -3,7 +3,7 @@
  * Plugin Name:       UpTrendPos Site Kit
  * Plugin URI:        https://uptrendpos.com/
  * Description:       One plugin for the whole uptrendpos.com front end: design system (CSS, JS, self-hosted fonts), site header with Industries mega menu, footer, animated hero stages, schema (Organization, SoftwareApplication, FAQ, breadcrumbs, industry hub), automatic image ALT text, automatic live-page links, Rank Math helpers, SEO Health screen with one-click SEO fill, llms.txt and redirects. Replaces the two WPCode snippets "UpTrendPos Design System" and "UpTrendPos SEO Snippet". Page designs are pasted as HTML into Elementor HTML widgets.
- * Version:           1.5.0
+ * Version:           1.5.1
  * Requires at least: 6.3
  * Requires PHP:      7.4
  * Author:            UpTrendPos
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'UTPK_VERSION', '1.5.0' );
+define( 'UTPK_VERSION', '1.5.1' );
 define( 'UTPK_FILE', __FILE__ );
 define( 'UTPK_DIR', plugin_dir_path( __FILE__ ) );
 define( 'UTPK_URL', plugin_dir_url( __FILE__ ) );

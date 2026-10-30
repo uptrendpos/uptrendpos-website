@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.5.0
+Version: 1.5.1
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,9 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.5.1 (30 Oct 2026) =
+* Industries mega menu, mobile menu and footer now use a FIXED short list of 9 top business types (registry "menu"), in 3 columns. New business types no longer make the menu bigger; they show on Home, the Industries hub and "See all business types".
+
 = 1.5.0 (29 Oct 2026) =
 * REST layer for the daily automation (utpk/v1, admin login only): status, image upload (same file name is
   replaced in place - no more "-1" copies), page code publish (through Elementor's own save, then SEO, featured

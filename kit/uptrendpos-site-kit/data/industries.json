@@ -1,5 +1,70 @@
 {
- "_help": "Business types under /industries/. A type shows in the menu, footer and hub schema only when its page is published and set to index in Rank Math. Fields: name (menu/card name), audience (schema), group, icon (sprite id), line (one short line in the menu).",
+ "_help": "Business types under /industries/. A type shows in the hub schema only when its page is published and set to index in Rank Math. Fields: name (menu/card name), audience (schema), group, icon (sprite id), line (one short line in the menu). The header menu and footer use the fixed \"menu\" list below.",
+ "menu": {
+  "_help": "Industries mega menu + footer list (decision 30 Oct 2026): a FIXED short list of top-growing business types, 3 columns x 3. New business types do NOT enter the menu by themselves; they show on the Home page, the Industries hub and the 'See all business types' link. Change this list by hand only. Optional per item: label (shorter menu name), line (menu sub-line).",
+  "columns": [
+   {
+    "name": "Daily needs and health",
+    "items": [
+     {
+      "slug": "grocery-store-pos-software",
+      "label": "Grocery & Kiryana",
+      "line": "7,000 products, udhaar"
+     },
+     {
+      "slug": "pharmacy-pos-software",
+      "label": "Pharmacy & Medical",
+      "line": "17,000+ medicines, expiry"
+     },
+     {
+      "slug": "cosmetics-store-pos-software",
+      "label": "Cosmetics & Beauty",
+      "line": "Shades, brands, expiry"
+     }
+    ]
+   },
+   {
+    "name": "Fashion",
+    "items": [
+     {
+      "slug": "clothing-store-pos-software",
+      "label": "Clothing & Garments",
+      "line": "Size and colour variants"
+     },
+     {
+      "slug": "tailor-shop-pos-software",
+      "label": "Tailoring & Boutique",
+      "line": "Orders and delivery dates"
+     },
+     {
+      "slug": "shoe-store-pos-software",
+      "label": "Shoes & Footwear",
+      "line": "Every size and colour"
+     }
+    ]
+   },
+   {
+    "name": "Electronics and solar",
+    "items": [
+     {
+      "slug": "solar-shop-pos-software",
+      "label": "Solar Shop",
+      "line": "Serials, warranty, qist"
+     },
+     {
+      "slug": "mobile-shop-pos-software",
+      "label": "Mobile & Computer",
+      "line": "IMEI tracking and qist"
+     },
+     {
+      "slug": "electronics-store-pos-software",
+      "label": "Electronics & CCTV",
+      "line": "Serials, warranty, CCTV"
+     }
+    ]
+   }
+  ]
+ },
  "groups": [
   {
    "id": "daily",

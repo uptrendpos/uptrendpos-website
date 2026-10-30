@@ -213,6 +213,60 @@ function utpk_live_industries() {
 	return $out;
 }
 
+/**
+ * Fixed short list for the header mega menu, mobile drawer and footer (registry "menu").
+ * Only live pages show. New business types never grow the menu; they live on Home and the hub.
+ * Falls back to the first 3 live groups x 3 types when the registry has no "menu" list.
+ */
+function utpk_menu_industries() {
+	$d    = utpk_industries();
+	$out  = array();
+	if ( ! empty( $d['menu']['columns'] ) && is_array( $d['menu']['columns'] ) ) {
+		foreach ( $d['menu']['columns'] as $col ) {
+			$items = array();
+			foreach ( (array) ( $col['items'] ?? array() ) as $it ) {
+				$t = utpk_industry( (string) ( $it['slug'] ?? '' ) );
+				if ( ! $t || ! utpk_is_live( $t['slug'] ) ) {
+					continue;
+				}
+				if ( ! empty( $it['label'] ) ) {
+					$t['name'] = $it['label'];
+				}
+				if ( ! empty( $it['line'] ) ) {
+					$t['line'] = $it['line'];
+				}
+				$items[] = $t;
+				if ( count( $items ) >= 4 ) {
+					break;
+				}
+			}
+			if ( $items ) {
+				$out[] = array( 'group' => array( 'name' => (string) ( $col['name'] ?? '' ) ), 'items' => $items );
+			}
+			if ( count( $out ) >= 3 ) {
+				break;
+			}
+		}
+		return $out;
+	}
+	foreach ( array_slice( utpk_live_industries(), 0, 3 ) as $g ) {
+		$g['items'] = array_slice( $g['items'], 0, 3 );
+		$out[]      = $g;
+	}
+	return $out;
+}
+
+/** Live business-type slugs (published + index). */
+function utpk_live_slugs_of_types() {
+	$out = array();
+	foreach ( utpk_industries()['types'] as $t ) {
+		if ( utpk_is_live( $t['slug'] ) ) {
+			$out[] = $t['slug'];
+		}
+	}
+	return $out;
+}
+
 function utpk_current_slug() {
 	return is_singular() ? (string) get_post_field( 'post_name', get_queried_object_id() ) : '';
 }
@@ -220,7 +274,7 @@ function utpk_current_slug() {
 function utpk_header_html() {
 	$b      = utpk_brand();
 	$cur    = utpk_current_slug();
-	$groups = utpk_live_industries();
+	$groups = utpk_menu_industries();
 	$hub    = utpk_is_live( $b['hub_slug'] ) ? home_url( '/' . $b['hub_slug'] . '/' ) : home_url( '/#utp-industries' );
 	$logo_c = UTPK_URL . 'assets/img/logo-color.webp';
 	$logo_w = UTPK_URL . 'assets/img/logo-white.webp';
@@ -239,7 +293,7 @@ function utpk_header_html() {
 		$mega .= '<div class="utn-grp"><p class="utn-gh">' . esc_html( $g['group']['name'] ) . '</p>';
 		foreach ( $g['items'] as $t ) {
 			$on    = $cur === $t['slug'] ? ' aria-current="page"' : '';
-			$mega .= '<a href="' . esc_url( utpk_industry_url( $t['slug'] ) ) . '"' . $on . ' data-track="menu_' . esc_attr( $t['slug'] ) . '"><span class="mi mi-' . esc_attr( $g['group']['id'] ) . '">' . utpk_ic( $t['icon'], 20 ) . '</span><span><strong>' . esc_html( $t['name'] ) . '</strong><small>' . esc_html( $t['line'] ) . '</small></span></a>';
+			$mega .= '<a href="' . esc_url( utpk_industry_url( $t['slug'] ) ) . '"' . $on . ' data-track="menu_' . esc_attr( $t['slug'] ) . '"><span class="mi mi-' . esc_attr( $t['group'] ) . '">' . utpk_ic( $t['icon'], 20 ) . '</span><span><strong>' . esc_html( $t['name'] ) . '</strong><small>' . esc_html( $t['line'] ) . '</small></span></a>';
 		}
 		$mega .= '</div>';
 	}
@@ -255,7 +309,13 @@ function utpk_header_html() {
 	$h .= '<a class="utn-logo" href="' . utpk_u( '/' ) . '" aria-label="UpTrendPos home"><img class="lc" src="' . esc_url( $logo_c ) . '" width="600" height="120" alt="UpTrendPos"><img class="lw" src="' . esc_url( $logo_w ) . '" width="600" height="120" alt="" aria-hidden="true"></a>';
 	$h .= '<nav class="utn-nav" aria-label="Main"><ul class="utn-menu">';
 	$h .= '<li class="has-mega"><button type="button" class="utn-mbtn" aria-expanded="false" aria-controls="utn-mega">Industries ' . utpk_ic( 'chev', 14 ) . '</button>';
-	$h .= '<div class="utn-mega" id="utn-mega"><div class="utn-mega-main">' . ( $mega ? '<div class="utn-mega-grid">' . $mega . '</div>' : '' ) . '</div>';
+	$in_menu = 0;
+	foreach ( $groups as $g ) {
+		$in_menu += count( $g['items'] );
+	}
+	$more = max( 0, count( utpk_live_slugs_of_types() ) - $in_menu );
+	$more_link = $more ? '<a class="utn-more" href="' . esc_url( $hub ) . '" data-track="menu_more_types"><span>Hardware, paint, auto parts, jewellery and more<small>+' . (int) $more . ' more business types</small></span>' . utpk_ic( 'arrow', 16 ) . '</a>' : '';
+	$h .= '<div class="utn-mega" id="utn-mega"><div class="utn-mega-main">' . ( $mega ? '<div class="utn-mega-grid">' . $mega . '</div>' : '' ) . $more_link . '</div>';
 	$h .= '<div class="utn-mega-side"><span class="utn-side-k">' . utpk_ic( 'grid', 16 ) . ' 30+ business types</span><p class="utn-side-t">Ready setup for your shop</p><p class="utn-side-p">Pick your business type at sign up. Fields, units and reports open ready for it.</p>';
 	$h .= '<a class="utn-side-btn" href="' . esc_url( $hub ) . '" data-track="menu_all_types">See all business types ' . utpk_ic( 'arrow', 16 ) . '</a>';
 	if ( utpk_is_live( 'fbr-pos-integration' ) ) {
@@ -280,7 +340,7 @@ function utpk_header_html() {
 	foreach ( $groups as $g ) {
 		$h .= '<p class="utn-gh">' . esc_html( $g['group']['name'] ) . '</p>';
 		foreach ( $g['items'] as $t ) {
-			$h .= '<a href="' . esc_url( utpk_industry_url( $t['slug'] ) ) . '"><span class="mi mi-' . esc_attr( $g['group']['id'] ) . '">' . utpk_ic( $t['icon'], 18 ) . '</span>' . esc_html( $t['name'] ) . '</a>';
+			$h .= '<a href="' . esc_url( utpk_industry_url( $t['slug'] ) ) . '"><span class="mi mi-' . esc_attr( $t['group'] ) . '">' . utpk_ic( $t['icon'], 18 ) . '</span>' . esc_html( $t['name'] ) . '</a>';
 		}
 	}
 	$h .= '<a class="utn-all" href="' . esc_url( $hub ) . '">See all business types ' . utpk_ic( 'arrow', 16 ) . '</a></div></details>';
@@ -304,7 +364,7 @@ function utpk_header_html() {
 function utpk_footer_html() {
 	$b     = utpk_brand();
 	$types = array();
-	foreach ( utpk_live_industries() as $g ) {
+	foreach ( utpk_menu_industries() as $g ) {
 		foreach ( $g['items'] as $t ) {
 			$types[] = $t;
 		}
