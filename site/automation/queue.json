@@ -92,7 +92,8 @@
    "electrical-store-pos-software",
    "tyre-shop-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-10-30"
  },
  {
   "order": 7,
