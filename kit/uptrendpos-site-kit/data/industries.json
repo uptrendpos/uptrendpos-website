@@ -9,7 +9,7 @@
      {
       "slug": "grocery-store-pos-software",
       "label": "Grocery & Kiryana",
-      "line": "7,000 products, udhaar"
+      "line": "7,000+ products, udhaar"
      },
      {
       "slug": "pharmacy-pos-software",
@@ -19,7 +19,7 @@
      {
       "slug": "cosmetics-store-pos-software",
       "label": "Cosmetics & Beauty",
-      "line": "Shades, brands, expiry"
+      "line": "5,500+ products, expiry"
      }
     ]
    },
@@ -29,7 +29,7 @@
      {
       "slug": "clothing-store-pos-software",
       "label": "Clothing & Garments",
-      "line": "Size and colour variants"
+      "line": "950+ products, sizes"
      },
      {
       "slug": "tailor-shop-pos-software",
@@ -39,7 +39,7 @@
      {
       "slug": "shoe-store-pos-software",
       "label": "Shoes & Footwear",
-      "line": "Every size and colour"
+      "line": "200+ products, sizes"
      }
     ]
    },
@@ -49,17 +49,17 @@
      {
       "slug": "solar-shop-pos-software",
       "label": "Solar Shop",
-      "line": "Serials, warranty, qist"
+      "line": "1,100+ products, qist"
      },
      {
       "slug": "mobile-shop-pos-software",
       "label": "Mobile & Computer",
-      "line": "IMEI tracking and qist"
+      "line": "700+ products, IMEI"
      },
      {
       "slug": "electronics-store-pos-software",
       "label": "Electronics & CCTV",
-      "line": "Serials, warranty, CCTV"
+      "line": "1,100+ products, CCTV"
      }
     ]
    }
@@ -102,7 +102,7 @@
    "audience": "Grocery and kiryana store owners",
    "group": "daily",
    "icon": "cart",
-   "line": "7,000 products ready, udhaar khata"
+   "line": "7,000+ products ready, udhaar khata"
   },
   {
    "slug": "meat-shop-pos-software",
@@ -118,7 +118,7 @@
    "audience": "Crockery and household shop owners",
    "group": "daily",
    "icon": "cup",
-   "line": "Sets, cartons and single pieces"
+   "line": "2,000+ products: sets, cartons, pieces"
   },
   {
    "slug": "vape-shop-pos-software",
@@ -142,7 +142,7 @@
    "audience": "Cosmetics and beauty store owners",
    "group": "health",
    "icon": "spark",
-   "line": "Shades, brands and expiry dates"
+   "line": "5,500+ products, shades, expiry"
   },
   {
    "slug": "baby-store-pos-software",
@@ -150,7 +150,7 @@
    "audience": "Baby and diaper store owners",
    "group": "health",
    "icon": "baby",
-   "line": "Pack or piece, with expiry alerts"
+   "line": "350+ products, pack or piece, expiry"
   },
   {
    "slug": "perfume-shop-pos-software",
@@ -158,7 +158,7 @@
    "audience": "Perfume and attar shop owners",
    "group": "health",
    "icon": "drop",
-   "line": "Fragrances and bottle sizes"
+   "line": "300+ products, bottle sizes"
   },
   {
    "slug": "clothing-store-pos-software",
@@ -166,7 +166,7 @@
    "audience": "Clothing and garment shop owners",
    "group": "fashion",
    "icon": "shirt",
-   "line": "Size and colour variants"
+   "line": "950+ products, size x colour"
   },
   {
    "slug": "shoe-store-pos-software",
@@ -174,7 +174,7 @@
    "audience": "Shoe and footwear shop owners",
    "group": "fashion",
    "icon": "shoe",
-   "line": "Every size and colour in view"
+   "line": "200+ products, every size and colour"
   },
   {
    "slug": "tailor-shop-pos-software",
@@ -190,7 +190,7 @@
    "audience": "Undergarments and hosiery shop owners",
    "group": "fashion",
    "icon": "shirt",
-   "line": "Sizes, colours and pack billing"
+   "line": "400+ products, sizes and packs"
   },
   {
    "slug": "bag-shop-pos-software",
@@ -198,7 +198,7 @@
    "audience": "Bag and luggage shop owners",
    "group": "fashion",
    "icon": "bag",
-   "line": "Models and colours as variants"
+   "line": "680+ products, models and colours"
   },
   {
    "slug": "watch-shop-pos-software",
@@ -206,7 +206,7 @@
    "audience": "Watch shop owners",
    "group": "fashion",
    "icon": "watch",
-   "line": "Models and fast billing"
+   "line": "150+ products, fast billing"
   },
   {
    "slug": "jewellery-shop-pos-software",
@@ -230,7 +230,7 @@
    "audience": "Electronics, home appliance and CCTV shop owners",
    "group": "electronics",
    "icon": "tv",
-   "line": "Serials, warranty lookup, CCTV quotes"
+   "line": "1,100+ products, serials, warranty"
   },
   {
    "slug": "solar-shop-pos-software",
@@ -238,7 +238,7 @@
    "audience": "Solar shop and solar business owners",
    "group": "electronics",
    "icon": "sun",
-   "line": "Serials, warranty and solar on qist"
+   "line": "1,100+ products, serials, qist"
   },
   {
    "slug": "electrical-store-pos-software",
@@ -254,7 +254,7 @@
    "audience": "Mobile and computer shop owners",
    "group": "electronics",
    "icon": "phone",
-   "line": "IMEI from purchase to sale, qist"
+   "line": "700+ products, IMEI, qist"
   },
   {
    "slug": "battery-shop-pos-software",
@@ -326,7 +326,7 @@
    "audience": "Toy and gift shop owners",
    "group": "gifts",
    "icon": "gift",
-   "line": "Barcode labels, fast billing"
+   "line": "1,000+ toys and gifts, barcode labels"
   },
   {
    "slug": "sports-shop-pos-software",
@@ -334,7 +334,7 @@
    "audience": "Sports goods shop owners",
    "group": "gifts",
    "icon": "ball",
-   "line": "Sizes and colours for kits"
+   "line": "250+ products, sizes and colours"
   },
   {
    "slug": "stationery-shop-pos-software",
@@ -342,7 +342,7 @@
    "audience": "Stationery and book shop owners",
    "group": "gifts",
    "icon": "book",
-   "line": "Pack and piece billing"
+   "line": "200+ products, pack and piece"
   },
   {
    "slug": "fertilizer-shop-pos-software",

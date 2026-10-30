@@ -333,7 +333,7 @@ def tablet_mobile_catalog():
           f'<rect x="0" y="0" width="{W}" height="{H}" rx="40" fill="#111827"/>', '<rect x="22" y="26" width="736" height="452" rx="16" fill="#f3f6fb"/>',
           '<clipPath id="cpMCat"><rect x="22" y="26" width="736" height="452" rx="16"/></clipPath><g clip-path="url(#cpMCat)">',
           '<rect x="22" y="26" width="736" height="52" fill="url(#gNavy)"/>', t(44, 58, 'Mobile &amp; Computer Catalog', 16, 700, '#fff'),
-          '<rect x="560" y="38" width="180" height="28" rx="14" fill="#fff" fill-opacity=".2"/>', t(650, 57, '670+ products', 12, 700, '#fff', 'middle'),
+          '<rect x="560" y="38" width="180" height="28" rx="14" fill="#fff" fill-opacity=".2"/>', t(650, 57, '700+ products', 12, 700, '#fff', 'middle'),
           '<rect x="44" y="94" width="692" height="38" rx="12" fill="#fff" stroke="#dfe6f1"/>', t(64, 118, '128gb', 13, 600, NAVY),
           t(716, 118, '31 results', 11, 500, MUTED, 'end')]
     rows = [('Phone A15 6/128GB', 'Smartphone · IMEI', 'Mobile', True), ('Phone N12 8/128GB', 'Smartphone · IMEI', 'Mobile', True),
@@ -460,7 +460,7 @@ SCENES = {
     'uptrendpos-mobile-shop-pos-software': ('Mobile Shop Counter', 'blue',
         lambda: g(monitor_mobile(), 40, 140, .9) + g(printer_mobile(), 830, 548, .5) + g(scanner_small(), 660, 660, .4, -24, 180, 180) + g(phone_qist(), 905, 112, .66),
         [(60, 780, 'IMEI on every phone', '#2F7BD9'), (300, 780, 'Qist plans', '#F59E0B')]),
-    'uptrendpos-mobile-shop-product-catalog': ('670+ Products Ready', 'navy', lambda: g(tablet_mobile_catalog(), 210, 150, 1.0),
+    'uptrendpos-mobile-shop-product-catalog': ('700+ Products Ready', 'navy', lambda: g(tablet_mobile_catalog(), 210, 150, 1.0),
         [(60, 770, 'Search and tick', '#2FA455'), (300, 770, 'Mobiles and computers', '#2F7BD9')]),
     'uptrendpos-mobile-shop-imei-warranty-installments': ('IMEI, Warranty and Qist', 'teal', lambda: g(phone_warranty(), 230, 140, 1.0) + g(phone_qist(), 680, 140, 1.0),
         [(60, 780, 'Warranty lookup by IMEI', '#2FA455'), (440, 780, 'Monthly qist plan', '#F59E0B')]),

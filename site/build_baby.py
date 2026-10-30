@@ -38,7 +38,7 @@ c = dict(
                     'Diaper shop software units: diapers bought by the carton, sold by the pack or by the piece, with stock kept in pieces',
                     'Sell a full pack or loose pieces',
                     'Set the units once for each item: a carton of 4 packs, a pack of 40 diapers. At the counter, sell a full pack or 5 loose pieces, and the stock drops in pieces. '
-                    'Your shop starts with an empty list, so you add only the items you sell.',
+                    '350+ baby and diaper products are already loaded: search, tick, add and set your own price. Sell something new? Add it in seconds.',
                     ['Carton, pack and piece on one bill', 'Stock always counted right', 'Own price for a pack and for a piece', 'Wipes, bottles and baby care as normal items']),
                    ('uptrendpos-baby-store-diaper-sizes-expiry.webp',
                     'Packs left in each diaper size and batch expiry alerts for baby cereal, formula and wipes in baby store POS software',
@@ -137,7 +137,7 @@ c = dict(
         ('Can I sell diapers by the pack and by the piece?', 'Yes. Set the pack size once, such as 40 diapers. Sell a full pack or 5 loose pieces on the same bill. Stock is counted in pieces, so packs and loose pieces always add up.'),
         ('Can I keep stock for every diaper size?', 'Yes. Each size is its own item with its own stock and price. The variant generator makes all sizes of a product in one go, and low stock alerts show which sizes to reorder.'),
         ('How does this diaper shop software track expiry?', 'Enter the batch and expiry date when baby food, formula or wipes come in. The dashboard shows expiring and expired items, and the batch-wise report lists every batch with its date. Sell the oldest stock first, or return it to the supplier before it becomes a loss.'),
-        ('Do you have a ready list of baby products?', 'No. Your shop starts with an empty list and you add the items you sell. Most baby products have a barcode, so scanning makes setup and billing fast.'),
+        ('Do you have a ready list of baby products?', 'Yes. 350+ baby and diaper products are already loaded. Search, tick the ones you sell, add them and set your own stock and price. Most baby products have a barcode, so scanning makes billing fast.' + ' You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Can I sell baby clothes and toys too?', 'Yes. Baby clothes can be made by age size with the variant generator, and toys, gifts and bath items sell as normal items on the same bill.'),
         ('How do I handle damaged packs?', 'Record torn or damaged packs as damage. The stock goes down and the cost is recorded, so your stock count and profit stay right.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),

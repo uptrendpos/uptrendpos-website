@@ -33,6 +33,14 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.5.2 (30 Oct 2026) =
+* Catalog counts (Abdul, 30 Oct 2026): hero stages Cosmetics 5,500+, Mobile & Computer 700+, Grocery 7,000+, and a new
+  catalog card for Clothing 950+, Shoes 200+ and Baby 350+; business-type lines with
+  counts (Grocery 7,000+, Crockery 2,000+, Toys 1,000+, Clothing 950+, Bags 680+, Undergarments 400+, Baby 350+, Perfume 300+,
+  Sports 250+, Shoes 200+, Stationery 200+, Watch 150+, Electronics and Solar 1,100+); menu sub-lines with counts.
+* llms.txt facts: every catalog count plus the full catalog of 38,000+ products.
+* Includes 1.5.1 (short Industries menu, guarded self-update endpoint).
+
 = 1.5.1 (30 Oct 2026) =
 * Industries mega menu, mobile menu and footer now use a FIXED short list of 9 top business types (registry "menu"), in 3 columns, centred under the header, with one "+N more business types" line. New business types no longer make the menu bigger; they show on Home, the Industries hub and "See all business types".
 * POST utpk/v1/self-update {version}: installs a newer Site Kit only from <asset source>plugin/uptrendpos-site-kit-<version>.zip (administrators only; zip and version are checked). Lets future plugin updates go live without a manual upload.

@@ -198,7 +198,7 @@ def tablet_beauty_catalog():
         y += 50
     b += ['<rect x="500" y="424" width="236" height="44" rx="14" fill="#FAE814"/>', t(618, 452, 'Add 3 to my shop', 13, 800, NAVY, 'middle'),
           t(64, 452, 'Not in the list? Add your own product.', 11.5, 600, BLUE)]
-    return tablet('cpBCat', 'Beauty &amp; Cosmetics Catalog', '5,000+ products', ''.join(b))
+    return tablet('cpBCat', 'Beauty &amp; Cosmetics Catalog', '5,500+ products', ''.join(b))
 
 
 def phone_shades():
@@ -269,7 +269,7 @@ def printer_beauty():
 
 def scene_beauty_process():
     return five_steps([
-        ('Pick products', mini_ui('Beauty catalog', [('Matte Lipstick 04', 'Ticked'), ('Foundation 220', 'Ticked'), ('Face Wash Neem', 'Ticked')], '3 added to my shop'), 'From 5,000+ items'),
+        ('Pick products', mini_ui('Beauty catalog', [('Matte Lipstick 04', 'Ticked'), ('Foundation 220', 'Ticked'), ('Face Wash Neem', 'Ticked')], '3 added to my shop'), 'From 5,500+ items'),
         ('Receive stock', mini_ui('GRN · Karachi Cosmetics', [('Face Wash Neem', 'FW-21'), ('Expiry', 'Mar 2027'), ('Qty', '24 pcs')], 'Batch and expiry saved'), 'Batch and expiry on GRN'),
         ('Scan and sell', mini_ui('New sale', [('Matte Lipstick 04', '1,250'), ('Foundation 220', '2,800'), ('Face Wash x2', '1,300')], 'Bill on WhatsApp', '#eaf1ff', BLUE), 'Scan the barcode, bill fast'),
         ('Check expiry', mini_ui('Expiry alerts', [('Sunblock SPF 50', '12 days'), ('Night Cream', 'Expired'), ('Testers used', '2 pcs')], 'Sell first or return', '#fffbeb', '#92400e'), 'Before it is a loss'),
@@ -286,7 +286,7 @@ SCENES = {
         lambda: hardware_scene(monitor_clothing, printer_cloth, phone_exchange, ['Windows PC', 'Barcode scanner', 'Receipt printer', 'Owner phone', 'Type-C printer']),
         [(880, 110, 'Start with a phone', '#2FA455')]),
     'uptrendpos-clothing-store-pos-process': ('Garment Sale, Step by Step', 'navy', scene_clothing_process, [(60, 470, 'All connected', '#2FA455')]),
-    'uptrendpos-cosmetics-store-product-catalog': ('5,000+ Products Ready', 'green', lambda: g(tablet_beauty_catalog(), 210, 150, 1.0),
+    'uptrendpos-cosmetics-store-product-catalog': ('5,500+ Products Ready', 'green', lambda: g(tablet_beauty_catalog(), 210, 150, 1.0),
         [(60, 770, 'Search and tick', '#2FA455'), (300, 770, 'Makeup, skin and hair care', '#F59E0B')]),
     'uptrendpos-cosmetics-store-shades-expiry': ('Shades and Expiry', 'teal', lambda: g(phone_shades(), 230, 140, 1.0) + g(phone_expiry(), 680, 140, 1.0),
         [(60, 780, 'Stock for every shade', '#2F7BD9'), (440, 780, 'Batch expiry alerts', '#F59E0B')]),

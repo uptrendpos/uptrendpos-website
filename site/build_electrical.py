@@ -37,7 +37,7 @@ c = dict(
                     'Electrical shop software units: wire bought as a 90 meter coil and sold by the meter, switches bought by the box and sold by the piece',
                     'Buy by coil or box, sell by meter or piece',
                     'Set the units once for each item: a coil of 90 meters, a box of 20 switches, a carton of 50 bulbs. At the counter, sell 15 meters of wire or 4 switches, and the stock drops in the same unit. '
-                    'Your shop starts with an empty list, so you add only the items you sell.',
+                    '50+ LED lighting items are ready to add. You add the rest of your electrical stock yourself.',
                     ['Wire and cable sold by the meter', 'Switches, sockets and bulbs by piece or box', 'Stock always in the unit you sell', 'Cost per meter and per piece worked out for you']),
                    ('uptrendpos-electrical-store-quotation-led-stock.webp',
                     'A4 quotation for an electrician and LED bulb stock by watt and light colour in electrical store POS software',
@@ -137,7 +137,7 @@ c = dict(
         ('Can I sell switches and bulbs from a box one by one?', 'Yes. Set the box or carton size once. Sell by the piece or the full box, and the stock always shows the right number of pieces.'),
         ('Can I give electricians a quotation?', 'Yes. Make an A4 quotation with your logo and send it on WhatsApp. When the electrician comes back, convert it to a sale in one tap.'),
         ('Does this electrical shop software keep udhaar for electricians?', 'Yes. Every electrician or contractor gets a khata. Credit sales and payments go on the ledger, and you can send the statement on WhatsApp.'),
-        ('Do you have a ready list of electrical items?', 'No. Your shop starts with an empty list and you add the items you sell. The variant generator makes every watt and colour of an LED model in one go.'),
+        ('Do you have a ready list of electrical items?', '50+ LED lighting items are ready to add. You add the rest of your electrical stock yourself. The variant generator makes every watt and colour of an LED model in one go.'),
         ('How do I handle fused bulbs and broken fittings?', 'Record them as damage. The stock goes down and the cost is recorded, so your stock count and profit stay right. Items that go back to the supplier are recorded as a return.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
         ('I also sell solar panels and inverters. Which page is for me?', 'If solar is your main business, see our <a href="https://uptrendpos.com/industries/solar-shop-pos-software/">solar shop POS software</a>, which comes with a ready catalog and serial tracking.'),

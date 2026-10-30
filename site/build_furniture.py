@@ -39,7 +39,7 @@ c = dict(
                     'Furniture store software variant generator: one sofa model made in three wood finishes and two fabric colours, each with its own code and stock',
                     'Every model in every finish, with its own stock',
                     'Pick a model, choose its finishes and colours, and the variant generator makes every item at once: the sofa in walnut and grey, walnut and beige, teak and grey, and so on. '
-                    'Each item gets its own code, stock and price. Your shop starts with an empty list, so you add only the models you sell.',
+                    'Each item gets its own code, stock and price. A starter list of 70+ furniture items is ready; add your own models.',
                     ['Model x finish or colour in one go', 'Own code, stock and price', 'Low stock alerts and demand list', 'Stock value at cost and at sale price']),
                    ('uptrendpos-furniture-shop-quotation-advance.webp',
                     'A4 quotation for a bedroom set and an advance payment on the customer ledger in furniture shop POS software',
@@ -140,7 +140,7 @@ c = dict(
         ('Can I keep stock for each finish and colour?', 'Yes. Use the variant generator: pick the model, its finishes and its colours, and every item is made in one go with its own code, stock and price.'),
         ('Can I sell furniture on qist?', 'Yes, on Enterprise and Custom plans. Set up a qist plan with a guarantor and record each installment. Qist needs internet so every device shows the same balance.'),
         ('Can I schedule deliveries or give job orders to carpenters?', 'Not yet. Delivery scheduling and carpenter job orders are coming soon. Today you can keep the quote, advance, bill and balance for every order.'),
-        ('Do you have a ready list of furniture?', 'No. Your shop starts with an empty list and you add the models you sell. The variant generator makes every finish and colour in one go.'),
+        ('Do you have a ready list of furniture?', 'A starter list of 70+ furniture items is ready; add your own models. The variant generator makes every finish and colour in one go.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
         ('I also sell home appliances on qist. Which page is for me?', 'If appliances are your main business, see our <a href="https://uptrendpos.com/industries/electronics-store-pos-software/">electronics store POS software</a>, made for appliances with serial numbers and qist.'),
         ('How much does furniture shop POS software cost?', 'It depends on your plan. Premium suits one furniture shop, Enterprise suits a busy showroom, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),

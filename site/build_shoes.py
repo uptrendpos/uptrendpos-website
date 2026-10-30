@@ -37,7 +37,7 @@ c = dict(
                     'Variant generator in footwear shop software: one design in 2 colours and sizes 39 to 44 makes 12 items, each with its own pairs',
                     'Every size and colour, made in one go',
                     'Type the article once, pick its colours and sizes, and the variant generator makes every item for you. Each size gets its own code, pairs in stock and price. '
-                    'Your shop starts with an empty list, so you add only the designs you sell.',
+                    '200+ shoe and footwear products are already loaded: search, tick, add and set your own price. Add your own seasonal designs in seconds.',
                     ['Colour x size items made in one go', 'Own pairs and price for each size', 'Article number as the product code', 'Men, ladies and kids sizes']),
                    ('uptrendpos-shoe-store-size-stock-exchange.webp',
                     'Pairs left in each size and a size swap on the same bill number in shoe store POS software',
@@ -136,7 +136,7 @@ c = dict(
         ('Which is the best shoe store POS software in Pakistan?', 'The best shoe store POS software is the one built for size runs, not groceries. Check five things: pairs per size, quick item setup, box labels, easy size swaps and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
         ('Can I see how many pairs are left in each size?', 'Yes. Each size and colour of a design is its own item with its own pairs in stock. Open the design and you see every size, and low stock alerts tell you which sizes to reorder.'),
         ('Do I have to type every size myself?', 'No. Type the article once, pick its colours and sizes, and the variant generator makes every item in one go. A design in 2 colours and 6 sizes becomes 12 items in a minute.'),
-        ('Does it come with a ready product list?', 'No. Designs change every season, so your shop starts with an empty list and you add only your own designs. The variant generator makes this fast.'),
+        ('Does it come with a ready product list?', 'Yes. 200+ shoe and footwear products are already loaded. Search, tick the ones you sell, add them and set your own stock and price. Designs change every season, so add your own seasonal designs too; the variant generator makes every size and colour in one go.' + ' You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Can I print labels for shoe boxes?', 'Yes, on the Enterprise and Custom plans. Print a label for each box with its barcode, size, colour and price. On every plan you can scan barcodes that are already on branded boxes.'),
         ('How do size swaps work in this footwear shop software?', 'Open the bill and swap the pair for another size or colour, or take it back. The old pair goes back to stock, the new one goes out, and the bill number stays the same.'),
         ('Can I sell socks, polish and other small items?', 'Yes. Socks, polish, insoles and laces sell like normal items on the same bill, by barcode or quick search.'),
