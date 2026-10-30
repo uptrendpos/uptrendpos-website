@@ -76,7 +76,8 @@
    "perfume-shop-pos-software",
    "cosmetics-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-10-30"
  },
  {
   "order": 6,
