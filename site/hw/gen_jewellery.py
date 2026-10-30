@@ -41,7 +41,7 @@ def scene_jw_process():
     return five_steps([
         ('Make designs', mini_ui('Variant Generator', [('Piece', 'RG-108'), ('Designs', '3'), ('Sizes', '12 14 16')], '9 items created'), 'Design x size'),
         ('Receive stock', mini_ui('GRN-0412 · Supplier', [('RG-108 Leaf / 14', '2 pcs'), ('ER-31 Flower', '4 pcs'), ('Weights', 'in grams')], 'Stock and cost updated'), 'Stock in the record'),
-        ('Make the bill', mini_ui('INV-2105', [('Ring 4.20 g', '1,37,900'), ('Earrings 3.10 g', '1,02,000'), ('Making on bill', '6,300')], 'Sent on WhatsApp', '#eaf1ff', BLUE), 'Gold rate and making'),
+        ('Make the bill', mini_ui('INV-2105', [('Ring 4.20 g', '1,37,900'), ('Earrings 3.10 g', '1,02,000'), ('Making incl.', '6,300')], 'Sent on WhatsApp', '#eaf1ff', BLUE), 'Gold rate and making'),
         ('Udhaar or qist', mini_ui('Ayesha Khan', [('Bill', '2,39,900'), ('Paid now', '1,50,000'), ('On ledger', '89,900')], 'Balance clear', '#fffbeb', '#92400e'), 'On the ledger'),
         ('See profit', ui_report("Today's sales", 'Rs 6,42,500', '5 bills · 2 udhaar payments · 1 qist'), 'Sales, stock and profit'),
     ])
