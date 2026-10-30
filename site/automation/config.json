@@ -3,5 +3,6 @@
  "asset_repo": "uptrendpos/uptrendpos-site-assets",
  "branch": "main",
  "assets_dir": "/home/claude/assets",
- "kit_out": "/home/claude/out/kit"
+ "kit_out": "/home/claude/out/kit",
+ "per_run": 1
 }

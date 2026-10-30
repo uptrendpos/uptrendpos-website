@@ -1,6 +1,6 @@
 """UpTrendPos daily page automation helper.
 
-  python3 automation/daily.py next            -> the next 2 queued business types (JSON) with their facts
+  python3 automation/daily.py next            -> the next queued business type(s), config.json per_run (default 1) (JSON) with their facts
   python3 automation/daily.py build A B       -> build pages A and B, run every quality gate, export to the assets repo
   python3 automation/daily.py mark A B        -> mark A and B published in queue.json (after the site confirms)
 
@@ -31,7 +31,7 @@ def text(s):
 
 def cmd_next():
     q = json.loads(QUEUE.read_text())
-    todo = [x for x in q if x['status'] == 'queued'][:2]
+    todo = [x for x in q if x['status'] == 'queued'][:int(CFG.get('per_run', 1))]
     print(json.dumps(todo, indent=1))
 
 
