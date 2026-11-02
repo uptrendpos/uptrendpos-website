@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-02",
+ "slug": "Clothing",
+ "badge": "CLOTHING &amp; GARMENTS",
+ "head": "One Design. <em>12 Items in One Go.</em>",
+ "sub": "Pick colours and sizes once. <b>950+ clothing products</b> loaded",
+ "c1": "#6D3FD1",
+ "c2": "#A77BFF",
+ "blocks": [
+  {"type": "phone", "x": 40, "y": 0, "w": 380, "h": 700, "color": "purple", "title": "Make Items", "subtitle": "3 colours x 4 sizes",
+   "banner": {"text": "Lawn Suit, Article LS-114", "icon": "hanger", "tone": "info"},
+   "rows": [
+    {"color": "#8E1F3F", "title": "Maroon", "sub": "S · M · L · XL", "end": "4 items"},
+    {"color": "#0F8B8D", "title": "Teal", "sub": "S · M · L · XL", "end": "4 items"},
+    {"color": "#1F2937", "title": "Black", "sub": "S · M · L · XL", "end": "4 items"},
+    {"icon": "check", "color": "green", "title": "New items", "sub": "Each with its own code", "end": "12", "tone": "ok"},
+    {"icon": "edit", "color": "blue", "title": "Stock and price", "sub": "Set for each item", "end": "You set"}
+   ],
+   "button": "Create 12 Items"},
+  {"type": "stat", "x": 470, "y": 0, "w": 480, "num": "950+", "label": "clothing products already loaded"},
+  {"type": "card", "x": 470, "y": 140, "w": 480, "icon": "barcode", "color": "blue", "title": "Barcode Tag", "sub": "On every piece",
+   "rows": [["Article", "LS-114"], ["Colour and size", "Maroon, M"], ["Scan at the counter", "Right size", "ok"]]},
+  {"type": "card", "x": 470, "y": 431, "w": 480, "icon": "replace", "color": "orange", "title": "Exchange a Size", "sub": "Same bill number",
+   "rows": [["Medium", "Back in stock", "ok"], ["Large", "Sold", "info"], ["Bill number", "Stays the same"]]}
+ ],
+ "tiles": [["layout-grid", "Colour x size items", "blue"], ["barcode", "Barcode tags", "teal"], ["receipt", "Exchange, same bill", "orange"]]
+}
