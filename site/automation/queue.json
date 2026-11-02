@@ -108,7 +108,8 @@
    "fertilizer-shop-pos-software",
    "veterinary-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-02"
  },
  {
   "order": 8,
