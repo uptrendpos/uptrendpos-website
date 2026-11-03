@@ -124,7 +124,8 @@
    "watch-shop-pos-software",
    "bag-shop-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-03"
  },
  {
   "order": 9,
