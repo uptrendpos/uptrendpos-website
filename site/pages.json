@@ -453,5 +453,70 @@
   "sec": "chicken shop software, meat shop billing software, poultry shop POS Pakistan",
   "builder": "build_meat.py",
   "images": "gen_meat.py"
+ },
+ {
+  "n": "perfume-shop-pos-software",
+  "src": "pages/website_perfume_v1.html",
+  "url": "/industries/perfume-shop-pos-software/",
+  "stage": "perfume",
+  "stage_items": [
+   [
+    "Days of typing products",
+    "search",
+    "b",
+    "300+ products loaded",
+    "Search, tick and add",
+    "Catalog"
+   ],
+   [
+    "One fragrance, many bottles",
+    "layers",
+    "y",
+    "Variant generator",
+    "Own stock and price",
+    "Sizes"
+   ],
+   [
+    "Loose attar has no count",
+    "ruler",
+    "t",
+    "Sell by the ml",
+    "Stock drops with every bill",
+    "Attar"
+   ],
+   [
+    "Testers vanish from stock",
+    "tag",
+    "g",
+    "Record as sample",
+    "Stock and cost stay true",
+    "Testers"
+   ],
+   [
+    "New price from every salesman",
+    "scan",
+    "y",
+    "Barcode billing",
+    "Same price on every bill",
+    "Barcode"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Perfume Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Perfume shop POS software for Pakistani perfume and attar shops: 300+ products loaded, every fragrance and bottle size, loose attar by ml, barcode billing.",
+  "kw": "perfume shop POS software",
+  "sec": "perfume shop software, attar shop billing software, perfume store POS Pakistan",
+  "builder": "build_perfume.py",
+  "images": "gen_perfume.py"
  }
 ]
