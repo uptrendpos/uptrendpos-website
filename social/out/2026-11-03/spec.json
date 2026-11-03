@@ -1,0 +1,26 @@
+{
+ "date": "2026-11-03",
+ "slug": "Grocery-Catalog",
+ "badge": "GROCERY &amp; KIRYANA STORE",
+ "head": "7,000+ Products. <em>Carton to Piece.</em>",
+ "sub": "Search, tick, add to your shop, <b>set your own stock and price</b>",
+ "c1": "#1E8A43",
+ "c2": "#47C683",
+ "blocks": [
+  {"type": "phone", "x": 40, "y": 0, "w": 380, "h": 700, "color": "mint", "title": "Add from Catalog", "subtitle": "7,000+ grocery products", "search": "cooking oil",
+   "rows": [
+    {"icon": "check", "color": "green", "title": "Cooking Oil 1 L", "sub": "Bottle · Carton of 12", "end": "Added", "tone": "ok"},
+    {"icon": "check", "color": "green", "title": "Cooking Oil 3 L", "sub": "Bottle · Carton of 6", "end": "Added", "tone": "ok"},
+    {"icon": "check", "color": "green", "title": "Cooking Oil 5 L", "sub": "Tin · Carton of 4", "end": "Added", "tone": "ok"},
+    {"color": "grey", "title": "Cooking Oil 500 ml", "sub": "Pouch · Carton of 24", "end": "Add"},
+    {"color": "grey", "title": "Cooking Oil 16 L", "sub": "Tin · Piece", "end": "Add"}
+   ],
+   "button": "Add 3 to My Shop"},
+  {"type": "stat", "x": 470, "y": 0, "w": 480, "num": "7,000+", "label": "grocery products ready"},
+  {"type": "card", "x": 470, "y": 160, "w": 480, "icon": "receipt", "color": "blue", "title": "One Bill", "sub": "Each item in its own unit",
+   "rows": [["Cooking Oil 1 L", "1 Carton"], ["Tea Pack 190 g", "2 Packs"], ["Soap Bar", "3 Pieces"], ["Sugar", "5 kg"]]},
+  {"type": "card", "x": 470, "y": 492, "w": 480, "icon": "edit", "color": "orange", "title": "You Only Set", "sub": "",
+   "rows": [["Stock and price", "Your shop"], ["Low-stock alert", "On", "ok"]]}
+ ],
+ "tiles": [["list-search", "Search and tick", "green"], ["package", "Carton, pack, piece", "blue"], ["alert-triangle", "Low-stock alerts", "orange"]]
+}
