@@ -13,5 +13,10 @@
   "key": "grocery-catalog",
   "date": "2026-11-03",
   "note": "7,000+ Products. Carton to Piece."
+ },
+ {
+  "key": "hardware",
+  "date": "2026-11-04",
+  "note": "Quote to Sale in One Tap."
  }
 ]

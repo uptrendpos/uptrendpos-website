@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-04",
+ "slug": "Hardware",
+ "badge": "HARDWARE &amp; SANITARY",
+ "head": "Quote to Sale <em>in One Tap.</em>",
+ "sub": "Sell by bag, foot or piece. <b>Contractor udhaar on a khata</b>",
+ "c1": "#024691",
+ "c2": "#2F9BFF",
+ "blocks": [
+  {"type": "phone", "x": 40, "y": 0, "w": 380, "h": 700, "color": "deep", "title": "Quotation", "subtitle": "House job",
+   "banner": {"text": "Imran Contractor, Sahiwal", "icon": "user", "tone": "info"},
+   "rows": [
+    {"icon": "package", "color": "orange", "title": "Cement", "sub": "By the bag", "end": "10 bags"},
+    {"icon": "weight", "color": "navy", "title": "Steel Bars", "sub": "By the kg", "end": "50 kg"},
+    {"icon": "ruler-2", "color": "blue", "title": "PVC Pipe 3/4 inch", "sub": "By the foot", "end": "40 ft"},
+    {"icon": "tool", "color": "teal", "title": "Elbow 3/4 inch", "sub": "By the piece", "end": "12 pcs"},
+    {"icon": "layout-grid", "color": "purple", "title": "Floor Tiles", "sub": "By the box", "end": "6 boxes"}
+   ],
+   "button": "Convert to Sale"},
+  {"type": "card", "x": 470, "y": 0, "w": 480, "icon": "file-text", "color": "deep", "title": "A4 Quotation", "sub": "With your shop logo",
+   "rows": [["Items in this quote", "5"], ["Sent on WhatsApp", "Done", "ok"], ["Convert to a sale", "One tap", "info"]]},
+  {"type": "chip", "x": 470, "y": 312, "text": "Find any item in a few letters", "icon": "search", "tone": "info"},
+  {"type": "card", "x": 470, "y": 426, "w": 480, "icon": "notebook", "color": "orange", "title": "Contractor Khata", "sub": "Udhaar for plumbers and masons",
+   "rows": [["Goods on udhaar", "On his khata", "warn"], ["Payments", "On the ledger", "ok"], ["Statement", "On WhatsApp", "info"]]}
+ ],
+ "tiles": [["ruler-measure", "Bag, foot or piece", "blue"], ["file-text", "A4 quotes", "teal"], ["notebook", "Contractor udhaar", "orange"]]
+}
