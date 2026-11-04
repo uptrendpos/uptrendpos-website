@@ -518,5 +518,70 @@
   "sec": "perfume shop software, attar shop billing software, perfume store POS Pakistan",
   "builder": "build_perfume.py",
   "images": "gen_perfume.py"
+ },
+ {
+  "n": "watch-shop-pos-software",
+  "src": "pages/website_watch_v1.html",
+  "url": "/industries/watch-shop-pos-software/",
+  "stage": "watch",
+  "stage_items": [
+   [
+    "Days of typing products",
+    "search",
+    "b",
+    "150+ products loaded",
+    "Search, tick and add",
+    "Catalog"
+   ],
+   [
+    "One model, many dial colours",
+    "layers",
+    "y",
+    "Variant generator",
+    "Own stock and price",
+    "Models"
+   ],
+   [
+    "Warranty promises on memory",
+    "doc",
+    "t",
+    "Warranty note on the sale",
+    "Promise stays on record",
+    "Warranty"
+   ],
+   [
+    "New price from every salesman",
+    "scan",
+    "g",
+    "Barcode billing",
+    "Same price on every bill",
+    "Barcode"
+   ],
+   [
+    "Small pieces go missing",
+    "shield",
+    "y",
+    "Stock audit",
+    "Own login for each staff",
+    "Audit"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Watch Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Watch shop POS software for Pakistani watch shops: 150+ products loaded, every model and dial colour, warranty notes on the sale, barcode billing, udhaar.",
+  "kw": "watch shop POS software",
+  "sec": "watch shop software, watch store billing software, watch shop POS Pakistan",
+  "builder": "build_watch.py",
+  "images": "gen_watch.py"
  }
 ]
