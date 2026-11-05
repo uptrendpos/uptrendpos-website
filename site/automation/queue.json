@@ -156,7 +156,8 @@
    "watch-shop-pos-software",
    "sports-shop-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-05"
  },
  {
   "order": 11,
