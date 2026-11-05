@@ -583,5 +583,70 @@
   "sec": "watch shop software, watch store billing software, watch shop POS Pakistan",
   "builder": "build_watch.py",
   "images": "gen_watch.py"
+ },
+ {
+  "n": "bag-shop-pos-software",
+  "src": "pages/website_bag_v1.html",
+  "url": "/industries/bag-shop-pos-software/",
+  "stage": "bag",
+  "stage_items": [
+   [
+    "Days of typing products",
+    "search",
+    "b",
+    "680+ products loaded",
+    "Search, tick and add",
+    "Catalog"
+   ],
+   [
+    "One model, many colours",
+    "layers",
+    "y",
+    "Variant generator",
+    "Own stock and price",
+    "Models"
+   ],
+   [
+    "Exchanges break the count",
+    "sync",
+    "t",
+    "Exchange on the same bill",
+    "Same invoice number",
+    "Exchange"
+   ],
+   [
+    "New price from every salesman",
+    "scan",
+    "g",
+    "Barcode billing",
+    "Same price on every bill",
+    "Barcode"
+   ],
+   [
+    "Udhaar on loose slips",
+    "book",
+    "y",
+    "Customer ledger",
+    "Statements on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Bag Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Bag shop POS software for Pakistani bag and luggage shops: 680+ products loaded, every model and colour, exchanges on the same bill, barcode billing, udhaar.",
+  "kw": "bag shop POS software",
+  "sec": "bag shop software, luggage shop billing software, bag shop POS Pakistan",
+  "builder": "build_bag.py",
+  "images": "gen_bag.py"
  }
 ]
