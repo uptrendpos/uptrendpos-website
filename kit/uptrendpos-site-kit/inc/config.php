@@ -70,6 +70,7 @@ function utpk_defaults() {
 		'auto_seo'       => 1,  // fill Rank Math from the page code on every save
 		'auto_thumb'     => 1,  // featured image from the first picture in the page design
 		'auto_lists'     => 1,  // Home + Industries hub business lists completed from data/industries.json
+		'arc'            => 1,  // moving business-type cards on Home, the Industries hub and every business-type page
 		'auto_pages'     => 1,  // draft pages made for business types / core pages that have no page yet
 		'apk'            => 'https://uptrendpos.com/downloadapk/app-release.apk',
 		'apk_version'    => '',

@@ -244,6 +244,7 @@ function utpk_settings_screen() {
 		'auto_seo'      => 'Fill Rank Math (SEO title, description, focus + secondary keywords, index) from the page code every time a page is saved',
 		'auto_thumb'    => 'Set the featured image from the first picture in the page design (a picture you choose by hand is kept)',
 		'auto_lists'    => 'Home page and Industries hub always list every business type from the registry (new types appear on their own)',
+		'arc'           => 'Moving business-type cards (curved ribbon) on Home, the Industries hub and every business-type page',
 		'auto_pages'    => 'Make a draft page (right URL, Elementor HTML widget, title hidden, noindex) for every business type or main page that has no page yet',
 	);
 	$text = array(

@@ -396,6 +396,91 @@
       });
     }
 
+    /* ================= Business-type card ribbon: curved, endless, pauses on hover, drag/swipe ================= */
+    root.querySelectorAll('.utp-arc[data-arc]').forEach(function (box) {
+      var track = box.querySelector('.utp-arc-track');
+      if (!track || track.getAttribute('data-ready')) return;
+      track.setAttribute('data-ready', '1');
+      if (reduce || inEditor || !MOTION || !window.requestAnimationFrame) return; // plain swipe row
+      var items = Array.prototype.slice.call(track.children);
+      if (items.length < 3) return;
+      function copy(li) {
+        var c = li.cloneNode(true);
+        c.setAttribute('aria-hidden', 'true');
+        c.querySelectorAll('a').forEach(function (a) { a.setAttribute('tabindex', '-1'); a.removeAttribute('data-track'); });
+        c.querySelectorAll('img').forEach(function (im) { im.setAttribute('alt', ''); });
+        return c;
+      }
+      box.classList.add('is-moving');
+      var set = items.slice(), guard = 0;
+      while (track.scrollWidth < box.clientWidth * 1.3 && guard < 6) {
+        items.forEach(function (li) { var c = copy(li); track.appendChild(c); set.push(c); });
+        guard++;
+      }
+      set.forEach(function (li) { track.appendChild(copy(li)); });
+      var cards = Array.prototype.slice.call(track.children);
+      var half = 0, x = 0, last = 0, raf = 0, hover = false, focus = false, visible = false, drag = null, moved = false;
+      var SPEED = 34;
+      function measure() { half = cards[set.length].offsetLeft - cards[0].offsetLeft; }
+      function wrap() { if (!half) return; while (x <= -half) x += half; while (x > 0) x -= half; }
+      function render() {
+        track.style.transform = 'translate3d(' + x.toFixed(2) + 'px,0,0)';
+        var bw = box.clientWidth, mid = bw / 2, k = bw < 640 ? 9 : 15, z = bw < 640 ? 18 : 44;
+        for (var i = 0; i < cards.length; i++) {
+          var li = cards[i], w = li.offsetWidth, l = li.offsetLeft + x;
+          if (l + w < -w || l > bw + w) continue;
+          var d = (l + w / 2 - mid) / mid;
+          d = d < -1.25 ? -1.25 : (d > 1.25 ? 1.25 : d);
+          li.style.transform = 'perspective(1100px) translateZ(' + (Math.abs(d) * z).toFixed(1) + 'px) rotateY(' + (-d * k).toFixed(2) + 'deg)';
+        }
+      }
+      function tick(t) {
+        raf = 0;
+        if (!visible) return;
+        var dt = last ? Math.min(64, t - last) : 16;
+        last = t;
+        if (!hover && !focus && !drag) { x -= SPEED * dt / 1000; wrap(); }
+        render();
+        raf = requestAnimationFrame(tick);
+      }
+      function start() { if (!raf && visible) { last = 0; raf = requestAnimationFrame(tick); } }
+      function stop() { if (raf) cancelAnimationFrame(raf); raf = 0; }
+      measure();
+      render();
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(function (l) { visible = l[0].isIntersecting; if (visible) start(); else stop(); }, { threshold: 0.02 }).observe(box);
+      } else { visible = true; start(); }
+      document.addEventListener('visibilitychange', function () { if (document.hidden) stop(); else start(); });
+      var rz;
+      window.addEventListener('resize', function () { clearTimeout(rz); rz = setTimeout(function () { measure(); wrap(); render(); }, 150); });
+      window.addEventListener('load', function () { measure(); wrap(); render(); });
+      box.addEventListener('mouseenter', function () { hover = true; });
+      box.addEventListener('mouseleave', function () { hover = false; });
+      box.addEventListener('focusin', function () { focus = true; });
+      box.addEventListener('focusout', function (e) { if (!box.contains(e.relatedTarget)) focus = false; });
+      box.addEventListener('pointerdown', function (e) {
+        if (e.button > 0) return;
+        drag = { sx: e.clientX, sy: e.clientY, x0: x, h: null };
+        moved = false;
+      });
+      window.addEventListener('pointermove', function (e) {
+        if (!drag) return;
+        var dx = e.clientX - drag.sx, dy = e.clientY - drag.sy;
+        if (drag.h === null && (Math.abs(dx) > 6 || Math.abs(dy) > 6)) drag.h = Math.abs(dx) > Math.abs(dy);
+        if (!drag.h) return;
+        moved = true;
+        box.classList.add('is-drag');
+        x = drag.x0 + dx;
+        wrap();
+        if (!raf) render();
+      });
+      function end() { if (drag) { drag = null; box.classList.remove('is-drag'); } }
+      window.addEventListener('pointerup', end);
+      window.addEventListener('pointercancel', end);
+      box.addEventListener('click', function (e) { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+      box.addEventListener('dragstart', function (e) { e.preventDefault(); });
+    });
+
     /* ================= Links to pages that are not live (backup; the server already does this) ================= */
     if (LIVE.length) {
       root.querySelectorAll('a[data-page]').forEach(function (a) {

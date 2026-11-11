@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.5.1
+Version: 1.6.0
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,14 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.6.0 (11 Nov 2026) =
+* Business-type card ribbon (design reference: ondial.ai industry cards): tall cards on a gently curved track that
+  moves on its own, pauses on hover, and can be dragged or swiped. Each card = a live business-type page (featured
+  image, short name, one line). Added on output, so no page code changes: Home (inside "30+ types of shops", above
+  the full list), Industries hub (under the hero) and every business-type page (before "Related"). New pages join
+  on their own once they are live and have a featured image. Respects reduced motion (static swipe row then).
+  Setting "arc" (on by default). Registry types may carry "short" (card name).
+
 = 1.5.2 (30 Oct 2026) =
 * Catalog counts (Abdul, 30 Oct 2026): hero stages Cosmetics 5,500+, Mobile & Computer 700+, Grocery 7,000+, and a new
   catalog card for Clothing 950+, Shoes 200+ and Baby 350+; business-type lines with

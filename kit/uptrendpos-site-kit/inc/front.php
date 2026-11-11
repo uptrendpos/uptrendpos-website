@@ -544,6 +544,9 @@ function utpk_output_pass( $html ) {
 	if ( utpk_opt( 'auto_lists' ) ) {
 		$html = utpk_fill_industry_lists( $html );
 	}
+	if ( utpk_opt( 'arc' ) && function_exists( 'utpk_insert_arc' ) ) {
+		$html = utpk_insert_arc( $html );
+	}
 	if ( utpk_opt( 'gate' ) ) {
 		$html = utpk_gate_html( $html );
 	}

@@ -1,5 +1,5 @@
 {
- "_help": "Business types under /industries/. A type shows in the hub schema only when its page is published and set to index in Rank Math. Fields: name (menu/card name), audience (schema), group, icon (sprite id), line (one short line in the menu). The header menu and footer use the fixed \"menu\" list below.",
+ "_help": "Business types under /industries/. A type shows in the hub schema only when its page is published and set to index in Rank Math. Fields: name (menu/card name), audience (schema), group, icon (sprite id), line (one short line in the menu). The header menu and footer use the fixed \"menu\" list below. Optional \"short\": a shorter name for cards (the moving business-type cards).",
  "menu": {
   "_help": "Industries mega menu + footer list (decision 30 Oct 2026): a FIXED short list of top-growing business types, 3 columns x 3. New business types do NOT enter the menu by themselves; they show on the Home page, the Industries hub and the 'See all business types' link. Change this list by hand only. Optional per item: label (shorter menu name), line (menu sub-line).",
   "columns": [
@@ -102,7 +102,8 @@
    "audience": "Grocery and kiryana store owners",
    "group": "daily",
    "icon": "cart",
-   "line": "7,000+ products ready, udhaar khata"
+   "line": "7,000+ products ready, udhaar khata",
+   "short": "Grocery & Kiryana"
   },
   {
    "slug": "meat-shop-pos-software",
@@ -110,7 +111,8 @@
    "audience": "Poultry, meat and seafood shop owners",
    "group": "daily",
    "icon": "meat",
-   "line": "Sell by kg, daily cash and udhaar"
+   "line": "Sell by kg, daily cash and udhaar",
+   "short": "Poultry & Meat"
   },
   {
    "slug": "crockery-shop-pos-software",
@@ -118,7 +120,8 @@
    "audience": "Crockery and household shop owners",
    "group": "daily",
    "icon": "cup",
-   "line": "2,000+ products: sets, cartons, pieces"
+   "line": "2,000+ products: sets, cartons, pieces",
+   "short": "Crockery & Household"
   },
   {
    "slug": "vape-shop-pos-software",
@@ -134,7 +137,8 @@
    "audience": "Pharmacy and medical store owners",
    "group": "health",
    "icon": "pill",
-   "line": "17,000+ medicines, batch and expiry"
+   "line": "17,000+ medicines, batch and expiry",
+   "short": "Pharmacy"
   },
   {
    "slug": "cosmetics-store-pos-software",
@@ -142,7 +146,8 @@
    "audience": "Cosmetics and beauty store owners",
    "group": "health",
    "icon": "spark",
-   "line": "5,500+ products, shades, expiry"
+   "line": "5,500+ products, shades, expiry",
+   "short": "Cosmetics & Beauty"
   },
   {
    "slug": "baby-store-pos-software",
@@ -150,7 +155,8 @@
    "audience": "Baby and diaper store owners",
    "group": "health",
    "icon": "baby",
-   "line": "350+ products, pack or piece, expiry"
+   "line": "350+ products, pack or piece, expiry",
+   "short": "Baby & Diaper"
   },
   {
    "slug": "perfume-shop-pos-software",
@@ -158,7 +164,8 @@
    "audience": "Perfume and attar shop owners",
    "group": "health",
    "icon": "drop",
-   "line": "300+ products, bottle sizes"
+   "line": "300+ products, bottle sizes",
+   "short": "Perfume & Attar"
   },
   {
    "slug": "clothing-store-pos-software",
@@ -190,7 +197,8 @@
    "audience": "Undergarments and hosiery shop owners",
    "group": "fashion",
    "icon": "shirt",
-   "line": "400+ products, sizes and packs"
+   "line": "400+ products, sizes and packs",
+   "short": "Undergarments"
   },
   {
    "slug": "bag-shop-pos-software",
@@ -214,7 +222,8 @@
    "audience": "Jewellery and gold shop owners",
    "group": "fashion",
    "icon": "gem",
-   "line": "Gold rate and making charge"
+   "line": "Gold rate and making charge",
+   "short": "Jewellery & Gold"
   },
   {
    "slug": "artificial-jewellery-shop-pos-software",
@@ -222,7 +231,8 @@
    "audience": "Artificial jewellery shop owners",
    "group": "fashion",
    "icon": "gem",
-   "line": "Designs as variants, labels"
+   "line": "Designs as variants, labels",
+   "short": "Artificial Jewellery"
   },
   {
    "slug": "electronics-store-pos-software",
@@ -230,7 +240,8 @@
    "audience": "Electronics, home appliance and CCTV shop owners",
    "group": "electronics",
    "icon": "tv",
-   "line": "1,100+ products, serials, warranty"
+   "line": "1,100+ products, serials, warranty",
+   "short": "Electronics & CCTV"
   },
   {
    "slug": "solar-shop-pos-software",
@@ -246,7 +257,8 @@
    "audience": "Electrical and LED lighting shop owners",
    "group": "electronics",
    "icon": "bulb",
-   "line": "Cartons, packs and single pieces"
+   "line": "Cartons, packs and single pieces",
+   "short": "Electrical & LED"
   },
   {
    "slug": "mobile-shop-pos-software",
@@ -254,7 +266,8 @@
    "audience": "Mobile and computer shop owners",
    "group": "electronics",
    "icon": "phone",
-   "line": "700+ products, IMEI, qist"
+   "line": "700+ products, IMEI, qist",
+   "short": "Mobile & Computer"
   },
   {
    "slug": "battery-shop-pos-software",
@@ -270,7 +283,8 @@
    "audience": "Hardware, sanitary and building material store owners",
    "group": "hardware",
    "icon": "hammer",
-   "line": "Thousands of items, quick search"
+   "line": "Thousands of items, quick search",
+   "short": "Hardware & Sanitary"
   },
   {
    "slug": "paint-store-pos-software",
@@ -286,7 +300,8 @@
    "audience": "Glass and aluminium shop owners",
    "group": "hardware",
    "icon": "window",
-   "line": "Quotations first, then the bill"
+   "line": "Quotations first, then the bill",
+   "short": "Glass & Aluminium"
   },
   {
    "slug": "furniture-shop-pos-software",
@@ -318,7 +333,8 @@
    "audience": "Motorcycle, electric bike, car and rickshaw showroom owners",
    "group": "hardware",
    "icon": "car",
-   "line": "Chassis, warranty and qist"
+   "line": "Chassis, warranty and qist",
+   "short": "Vehicle Showroom"
   },
   {
    "slug": "toy-shop-pos-software",
@@ -326,7 +342,8 @@
    "audience": "Toy and gift shop owners",
    "group": "gifts",
    "icon": "gift",
-   "line": "1,000+ toys and gifts, barcode labels"
+   "line": "1,000+ toys and gifts, barcode labels",
+   "short": "Toys & Gifts"
   },
   {
    "slug": "sports-shop-pos-software",
@@ -342,7 +359,8 @@
    "audience": "Stationery and book shop owners",
    "group": "gifts",
    "icon": "book",
-   "line": "200+ products, pack and piece"
+   "line": "200+ products, pack and piece",
+   "short": "Stationery & Books"
   },
   {
    "slug": "fertilizer-shop-pos-software",
@@ -350,7 +368,8 @@
    "audience": "Seed, fertilizer and pesticide dealers",
    "group": "agri",
    "icon": "leaf",
-   "line": "Batch, expiry and season udhaar"
+   "line": "Batch, expiry and season udhaar",
+   "short": "Agri Inputs"
   },
   {
    "slug": "veterinary-store-pos-software",
