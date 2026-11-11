@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.6.0
+Version: 1.6.1
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,7 +33,7 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
-= 1.6.0 (11 Nov 2026) =
+= 1.6.1 (11 Nov 2026) =
 * Business-type card ribbon (design reference: ondial.ai industry cards): tall cards on a gently curved track that
   moves on its own, pauses on hover, and can be dragged or swiped. Each card = a live business-type page (featured
   image, short name, one line). Added on output, so no page code changes: Home (inside "30+ types of shops", above
