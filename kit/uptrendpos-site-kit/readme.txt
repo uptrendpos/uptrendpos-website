@@ -40,6 +40,8 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
   the full list), Industries hub (under the hero) and every business-type page (before "Related"). New pages join
   on their own once they are live and have a featured image. Respects reduced motion (static swipe row then).
   Setting "arc" (on by default). Registry types may carry "short" (card name).
+* POST utpk/v1/backup {"now":true} runs the UpdraftPlus backup inside the request (WP-Cron did not fire on its own).
+* Cache purge after page/media/self-update now also clears WP-Optimize (LiteSpeed is off on the site).
 
 = 1.5.2 (30 Oct 2026) =
 * Catalog counts (Abdul, 30 Oct 2026): hero stages Cosmetics 5,500+, Mobile & Computer 700+, Grocery 7,000+, and a new

@@ -80,7 +80,7 @@ function utpk_api_self_update( WP_REST_Request $req ) {
 	if ( ! is_plugin_active( 'uptrendpos-site-kit/uptrendpos-site-kit.php' ) ) {
 		activate_plugin( 'uptrendpos-site-kit/uptrendpos-site-kit.php' );
 	}
-	do_action( 'litespeed_purge_all' );
+	utpk_purge_caches();
 	return array( 'installed' => $ver, 'from' => $url );
 }
 
@@ -301,7 +301,7 @@ function utpk_api_page( WP_REST_Request $r ) {
 	utpk_page_html( $id, true );
 	utpk_auto_page( $id );
 	utpk_flush_live();
-	do_action( 'litespeed_purge_all' );
+	utpk_purge_caches();
 	return array(
 		'id'        => (int) $id,
 		'url'       => get_permalink( $id ),
@@ -316,11 +316,28 @@ function utpk_api_page( WP_REST_Request $r ) {
 
 /* ---------------- POST /backup ---------------- */
 
-function utpk_api_backup() {
+/** Purge every page cache the site may run (LiteSpeed, WP-Optimize). */
+function utpk_purge_caches() {
+	do_action( 'litespeed_purge_all' );
+	if ( function_exists( 'wpo_cache_flush' ) ) {
+		wpo_cache_flush();
+	}
+}
+
+function utpk_api_backup( WP_REST_Request $r = null ) {
 	if ( ! class_exists( 'UpdraftPlus' ) && ! has_action( 'updraft_backup_all' ) ) {
 		return new WP_Error( 'utpk_backup', 'UpdraftPlus is not active.', array( 'status' => 400 ) );
 	}
 	$before = utpk_last_backup();
+	if ( $r && $r->get_param( 'now' ) ) {
+		// Run the backup inside this request (WP-Cron may not fire on a site without visits).
+		if ( function_exists( 'set_time_limit' ) ) {
+			@set_time_limit( 600 ); // phpcs:ignore
+		}
+		do_action( 'updraft_backup_all' );
+		$after = utpk_last_backup();
+		return array( 'started' => true, 'done' => $after > $before, 'last_backup_before' => $before, 'last_backup' => $after );
+	}
 	if ( ! wp_next_scheduled( 'updraft_backup_all' ) ) {
 		wp_schedule_single_event( time() + 5, 'updraft_backup_all' );
 	}
@@ -401,7 +418,7 @@ function utpk_api_cleanup( WP_REST_Request $r ) {
 		$report['deleted'][] = $file;
 	}
 	if ( $apply && ( $report['deleted'] || $report['merged'] ) ) {
-		do_action( 'litespeed_purge_all' );
+		utpk_purge_caches();
 	}
 	return $report;
 }

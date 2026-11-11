@@ -16,8 +16,8 @@ You are the scheduled UpTrendPos website session. Abdul is NOT watching. Do not 
 
 ## 2. Pre-flight and backup (WPVibe, site https://uptrendpos.com)
 1. `rest_api` GET `/utpk/v1/status`. Plugin `version` must be 1.5.0 or newer, and the slug must exist in `types`. If not: STOP.
-2. `rest_api_write` POST `/utpk/v1/backup` with body `{}`. Note `last_backup_before`.
-3. Continue to step 3 while the backup runs. Before step 5, GET `/utpk/v1/status` until `last_backup` > `last_backup_before`. Check about once a minute, using the build work as the wait. If it has not finished after 25 minutes: STOP (report "backup did not finish").
+2. `rest_api_write` POST `/utpk/v1/backup` with body `{"now":true}` (Site Kit 1.6.0+: runs the backup inside the request, about 30-60 s). The reply must show `done: true`. If the call times out or `done` is false, GET `/utpk/v1/status` about once a minute until `last_backup` > `last_backup_before`; if it has not finished after 25 minutes: STOP (report "backup did not finish").
+3. Continue only after the backup is confirmed.
 
 ## 3. Write today's page
 For the slug:
