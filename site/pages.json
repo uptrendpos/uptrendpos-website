@@ -648,5 +648,70 @@
   "sec": "bag shop software, luggage shop billing software, bag shop POS Pakistan",
   "builder": "build_bag.py",
   "images": "gen_bag.py"
+ },
+ {
+  "n": "crockery-shop-pos-software",
+  "src": "pages/website_crockery_v1.html",
+  "url": "/industries/crockery-shop-pos-software/",
+  "stage": "crockery",
+  "stage_items": [
+   [
+    "Days of typing products",
+    "search",
+    "b",
+    "2,000+ products loaded",
+    "Search, tick and add",
+    "Catalog"
+   ],
+   [
+    "Cartons, sets and pieces",
+    "layers",
+    "y",
+    "One stock, any unit",
+    "Carton, set or piece",
+    "Units"
+   ],
+   [
+    "Broken pieces not counted",
+    "shield",
+    "t",
+    "Breakage as damage",
+    "Stock stays correct",
+    "Damage"
+   ],
+   [
+    "New price from every salesman",
+    "scan",
+    "g",
+    "Barcode billing",
+    "Same price on every bill",
+    "Barcode"
+   ],
+   [
+    "Udhaar on loose slips",
+    "book",
+    "y",
+    "Customer ledger",
+    "Statements on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Crockery Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Crockery shop POS software for Pakistani crockery and household shops: 2,000+ products loaded, carton, set or piece, breakage as damage, barcode billing.",
+  "kw": "crockery shop POS software",
+  "sec": "crockery shop software, household shop billing software, crockery shop POS Pakistan",
+  "builder": "build_crockery.py",
+  "images": "gen_crockery.py"
  }
 ]
