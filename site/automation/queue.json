@@ -188,7 +188,8 @@
    "baby-store-pos-software",
    "cosmetics-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-14"
  },
  {
   "order": 13,
