@@ -778,5 +778,70 @@
   "sec": "undergarments shop software, hosiery shop billing software, undergarments shop POS Pakistan",
   "builder": "build_undergarments.py",
   "images": "gen_undergarments.py"
+ },
+ {
+  "n": "artificial-jewellery-shop-pos-software",
+  "src": "pages/website_artificial_v1.html",
+  "url": "/industries/artificial-jewellery-shop-pos-software/",
+  "stage": "artificial",
+  "stage_items": [
+   [
+    "Which colour is in stock?",
+    "layers",
+    "b",
+    "Design x colour",
+    "Own stock for each",
+    "Designs"
+   ],
+   [
+    "Prices from memory",
+    "tag",
+    "y",
+    "Price on every item",
+    "Labels on Enterprise+",
+    "Tags"
+   ],
+   [
+    "Slow bills in the rush",
+    "scan",
+    "g",
+    "Scan or search",
+    "Hold a bill, serve next",
+    "Fast bill"
+   ],
+   [
+    "Udhaar on loose slips",
+    "book",
+    "t",
+    "Customer ledger",
+    "Statements on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Small pieces go missing",
+    "box",
+    "y",
+    "Damage and samples",
+    "Stock audit on record",
+    "Stock"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Artificial Jewellery Shop POS Software | UpTrendPos",
+  "desc": "Artificial jewellery shop POS software for Pakistani shops: every design and colour with its own stock, fast billing, small barcode tags and udhaar.",
+  "kw": "artificial jewellery shop POS software",
+  "sec": "artificial jewellery shop software, imitation jewellery billing software, artificial jewellery POS Pakistan",
+  "builder": "build_artificial.py",
+  "images": "gen_artificial.py"
  }
 ]
