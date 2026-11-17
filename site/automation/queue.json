@@ -204,7 +204,8 @@
    "perfume-shop-pos-software",
    "bag-shop-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-17"
  },
  {
   "order": 14,
