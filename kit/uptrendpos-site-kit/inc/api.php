@@ -233,6 +233,8 @@ function utpk_api_page( WP_REST_Request $r ) {
 	}
 	$pub  = (bool) $r->get_param( 'publish' );
 	$ok   = isset( utpk_core_page_list()[ $slug ] );
+	// 1.6.2: the front page (slug "home") may be written too, so site-wide facts such as plan prices stay editable through this route
+	$ok   = $ok || ( 'home' === $slug && (int) get_option( 'page_on_front' ) === utpk_find_page( 'home' ) );
 	foreach ( utpk_industries()['types'] as $t ) {
 		$ok = $ok || $t['slug'] === $slug;
 	}

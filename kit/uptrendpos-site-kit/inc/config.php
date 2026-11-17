@@ -43,9 +43,9 @@ function utpk_brand() {
 		'support_close' => '19:00',
 		/* Plans: name => monthly price in PKR (pricing page is the only page that shows prices) */
 		'plans'         => array(
-			'Premium'    => 2000,
-			'Enterprise' => 3000,
-			'Custom'     => 6000,
+			'Premium'    => 1000,
+			'Enterprise' => 2000,
+			'Custom'     => 5000,
 		),
 		'hub_slug'      => 'industries',
 	);
