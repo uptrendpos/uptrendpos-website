@@ -18,3 +18,4 @@
 - Premium Rs 1,000 / Enterprise Rs 2,000 / Custom Rs 5,000 a month (yearly 12,000 / 24,000 / 60,000; first year with 10% off 10,800 / 21,600 / 54,000).
 - Live pages updated through /utpk/v1/page: pos-software-pricing (cards, yearly toggle, table, FAQ, SEO description), about-uptrendpos (FAQ), home (FAQ). Source copies in site/core/ and asset repo pages/.
 - Site Kit 1.6.2: schema plan offers + llms.txt facts use the new prices; /page also accepts slug "home" (front page only).
+- 2026-11-18: tyre-shop-pos-software (2,895 words, 0.86%) https://uptrendpos.com/industries/tyre-shop-pos-software/ . Backup OK, 4 media created, cleanup 0 removed. Gates passed (round 1). Catalog 0; size x rim variants (width/ratio x rim), warranty notes on the sale only, udhaar for transporters and mechanics, qist Enterprise+; old tyre trade-in and special prices = Coming soon; no serial or warranty lookup. Writes through the UpTrendPos WordPress connector (four utpk/v1 endpoints only).
