@@ -843,5 +843,70 @@
   "sec": "artificial jewellery shop software, imitation jewellery billing software, artificial jewellery POS Pakistan",
   "builder": "build_artificial.py",
   "images": "gen_artificial.py"
+ },
+ {
+  "n": "tyre-shop-pos-software",
+  "src": "pages/website_tyre_v1.html",
+  "url": "/industries/tyre-shop-pos-software/",
+  "stage": "tyre",
+  "stage_items": [
+   [
+    "Which size is in stock?",
+    "layers",
+    "b",
+    "Size x rim",
+    "Own stock for each",
+    "Sizes"
+   ],
+   [
+    "Warranty on a loose slip",
+    "doc",
+    "y",
+    "Warranty note on the bill",
+    "Bill on WhatsApp",
+    "Warranty"
+   ],
+   [
+    "Transporters' udhaar in a khata",
+    "book",
+    "t",
+    "Udhaar on the ledger",
+    "Statement on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Truck tyre sets on qist",
+    "cal",
+    "g",
+    "Qist with guarantor",
+    "Enterprise and Custom",
+    "Qist"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ],
+   [
+    "Faulty tyre from supplier",
+    "box",
+    "y",
+    "Damage and returns",
+    "Supplier ledger stays right",
+    "Returns"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Tyre Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Tyre shop POS software for car, bike and truck tyre shops in Pakistan: stock for every size and rim, warranty notes on the bill, udhaar and qist.",
+  "kw": "tyre shop POS software",
+  "sec": "tyre shop software, tyre dealer billing software, tyre shop POS Pakistan",
+  "builder": "build_tyre.py",
+  "images": "gen_tyre.py"
  }
 ]
