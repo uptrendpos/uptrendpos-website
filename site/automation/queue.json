@@ -236,7 +236,8 @@
    "sports-shop-pos-software",
    "crockery-shop-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-19"
  },
  {
   "order": 16,
