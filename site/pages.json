@@ -908,5 +908,70 @@
   "sec": "tyre shop software, tyre dealer billing software, tyre shop POS Pakistan",
   "builder": "build_tyre.py",
   "images": "gen_tyre.py"
+ },
+ {
+  "n": "toy-shop-pos-software",
+  "src": "pages/website_toy_v1.html",
+  "url": "/industries/toy-shop-pos-software/",
+  "stage": "toy",
+  "stage_items": [
+   [
+    "Days of typing toys",
+    "search",
+    "b",
+    "1,000+ products loaded",
+    "Search, tick and add",
+    "Catalog"
+   ],
+   [
+    "Long queue in the Eid rush",
+    "scan",
+    "g",
+    "Barcode billing",
+    "Bill ready in seconds",
+    "Barcode"
+   ],
+   [
+    "Same toy, many colours",
+    "layers",
+    "y",
+    "Model x colour",
+    "Own stock per item",
+    "Variants"
+   ],
+   [
+    "Toys sorted by guesswork",
+    "users",
+    "t",
+    "Age groups",
+    "Search one age group",
+    "Age group"
+   ],
+   [
+    "Udhaar on loose slips",
+    "book",
+    "y",
+    "Customer ledger",
+    "Statements on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Toy Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Toy shop POS software for Pakistani toy and gift shops: 1,000+ products loaded, age groups, model and colour stock, fast barcode billing in the Eid rush.",
+  "kw": "toy shop POS software",
+  "sec": "toy shop software, gift shop billing software, toy shop POS Pakistan",
+  "builder": "build_toy.py",
+  "images": "gen_toy.py"
  }
 ]
