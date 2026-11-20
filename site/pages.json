@@ -973,5 +973,70 @@
   "sec": "toy shop software, gift shop billing software, toy shop POS Pakistan",
   "builder": "build_toy.py",
   "images": "gen_toy.py"
+ },
+ {
+  "n": "sports-shop-pos-software",
+  "src": "pages/website_sports_v1.html",
+  "url": "/industries/sports-shop-pos-software/",
+  "stage": "sports",
+  "stage_items": [
+   [
+    "Days of typing items",
+    "search",
+    "b",
+    "250+ products loaded",
+    "Search, tick and add",
+    "Catalog"
+   ],
+   [
+    "Sizes and colours mixed up",
+    "layers",
+    "y",
+    "Size x colour",
+    "Own stock per item",
+    "Variants"
+   ],
+   [
+    "School orders on slips",
+    "doc",
+    "g",
+    "A4 quotations",
+    "Sale in one tap",
+    "Quotes"
+   ],
+   [
+    "Club udhaar in a diary",
+    "book",
+    "t",
+    "Club ledger",
+    "Statements on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Rush in the cricket season",
+    "scan",
+    "g",
+    "Barcode billing",
+    "Bill ready in seconds",
+    "Barcode"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Sports Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Sports shop POS software for Pakistani sports goods shops: 250+ products loaded, size and colour stock, A4 quotes and udhaar for schools and clubs.",
+  "kw": "sports shop POS software",
+  "sec": "sports shop software, sports goods shop billing software, sports shop POS Pakistan",
+  "builder": "build_sports.py",
+  "images": "gen_sports.py"
  }
 ]
