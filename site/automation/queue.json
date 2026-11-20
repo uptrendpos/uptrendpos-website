@@ -252,7 +252,8 @@
    "bag-shop-pos-software",
    "stationery-shop-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-20"
  },
  {
   "order": 17,
