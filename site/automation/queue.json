@@ -268,7 +268,8 @@
    "crockery-shop-pos-software",
    "grocery-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-21"
  },
  {
   "order": 18,
