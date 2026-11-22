@@ -284,7 +284,8 @@
    "furniture-shop-pos-software",
    "electrical-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-22"
  },
  {
   "order": 19,
