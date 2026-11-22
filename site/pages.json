@@ -1103,5 +1103,70 @@
   "sec": "stationery shop software, book shop billing software, stationery shop POS Pakistan",
   "builder": "build_stationery.py",
   "images": "gen_stationery.py"
+ },
+ {
+  "n": "glass-shop-pos-software",
+  "src": "pages/website_glass_v1.html",
+  "url": "/industries/glass-shop-pos-software/",
+  "stage": "glass",
+  "stage_items": [
+   [
+    "Quotes on rough slips",
+    "doc",
+    "b",
+    "A4 quotations",
+    "Sale in one tap",
+    "Quotes"
+   ],
+   [
+    "Advance slip lost",
+    "book",
+    "y",
+    "Advance on the ledger",
+    "Balance on the final bill",
+    "Advance"
+   ],
+   [
+    "Sq ft guessed in the head",
+    "layers",
+    "g",
+    "Sq ft, foot, piece",
+    "Stock always right",
+    "Units"
+   ],
+   [
+    "Contractor udhaar in a diary",
+    "users",
+    "t",
+    "Contractor ledger",
+    "Statements on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Broken sheets still in stock",
+    "box",
+    "y",
+    "Damage entries",
+    "Stock stays true",
+    "Breakage"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Glass Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Glass shop POS software for Pakistani glass and aluminium shops: A4 quotes to sale in one tap, sq ft and foot units, advance and contractor udhaar.",
+  "kw": "glass shop POS software",
+  "sec": "glass shop software, aluminium shop billing software, glass shop POS Pakistan",
+  "builder": "build_glass.py",
+  "images": "gen_glass.py"
  }
 ]
