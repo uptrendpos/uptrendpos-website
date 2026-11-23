@@ -139,7 +139,7 @@ c = dict(
             ('Enterprise', 'A busy battery dealer', 'Up to 2 branches and 6 users. Adds qist with guarantor, FBR invoices, barcode labels, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A battery chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Battery shop POS software questions', [
-        ('Which is the best battery shop POS software in Pakistan?', 'The best battery shop POS software is the one built for the way a battery shop sells. Check five things: stock for every ampere and type, warranty notes on the bill, udhaar for mechanics, qist for big sales, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best battery shop POS software in Pakistan?', 'The best battery shop POS software is the one built for the way a battery shop sells. Check five things: stock for every ampere and type, warranty notes on the bill, udhaar for mechanics, qist for big sales, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I keep stock for each ampere and type?', 'Yes. Use the variant generator: pick the battery, its ampere sizes and its types, and every item is made in one go with its own code, stock and price.'),
         ('Can I write the warranty on the bill?', 'Yes. Write the warranty note on the sale, for example "12 months". It shows on the thermal receipt or A4 invoice, and on the bill you send on WhatsApp as a picture or PDF.'),
         ('Can I check warranty by battery serial number?', 'Not for battery shops today. Warranty notes are written on the sale, and you find the bill on the customer\'s ledger by name or phone number.'),
@@ -148,11 +148,11 @@ c = dict(
         ('Can I take the old battery back and give a discount?', 'Old battery trade-in is coming soon. Today you can give a discount on the bill.'),
         ('Do you have a ready list of batteries?', 'No. Your shop starts with an empty list and you add only the batteries you sell. The variant generator makes every ampere and type in one go. You can also add products from the full UpTrendPos catalog of 38,000+ products by name or category.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
-        ('How much does battery shop POS software cost?', 'It depends on your plan. Premium suits one battery shop, Enterprise suits a busy dealer, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does battery shop POS software cost?', 'It depends on your plan. Premium suits one battery shop, Enterprise suits a busy dealer, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('solar-shop-pos-software', 'Solar Shop'), ('auto-parts-pos-software', 'Auto Spare Parts'),
              ('electrical-store-pos-software', 'Electrical &amp; LED Lighting'), ('tyre-shop-pos-software', 'Tyre Shop')],
-    final=('Try UpTrendPos in your battery shop for 14 days',
+    final=('Try UpTrendPos in your battery shop for 7 days',
            'Add your first batteries today and make your first bill, or message us and we will set it up with you. Simple battery shop POS software, made for Pakistani battery shops.'),
 )
 render(c)

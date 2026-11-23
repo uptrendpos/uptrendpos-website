@@ -133,7 +133,7 @@ c = dict(
             ('Enterprise', 'A busy paint store', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, staff commission, profit reports and audit trail.'),
             ('Custom', 'A paint store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Paint store POS software questions', [
-        ('Which is the best paint store POS software in Pakistan?', 'The best paint store POS software is the one built for shades and pack sizes, not a plain item list. Check five things: shade x pack size items, litre, gallon and drum units, A4 quotes, udhaar for painters and offline billing. UpTrendPos does all of them, and you can test it free for 14 days.'),
+        ('Which is the best paint store POS software in Pakistan?', 'The best paint store POS software is the one built for shades and pack sizes, not a plain item list. Check five things: shade x pack size items, litre, gallon and drum units, A4 quotes, udhaar for painters and offline billing. UpTrendPos does all of them, and you can test it free for 7 days.'),
         ('Can I keep stock for every shade and pack size?', 'Yes. Use the variant generator: pick the paint, its shades and its pack sizes, and every item is made in one go with its own code, stock and price.'),
         ('Can I sell by the litre, gallon and drum?', 'Yes. Set the units once for each paint. Sell a quarter, a gallon or a drum, or loose paint by the litre where you sell it, and the stock drops in the right unit.'),
         ('Can I give painters and contractors a quotation?', 'Yes. Make an A4 quotation with your logo for a paint job and send it on WhatsApp. When the painter comes back, convert it to a sale in one tap.'),
@@ -142,11 +142,11 @@ c = dict(
         ('Do you have a ready list of paints?', 'No. Your shop starts with an empty list and you add the paints you sell. The variant generator makes every shade and pack size in one go.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
         ('I also sell pipes, taps and building material. Which page is for me?', 'If hardware and sanitary goods are your main business, see our <a href="https://uptrendpos.com/industries/hardware-store-pos-software/">hardware store POS software</a>, made for thousands of items and many units.'),
-        ('How much does paint store POS software cost?', 'It depends on your plan. Premium suits one paint shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does paint store POS software cost?', 'It depends on your plan. Premium suits one paint shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('hardware-store-pos-software', 'Hardware &amp; Sanitary'), ('glass-shop-pos-software', 'Glass &amp; Aluminium Shop'),
              ('crockery-shop-pos-software', 'Crockery &amp; Household Shop'), ('electrical-store-pos-software', 'Electrical &amp; LED Lighting')],
-    final=('Try UpTrendPos in your paint shop for 14 days',
+    final=('Try UpTrendPos in your paint shop for 7 days',
            'Make your first shades today and print your first bill, or message us and we will set it up with you. Simple paint store POS software, made for Pakistani paint shops.'),
 )
 render(c)

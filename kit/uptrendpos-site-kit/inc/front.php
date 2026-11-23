@@ -302,11 +302,11 @@ function utpk_header_html() {
 	$h .= '<div class="utn-top"><div class="utn-top-in"><div class="l">';
 	$h .= '<a href="' . esc_url( 'https://wa.me/' . $b['wa'] ) . '" target="_blank" rel="noopener" data-track="top_whatsapp">' . utpk_ic( 'wa', 15 ) . esc_html( $b['phone_show'] ) . '</a>';
 	$h .= '<a class="hide-m" href="mailto:' . esc_attr( $b['email'] ) . '">' . utpk_ic( 'mail', 15 ) . esc_html( $b['email'] ) . '</a>';
-	$h .= '</div><div class="r"><span class="utn-badge hide-m"><i></i>Works offline · 14-day free trial</span>';
+	$h .= '</div><div class="r"><span class="utn-badge hide-m"><i></i>Works offline · 7-day free trial</span>';
 	$h .= '<a href="' . esc_url( $b['app'] ) . '" target="_blank" rel="noopener" data-track="top_login">' . utpk_ic( 'user', 15 ) . 'Login</a></div></div></div>';
 
 	$h .= '<div class="utn-in">';
-	$h .= '<a class="utn-logo" href="' . utpk_u( '/' ) . '" aria-label="UpTrendPos home"><img class="lc" src="' . esc_url( $logo_c ) . '" width="600" height="120" alt="UpTrendPos"><img class="lw" src="' . esc_url( $logo_w ) . '" width="600" height="120" alt="" aria-hidden="true"></a>';
+	$h .= '<a class="utn-logo" href="' . utpk_u( '/' ) . '" aria-label="UpTrendPos home"><img class="lc" src="' . esc_url( $logo_c ) . '" width="600" height="120" alt="UpTrendPos" fetchpriority="high" decoding="async"><img class="lw" src="' . esc_url( $logo_w ) . '" width="600" height="120" alt="" aria-hidden="true" fetchpriority="high" decoding="async"></a>';
 	$h .= '<nav class="utn-nav" aria-label="Main"><ul class="utn-menu">';
 	$h .= '<li class="has-mega"><button type="button" class="utn-mbtn" aria-expanded="false" aria-controls="utn-mega">Industries ' . utpk_ic( 'chev', 14 ) . '</button>';
 	$in_menu = 0;
@@ -350,7 +350,7 @@ function utpk_header_html() {
 		}
 		$h .= '<a class="utn-dl" href="' . utpk_u( '/' . $n[0] . '/' ) . '">' . esc_html( $n[1] ) . utpk_ic( 'arrow', 16 ) . '</a>';
 	}
-	$h .= '<div class="utn-dcta"><a class="utn-btn" href="' . esc_url( $b['app'] ) . '" target="_blank" rel="noopener" data-track="drawer_trial">Start 14-day free trial</a>';
+	$h .= '<div class="utn-dcta"><a class="utn-btn" href="' . esc_url( $b['app'] ) . '" target="_blank" rel="noopener" data-track="drawer_trial">Start 7-day free trial</a>';
 	$h .= '<a class="utn-btn line" href="' . esc_url( $demo ) . '" target="_blank" rel="noopener" data-track="drawer_whatsapp">' . utpk_ic( 'wa', 18 ) . 'Free demo on WhatsApp</a></div>';
 	$h .= '<p class="utn-dnote">Call <a href="tel:' . esc_attr( $b['phone_tel'] ) . '">' . esc_html( $b['phone_show'] ) . '</a> · Mon to Sat, 10 am to 7 pm</p></div>';
 	$h .= '</header>';
@@ -374,7 +374,7 @@ function utpk_footer_html() {
 	$demo  = utpk_wa_link( 'Hi, I want a free demo of UpTrendPos' );
 
 	$f  = '<footer class="utp-foot" id="utp-footer"><div class="uf-wrap">';
-	$f .= '<div class="uf-cta"><div class="uf-cta-copy"><p class="uf-cta-title">Ready to run your shop on UpTrendPos?</p><p class="uf-cta-text">Start free for 14 days, or get a free demo for your type of shop on WhatsApp.</p></div>';
+	$f .= '<div class="uf-cta"><div class="uf-cta-copy"><p class="uf-cta-title">Ready to run your shop on UpTrendPos?</p><p class="uf-cta-text">Start free for 7 days, or get a free demo for your type of shop on WhatsApp.</p></div>';
 	$f .= '<div class="uf-cta-btns"><a class="uf-btn uf-btn-yellow" href="' . esc_url( $b['app'] ) . '" target="_blank" rel="noopener" data-track="footer_trial">Start free trial</a>';
 	$f .= '<a class="uf-btn uf-btn-line" href="' . esc_url( $demo ) . '" target="_blank" rel="noopener" data-track="footer_whatsapp">' . utpk_ic( 'wa', 18 ) . 'Free demo</a></div></div>';
 
@@ -412,6 +412,10 @@ function utpk_footer_html() {
 
 	$f .= '<div class="uf-bottom"><p>&copy; <span data-utp-year>' . esc_html( gmdate( 'Y' ) ) . '</span> UpTrendPos. All rights reserved. Made in Sahiwal, Pakistan.</p><ul class="uf-legal">';
 	$f .= '<li><a href="' . utpk_u( '/privacy-policy/' ) . '">Privacy Policy</a></li><li><a href="' . utpk_u( '/terms-and-conditions/' ) . '">Terms &amp; Conditions</a></li><li><a href="' . utpk_u( '/support/' ) . '">Support</a></li>';
+	$blog = (int) get_option( 'page_for_posts' );
+	if ( $blog && 'publish' === get_post_status( $blog ) ) {
+		$f .= '<li><a href="' . esc_url( get_permalink( $blog ) ) . '">Blog</a></li>';
+	}
 	$f .= '</ul></div></div></footer>';
 	return $f;
 }

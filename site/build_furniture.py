@@ -134,7 +134,7 @@ c = dict(
             ('Enterprise', 'A busy furniture showroom', 'Up to 2 branches and 6 users. Adds qist with guarantor, FBR invoices, barcode labels, staff commission, profit reports and audit trail.'),
             ('Custom', 'A furniture chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Furniture shop POS software questions', [
-        ('Which is the best furniture shop POS software in Pakistan?', 'The best furniture shop POS software is the one built for quotes, advances and big bills, not small cash sales. Check five things: A4 quotes, advances on the customer ledger, models in every finish, qist and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best furniture shop POS software in Pakistan?', 'The best furniture shop POS software is the one built for quotes, advances and big bills, not small cash sales. Check five things: A4 quotes, advances on the customer ledger, models in every finish, qist and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I give a customer a quotation and turn it into a sale?', 'Yes. Make an A4 quotation with your logo and send it on WhatsApp. When the customer agrees, convert it to a sale in one tap.'),
         ('How do I record an advance?', 'Record the advance as a payment on the customer ledger and print or send a receipt. When you make the bill, the bill and the advance sit on the same ledger, so the balance shows what is left to pay.'),
         ('Can I keep stock for each finish and colour?', 'Yes. Use the variant generator: pick the model, its finishes and its colours, and every item is made in one go with its own code, stock and price.'),
@@ -143,11 +143,11 @@ c = dict(
         ('Do you have a ready list of furniture?', 'A starter list of 70+ furniture items is ready; add your own models. The variant generator makes every finish and colour in one go.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
         ('I also sell home appliances on qist. Which page is for me?', 'If appliances are your main business, see our <a href="https://uptrendpos.com/industries/electronics-store-pos-software/">electronics store POS software</a>, made for appliances with serial numbers and qist.'),
-        ('How much does furniture shop POS software cost?', 'It depends on your plan. Premium suits one furniture shop, Enterprise suits a busy showroom, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does furniture shop POS software cost?', 'It depends on your plan. Premium suits one furniture shop, Enterprise suits a busy showroom, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('crockery-shop-pos-software', 'Crockery &amp; Household Shop'), ('electronics-store-pos-software', 'Electronics &amp; CCTV Shop'),
              ('glass-shop-pos-software', 'Glass &amp; Aluminium Shop'), ('hardware-store-pos-software', 'Hardware &amp; Sanitary')],
-    final=('Try UpTrendPos in your furniture shop for 14 days',
+    final=('Try UpTrendPos in your furniture shop for 7 days',
            'Add your first models today and send your first quote, or message us and we will set it up with you. Simple furniture shop POS software, made for Pakistani furniture shops.'),
 )
 render(c)

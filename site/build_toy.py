@@ -140,7 +140,7 @@ c = dict(
             ('Enterprise', 'A busy toy store', 'Up to 2 branches and 6 users. Adds barcode labels, FBR invoices, qist, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A toy store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Toy shop POS software questions', [
-        ('Which is the best toy shop POS software in Pakistan?', 'The best toy shop POS software is the one built for the way a toy shop sells. Check five things: a ready product list, stock for each model and colour, fast barcode billing for the Eid rush, udhaar on a ledger, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best toy shop POS software in Pakistan?', 'The best toy shop POS software is the one built for the way a toy shop sells. Check five things: a ready product list, stock for each model and colour, fast barcode billing for the Eid rush, udhaar on a ledger, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all my toys myself?', 'No. UpTrendPos has 1,000+ toy products already loaded. Search, tick the ones you sell and add them to your shop. If a product is missing, add it yourself in seconds. You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Does the catalog come with prices and stock?', 'No. The catalog gives you the product names and details. You set your own stock and price, so your rates are always your own.'),
         ('Can I sort toys by age group?', 'Yes. Make age groups your categories, like 0-2, 3-5, 6-8 and 9-12 years, and put each toy in one. When a parent asks for a gift for a certain age, search that category and see what is in stock.'),
@@ -149,11 +149,11 @@ c = dict(
         ('Can I print barcode labels for toys with no barcode?', 'Yes, on Enterprise and Custom plans. Print a label for each item and stick it on the box, then scan it at the counter. On every plan you can scan a barcode that is already on the box, with a USB scanner or your phone camera.'),
         ('Will it keep up with the Eid and birthday rush?', 'Yes. Scan or search, and the price comes on its own. Hold a bill while one buyer picks one more toy and bill the next buyer.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
-        ('How much does toy shop POS software cost?', 'It depends on your plan. Premium suits one toy shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does toy shop POS software cost?', 'It depends on your plan. Premium suits one toy shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can a buyer exchange a toy for another colour?', 'Yes. Make the exchange on the same bill. The invoice number stays the same, the returned toy goes back into stock, and the new one goes out.')]),
     related=[('baby-store-pos-software', 'Baby &amp; Diaper'), ('stationery-shop-pos-software', 'Stationery &amp; Books'),
              ('sports-shop-pos-software', 'Sports Goods'), ('crockery-shop-pos-software', 'Crockery &amp; Household')],
-    final=('Try UpTrendPos in your toy shop for 14 days',
+    final=('Try UpTrendPos in your toy shop for 7 days',
            'Pick your products from the 1,000+ catalog today and make your first bill, or message us and we will set it up with you. Simple toy shop POS software, made for Pakistani toy and gift shops.'),
 )
 render(c)

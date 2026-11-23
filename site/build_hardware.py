@@ -134,7 +134,7 @@ c = dict(
             ('Enterprise', 'A busy hardware store', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, staff commission, profit reports and audit trail.'),
             ('Custom', 'A hardware store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Hardware store POS software questions', [
-        ('Which is the best hardware store POS software in Pakistan?', 'The best hardware store POS software is the one built for thousands of items and many units, not a small grocery list. Check five things: quick search, bag, foot and box units, A4 quotes, udhaar for contractors and offline billing. UpTrendPos does all of them, and you can test it free for 14 days.'),
+        ('Which is the best hardware store POS software in Pakistan?', 'The best hardware store POS software is the one built for thousands of items and many units, not a small grocery list. Check five things: quick search, bag, foot and box units, A4 quotes, udhaar for contractors and offline billing. UpTrendPos does all of them, and you can test it free for 7 days.'),
         ('I have thousands of items. How fast can I find one?', 'Type a few letters of the name, such as "elbow" or "tap", and every matching item shows with its size, price and stock. Items with a barcode can be scanned with a USB scanner or the phone camera.'),
         ('Can I sell cement by the bag and pipe by the foot?', 'Yes. Set the unit once for each item: bag for cement, foot or meter for pipe, kg for steel bars. When you sell, the stock drops in the same unit.'),
         ('Can I sell screws and fittings from a box one by one?', 'Yes. Set the box or carton size once. Sell by the piece or the full box, and the stock always shows the right number of pieces.'),
@@ -143,11 +143,11 @@ c = dict(
         ('Do you have a ready list of hardware items?', 'No. Your shop starts with an empty list and you add the items you sell. The variant generator makes every size and type of a fitting in one go, each with its own stock and price.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
         ('I also sell wire, switches and LED lights. Which page is for me?', 'If electrical goods are your main business, see our <a href="https://uptrendpos.com/industries/electrical-store-pos-software/">electrical store POS software</a>, made for wire by the meter and LED stock.'),
-        ('How much does hardware store POS software cost?', 'It depends on your plan. Premium suits one hardware shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does hardware store POS software cost?', 'It depends on your plan. Premium suits one hardware shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('paint-store-pos-software', 'Paint Store'), ('glass-shop-pos-software', 'Glass &amp; Aluminium Shop'),
              ('electrical-store-pos-software', 'Electrical &amp; LED Lighting'), ('furniture-shop-pos-software', 'Furniture Shop')],
-    final=('Try UpTrendPos in your hardware shop for 14 days',
+    final=('Try UpTrendPos in your hardware shop for 7 days',
            'Add your first items today and make your first bill, or message us and we will set it up with you. Simple hardware store POS software, made for Pakistani hardware and sanitary shops.'),
 )
 render(c)

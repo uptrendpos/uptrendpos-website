@@ -26,6 +26,7 @@ add_action( 'rest_api_init', function () {
 	register_rest_route( $ns, '/page', array( 'methods' => 'POST', 'callback' => 'utpk_api_page', 'permission_callback' => 'utpk_api_can' ) );
 	register_rest_route( $ns, '/backup', array( 'methods' => 'POST', 'callback' => 'utpk_api_backup', 'permission_callback' => 'utpk_api_can' ) );
 	register_rest_route( $ns, '/media-cleanup', array( 'methods' => 'POST', 'callback' => 'utpk_api_cleanup', 'permission_callback' => 'utpk_api_can' ) );
+	register_rest_route( $ns, '/replace', array( 'methods' => 'POST', 'callback' => 'utpk_api_replace', 'permission_callback' => 'utpk_api_can' ) );
 	register_rest_route( $ns, '/self-update', array( 'methods' => 'POST', 'callback' => 'utpk_api_self_update', 'permission_callback' => 'utpk_api_can_update' ) );
 } );
 
@@ -314,6 +315,136 @@ function utpk_api_page( WP_REST_Request $r ) {
 		'thumbnail' => (int) get_post_thumbnail_id( $id ),
 		'elementor' => $saved ? 'document_save' : 'meta_write',
 	);
+}
+
+/* ---------------- POST /replace {pairs:[{find,replace}], apply} ---------------- */
+
+/**
+ * 1.6.3 - site-wide plain-text fact change (e.g. "14-day" -> "7-day").
+ * Only plain text: find/replace may not contain < or >, so no markup or script can be added.
+ * Targets: the front page, every core page, every business-type page and every blog post.
+ * Elementor pages: text inside HTML widgets. Other posts: post_content and excerpt. Plus Rank Math title/description.
+ * Without apply:true it only reports what would change.
+ */
+function utpk_api_replace( WP_REST_Request $r ) {
+	$pairs = $r->get_param( 'pairs' );
+	$apply = (bool) $r->get_param( 'apply' );
+	if ( ! is_array( $pairs ) || ! $pairs || count( $pairs ) > 20 ) {
+		return new WP_Error( 'utpk_pairs', 'Send 1 to 20 pairs of {find, replace}.', array( 'status' => 400 ) );
+	}
+	$find = array();
+	$repl = array();
+	foreach ( $pairs as $p ) {
+		$f = isset( $p['find'] ) ? (string) $p['find'] : '';
+		$t = isset( $p['replace'] ) ? (string) $p['replace'] : '';
+		if ( strlen( $f ) < 3 || strlen( $f ) > 300 || strlen( $t ) > 300 || $f === $t || preg_match( '/[<>]/', $f . $t ) ) {
+			return new WP_Error( 'utpk_pairs', 'Each pair needs plain text: find 3-300 characters, replace up to 300, no < or >.', array( 'status' => 400 ) );
+		}
+		$find[] = $f;
+		$repl[] = $t;
+	}
+	$swap = function ( $s, &$n ) use ( $find, $repl ) {
+		$c   = 0;
+		$out = str_replace( $find, $repl, (string) $s, $c );
+		$n  += $c;
+		return $out;
+	};
+
+	$ids   = array();
+	$slugs = array_keys( utpk_core_page_list() );
+	foreach ( utpk_industries()['types'] as $t ) {
+		$slugs[] = $t['slug'];
+	}
+	foreach ( array_unique( $slugs ) as $slug ) {
+		$id = utpk_find_page( $slug );
+		if ( $id ) {
+			$ids[ $id ] = $slug;
+		}
+	}
+	$front = (int) get_option( 'page_on_front' );
+	if ( $front ) {
+		$ids[ $front ] = 'home';
+	}
+	foreach ( (array) get_posts( array( 'post_type' => 'post', 'post_status' => array( 'publish', 'draft', 'future', 'pending', 'private' ), 'numberposts' => -1, 'fields' => 'ids', 'suppress_filters' => true ) ) as $pid ) {
+		$ids[ (int) $pid ] = (string) get_post_field( 'post_name', $pid );
+	}
+
+	$report = array( 'apply' => $apply, 'pages' => array(), 'total' => 0 );
+	foreach ( $ids as $id => $slug ) {
+		if ( 'trash' === get_post_status( $id ) ) {
+			continue;
+		}
+		$n    = 0;
+		$raw  = get_post_meta( $id, '_elementor_data', true );
+		$data = is_string( $raw ) && '' !== $raw ? json_decode( $raw, true ) : null;
+		$new_content = null;
+		$new_excerpt = null;
+		if ( is_array( $data ) && $data ) {
+			$walk = function ( $els ) use ( &$walk, &$n, $swap ) {
+				foreach ( $els as $k => $el ) {
+					if ( isset( $el['widgetType'] ) && 'html' === $el['widgetType'] && isset( $el['settings']['html'] ) ) {
+						$els[ $k ]['settings']['html'] = $swap( $el['settings']['html'], $n );
+					}
+					if ( ! empty( $el['elements'] ) ) {
+						$els[ $k ]['elements'] = $walk( $el['elements'] );
+					}
+				}
+				return $els;
+			};
+			$data = $walk( $data );
+		} else {
+			$data        = null;
+			$new_content = $swap( get_post_field( 'post_content', $id, 'raw' ), $n );
+			$new_excerpt = $swap( get_post_field( 'post_excerpt', $id, 'raw' ), $n );
+		}
+		$meta = array();
+		foreach ( array( 'rank_math_title', 'rank_math_description' ) as $mk ) {
+			$mv = get_post_meta( $id, $mk, true );
+			if ( is_string( $mv ) && '' !== $mv ) {
+				$c2 = 0;
+				$nv = $swap( $mv, $c2 );
+				if ( $c2 ) {
+					$meta[ $mk ] = $nv;
+					$n          += $c2;
+				}
+			}
+		}
+		if ( ! $n ) {
+			continue;
+		}
+		$report['pages'][] = array( 'id' => (int) $id, 'slug' => $slug, 'type' => get_post_type( $id ), 'changes' => $n );
+		$report['total']  += $n;
+		if ( ! $apply ) {
+			continue;
+		}
+		if ( null !== $data ) {
+			$saved = false;
+			if ( class_exists( '\Elementor\Plugin' ) && isset( \Elementor\Plugin::$instance->documents ) ) {
+				$doc = \Elementor\Plugin::$instance->documents->get( $id, false );
+				if ( $doc ) {
+					$saved = (bool) $doc->save( array( 'elements' => $data ) );
+				}
+			}
+			if ( ! $saved ) {
+				update_post_meta( $id, '_elementor_data', wp_slash( wp_json_encode( $data ) ) );
+				delete_post_meta( $id, '_elementor_element_cache' );
+				delete_post_meta( $id, '_elementor_css' );
+			}
+			wp_update_post( array( 'ID' => $id ) ); // normal save hooks (SEO from the page code, featured image)
+			utpk_page_html( $id, true );
+			utpk_auto_page( $id );
+		} else {
+			wp_update_post( wp_slash( array( 'ID' => $id, 'post_content' => $new_content, 'post_excerpt' => $new_excerpt ) ) );
+		}
+		foreach ( $meta as $mk => $nv ) {
+			update_post_meta( $id, $mk, $nv );
+		}
+	}
+	if ( $apply && $report['total'] ) {
+		utpk_flush_live();
+		utpk_purge_caches();
+	}
+	return $report;
 }
 
 /* ---------------- POST /backup ---------------- */

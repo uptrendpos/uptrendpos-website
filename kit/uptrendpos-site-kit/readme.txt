@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.6.2
+Version: 1.6.4
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,15 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.6.4 (23 Nov 2026) =
+* Free trial is now 7 days (header badge, menu drawer, footer, page animations, download button note, llms.txt).
+* New POST /utpk/v1/replace: plain-text find and replace (no HTML) across every UpTrendPos page and blog post, with a dry run. Used for site-wide fact changes such as the trial length or prices.
+
+= 1.6.3 (18 Nov 2026) =
+* Security headers (HSTS, X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy, CSP upgrade-insecure-requests / frame-ancestors) written to .htaccess so cached pages get them too; PHP fallback if .htaccess is not writable; removed on deactivation.
+* User enumeration closed for visitors (/wp/v2/users REST routes and ?author=N).
+* Header logos load with fetchpriority=high (above-the-fold priority).
+
 = 1.6.2 (17 Nov 2026) =
 * New plan prices: Premium Rs 1,000, Enterprise Rs 2,000, Custom Rs 5,000 a month (schema offers + llms.txt facts).
 * POST /utpk/v1/page also accepts slug "home" (only when it is the site front page).

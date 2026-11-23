@@ -139,7 +139,7 @@ c = dict(
             ('Enterprise', 'A busy innerwear shop', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, qist, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A hosiery shop chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Undergarments shop POS software questions', [
-        ('Which is the best undergarments shop POS software in Pakistan?', 'The best undergarments shop POS software is the one built for the way a hosiery shop sells. Check five things: a ready product list, stock for every size and colour, pack and dozen billing, clean exchanges, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best undergarments shop POS software in Pakistan?', 'The best undergarments shop POS software is the one built for the way a hosiery shop sells. Check five things: a ready product list, stock for every size and colour, pack and dozen billing, clean exchanges, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all my products myself?', 'No. UpTrendPos has 400+ undergarments and hosiery products already loaded. Search, tick the ones you sell and add them to your shop. If a product is missing, add it yourself in seconds. You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Does the catalog come with prices and stock?', 'No. The catalog gives you the product names and details. You set your own stock and price, so your rates are always your own.'),
         ('Can I keep stock for each size and colour?', 'Yes. The variant generator takes your sizes and colours and makes every item in one go. Each item has its own stock and price, so medium white and large black of the same vest never mix.'),
@@ -148,11 +148,11 @@ c = dict(
         ('Can I print barcode labels for loose stock?', 'Yes, on Enterprise and Custom plans. Print a label for each size and colour, then scan it at the counter. On every plan you can scan a barcode that is already on the pack, with a USB scanner or your phone camera.'),
         ('Can regular buyers and small shops buy on udhaar?', 'Yes. The unpaid part goes on the customer ledger as udhaar. Send a statement as PDF, print or WhatsApp. Customer installments (qist) with a guarantor are on Enterprise and Custom plans.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
-        ('How much does undergarments shop POS software cost?', 'It depends on your plan. Premium suits one shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does undergarments shop POS software cost?', 'It depends on your plan. Premium suits one shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. Limits depend on your plan.')]),
     related=[('clothing-store-pos-software', 'Clothing &amp; Garments'), ('shoe-store-pos-software', 'Shoes &amp; Footwear'),
              ('baby-store-pos-software', 'Baby &amp; Diaper Store'), ('cosmetics-store-pos-software', 'Cosmetics &amp; Beauty Store')],
-    final=('Try UpTrendPos in your undergarments shop for 14 days',
+    final=('Try UpTrendPos in your undergarments shop for 7 days',
            'Pick your products from the 400+ catalog today and make your first bill, or message us and we will set it up with you. Simple undergarments shop POS software, made for Pakistani innerwear and hosiery shops.'),
 )
 render(c)

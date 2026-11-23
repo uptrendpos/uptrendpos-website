@@ -146,7 +146,7 @@ c = dict(
             ('Enterprise', 'A busy appliance showroom', 'Up to 2 branches and 6 users. Adds qist plans, FBR invoices, barcode labels, profit reports and audit trail.'),
             ('Custom', 'A showroom chain', 'Up to 3 branches and 9 users, with every module, including staff attendance, salary and commission.')]),
     faq=('Electronics store POS software questions', [
-        ('Which is the best electronics store POS software in Pakistan?', 'The best electronics store POS software is the one built for costly units, not groceries. Check five things: ready product list, serial tracking, warranty lookup, qist plans and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best electronics store POS software in Pakistan?', 'The best electronics store POS software is the one built for costly units, not groceries. Check five things: ready product list, serial tracking, warranty lookup, qist plans and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Is this also home appliance store software?', 'Yes. ACs, fridges, washing machines, fans and other home appliances work the same way, with a serial number on each unit, warranty lookup and qist plans. One electronics store POS software runs the whole showroom.'),
         ('Can I use it for a CCTV shop?', 'Yes. Make an A4 quotation for a full camera kit, convert it to a sale, and save the serial of every camera and DVR. Cable sells by the meter and connectors by the piece on the same bill.'),
         ('Do I need to type all products myself?', 'No. UpTrendPos comes with 1,100+ electronics, appliance, solar and CCTV products. Search, tick the ones you sell and add them to your shop. If a model is missing, add it yourself in a minute. You set your own prices and stock.'),
@@ -155,11 +155,11 @@ c = dict(
         ('Can I sell appliances on qist?', 'Yes, on the Enterprise and Custom plans. Set the advance, the markup and the number of months. The plan shows every monthly due, and markup income is kept apart until it is earned.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
         ('Can I sell to other dealers on udhaar?', 'Yes. Open a khata for each dealer or regular customer. Sales on udhaar and part payments go into the khata, and you can send the statement as a PDF or on WhatsApp at any time.'),
-        ('How much does electronics store POS software cost?', 'It depends on your plan. Premium suits one shop, Enterprise suits a busy showroom with qist, and Custom suits a chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does electronics store POS software cost?', 'It depends on your plan. Premium suits one shop, Enterprise suits a busy showroom with qist, and Custom suits a chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock and serials. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('solar-shop-pos-software', 'Solar Shop'), ('mobile-shop-pos-software', 'Mobile &amp; Computer Shop'),
              ('electrical-store-pos-software', 'Electrical &amp; LED Lighting'), ('battery-shop-pos-software', 'Battery Shop')],
-    final=('Try UpTrendPos in your electronics shop for 14 days',
+    final=('Try UpTrendPos in your electronics shop for 7 days',
            'Pick your TVs, ACs and cameras from the catalog today and make your first bill, or message us and we will set it up with you. Simple electronics store POS software, made for Pakistani electronics shops.'),
     custom=dict(trades=trades, cctv=cctv), order=ORDER,
 )

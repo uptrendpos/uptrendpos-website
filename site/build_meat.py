@@ -140,7 +140,7 @@ c = dict(
             ('Enterprise', 'A busy meat shop', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A meat shop chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Meat shop POS software questions', [
-        ('Which is the best meat shop POS software in Pakistan?', 'The best meat shop POS software is the one built for the way a meat shop sells. Check five things: bills by kg and grams, a rate per kg you can change, udhaar for hotels, cash sessions per shift, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best meat shop POS software in Pakistan?', 'The best meat shop POS software is the one built for the way a meat shop sells. Check five things: bills by kg and grams, a rate per kg you can change, udhaar for hotels, cash sessions per shift, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I sell by kg and by grams?', 'Yes. Set each item with a rate per kg. At the counter type 1.25 kg or 750 grams and the bill works out the amount. Stock goes down by the exact weight.'),
         ('Does it connect to my weighing scale by cable?', 'No. You weigh on your own scale as you do today and type the weight into the bill. It takes a second and works with any scale.'),
         ('Can I change the chicken rate every day?', 'Yes. Change the rate per kg on the item and every new bill uses it. Old bills keep the rate they were made with.'),
@@ -149,11 +149,11 @@ c = dict(
         ('How do I record meat that spoiled?', 'Enter it as damage with the weight. Stock goes down and the loss shows in your accounts, so your stock count stays true.'),
         ('Do you have a ready list of meat items?', 'No. Your shop starts with an empty list and you add only what you sell, like whole chicken, boneless, mutton, beef, mince and fish. You can also add products from the full UpTrendPos catalog of 38,000+ products by name or category.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
-        ('How much does meat shop POS software cost?', 'It depends on your plan. Premium suits one meat shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does meat shop POS software cost?', 'It depends on your plan. Premium suits one meat shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('grocery-store-pos-software', 'Grocery &amp; Kiryana Store'), ('crockery-shop-pos-software', 'Crockery &amp; Household Shop'),
              ('fertilizer-shop-pos-software', 'Agri Inputs'), ('veterinary-store-pos-software', 'Veterinary Store')],
-    final=('Try UpTrendPos in your meat shop for 14 days',
+    final=('Try UpTrendPos in your meat shop for 7 days',
            'Add your first items today and make your first bill by weight, or message us and we will set it up with you. Simple meat shop POS software, made for Pakistani poultry, meat and seafood shops.'),
 )
 render(c)

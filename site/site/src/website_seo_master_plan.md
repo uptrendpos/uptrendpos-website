@@ -114,7 +114,7 @@ Secondary keywords: add the Pakistani phrasing as Rank Math secondary keywords a
 - Industries hub has the default title %title% and %excerpt% - set on Day 2.
 - Tailor page SEO title "Tailor Shop POS Software for Boutiques in Pakistan" has no brand and is 50+ characters; change to "Tailor Shop POS Software in Pakistan | UpTrendPos" with the new slug.
 - Pricing, Privacy, Support, Terms titles/meta use "UpTrendPOS"; Pricing title has "2026"; Support meta claims "24/7" - align.
-- Live homepage claims to remove: "Pakistan's first", "100+ startups", "30-day free trial" (real = 14 days), "free basic plan", "PRAL Sales Tax Compliant", visible editor notes in two FAQ answers, several H1 tags.
+- Live homepage claims to remove: "Pakistan's first", "100+ startups", "30-day free trial" (real = 7 days), "free basic plan", "PRAL Sales Tax Compliant", visible editor notes in two FAQ answers, several H1 tags.
 - Customer logos and 4 testimonials on the live homepage: keep only if they are real customers who agreed. Send names and permission, and a real testimonials section will be added.
 - Official address (confirmed by Abdul): House No 193/A, Umer Block, Shadab Town, Sahiwal 57000, Punjab, Pakistan - use it everywhere (footer, schema, Rank Math Local SEO, contact page).
 - Two snippet plugins are installed (WPCode and Code Snippets). Use WPCode only.
@@ -122,7 +122,7 @@ Secondary keywords: add the Pakistani phrasing as Rank Math secondary keywords a
 ## 7. Pricing page v1 (13 Oct 2026)
 - Plans (updated by Abdul 13 Oct 2026): Premium Rs 2,000/mo, Rs 24,000/yr (1 branch, 3 users); Enterprise Rs 3,000/mo, Rs 36,000/yr (2 branches, 6 users, Recommended); Custom Rs 6,000/mo, Rs 72,000/yr (3 branches, 9 users). Unlimited invoices on all.
 - Yearly toggle shows 10% off the first year (Rs 21,600 / 32,400 / 64,800), taken from Abdul's own pricing block. Admin yearly fee is still 12x monthly - sales must apply the 10% by hand until admin supports it.
-- One-time setup fee mentioned without an amount. 14-day free trial. No free plan.
+- One-time setup fee mentioned without an amount. 7-day free trial. No free plan.
 - Compare table follows the admin module flags exactly (Premium locks barcode labels, FBR, installments, share links, white-label, P&L, audit, attendance, commission, payroll; Enterprise locks staff commission, attendance and payroll; Custom has all).
 - 6 watermarked hardware images (WebP, 28-58 KB) uploaded to /wp-content/uploads/: uptrendpos-pos-hardware-set, -windows-pc-pos, -thermal-receipt-printer, -barcode-scanner, -android-tablet-pos, -android-phone-pos. Generator: site/hw/gen_hw.py.
 - Schema: SEO snippet price range now 2000-6000, offerCount 3.

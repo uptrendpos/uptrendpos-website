@@ -229,7 +229,7 @@ segsec = ('  <section class="utp-sec utp-alt" aria-labelledby="utp-seg-title">\n
 
 faqs = [
     ('Which is the best grocery store POS software in Pakistan?',
-     'The best grocery store POS software is the one that fits a kiryana counter. Check five things: it sells by pack, piece and kg, keeps udhaar, works offline, prints from a phone, and your staff find it easy. UpTrendPos does all five, and you can test it free for 14 days.'),
+     'The best grocery store POS software is the one that fits a kiryana counter. Check five things: it sells by pack, piece and kg, keeps udhaar, works offline, prints from a phone, and your staff find it easy. UpTrendPos does all five, and you can test it free for 7 days.'),
     ('Is UpTrendPos good for a small kiryana shop?',
      'Yes. A small shop can run the full system on one Android phone. Make bills, keep the udhaar khata and check stock on the phone. Add a small Type-C printer for paper receipts, or send bills on WhatsApp. You can move to a PC later without losing any data.'),
     ('Can I print receipts from my phone without a computer?',
@@ -247,7 +247,7 @@ faqs = [
     ('Does UpTrendPos support FBR invoices?',
      'Yes, on the Enterprise and Custom plans. If your store is registered with FBR for POS, add your FBR details once. Each bill then prints an FBR invoice number and a QR code that buyers can check. Shops not on FBR POS can keep it off.'),
     ('How much does grocery store POS software cost?',
-     'It depends on your plan. Premium suits one shop, Enterprise suits a busy mart and Custom suits two or three branches. You can pay monthly or yearly, and every new shop gets a 14-day free trial first. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+     'It depends on your plan. Premium suits one shop, Enterprise suits a busy mart and Custom suits two or three branches. You can pay monthly or yearly, and every new shop gets a 7-day free trial first. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
     ('Can I use more than one counter or branch?',
      'Yes. Add more counters with separate staff logins, and each branch keeps its own stock and prices. The owner sees every counter and branch from one account. Branch and user limits depend on your plan, and we can quote for more.'),
 ]

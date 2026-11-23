@@ -132,7 +132,7 @@ c = dict(
             ('Enterprise', 'A busy boutique', 'Up to 2 branches and 6 users. Adds FBR invoices, profit reports and audit trail.'),
             ('Custom', 'A big workshop', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary for your karigars.')]),
     faq=('Tailor shop POS software questions', [
-        ('Which is the best tailor shop POS software in Pakistan?', 'The best tailor shop POS software is the one built for stitching orders, not just shelf sales. Check five things: sizes saved by customer, delivery dates, order status, advance and balance, and a workshop slip. UpTrendPos is tailoring software that does all five, and you can test it free for 14 days.'),
+        ('Which is the best tailor shop POS software in Pakistan?', 'The best tailor shop POS software is the one built for stitching orders, not just shelf sales. Check five things: sizes saved by customer, delivery dates, order status, advance and balance, and a workshop slip. UpTrendPos is tailoring software that does all five, and you can test it free for 7 days.'),
         ('Can I keep my old register numbers?', 'Yes. When you add a customer, you can type his old register number as his customer ID, for example 1283. He keeps the same number he knows, and you can search by it, by name or by phone.'),
         ('Which sizes can I save?', 'You can save sizes for shalwar kameez, coat, waistcoat and more on each customer. The sizes stay on his record and open on every new order, so you do not measure a regular customer again.'),
         ('What if a customer\'s size changes?', 'Just update the size on his next order. The new size is saved on the customer and used for every order after it, so the old size is never used by mistake.'),
@@ -141,11 +141,11 @@ c = dict(
         ('How do I handle advance and balance?', 'Take the advance when you book the order. The balance shows on the order and the slip. When the customer collects his suit, take the balance and give or send the receipt.'),
         ('Can I send the order slip on WhatsApp?', 'Yes. Send the order slip on WhatsApp, or print it on a thermal printer or on A4 paper. A separate size slip can also be printed for your workshop, like a kitchen print in a restaurant.'),
         ('Will my customers get a message when the suit is ready?', 'Our customer app is coming soon. With it, your customer will get a notification at every status of his order, from booked to ready. Until then, you can send the slip and receipt on WhatsApp.'),
-        ('How much does tailor shop POS software cost?', 'It depends on your plan. Premium suits one tailor shop, Enterprise suits a busy boutique and Custom suits a big workshop. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does tailor shop POS software cost?', 'It depends on your plan. Premium suits one tailor shop, Enterprise suits a busy boutique and Custom suits a big workshop. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I also sell ready-made suits and fabric?', 'Ready-made suits and fabric on the same counter are coming soon to the tailor setup. Today you can already run stitching orders, payments, purchases, expenses and accounts in one place.')]),
     related=[('clothing-store-pos-software', 'Clothing &amp; Garments'), ('shoe-store-pos-software', 'Shoes &amp; Footwear'),
              ('undergarments-shop-pos-software', 'Undergarments &amp; Hosiery'), ('artificial-jewellery-shop-pos-software', 'Artificial Jewellery')],
-    final=('Try UpTrendPos in your tailor shop for 14 days',
+    final=('Try UpTrendPos in your tailor shop for 7 days',
            'Add your regular customers and their sizes today and book your first order, or message us and we will set it up with you. Simple tailor shop POS software, made for Pakistani tailors.'),
 )
 render(c)

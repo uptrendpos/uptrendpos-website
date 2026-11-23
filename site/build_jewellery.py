@@ -137,7 +137,7 @@ c = dict(
             ('Enterprise', 'A busy jeweller', 'Up to 2 branches and 6 users. Adds qist with guarantor, FBR invoices, barcode labels, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A jewellery chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Jewellery shop POS software questions', [
-        ('Which is the best jewellery shop POS software in Pakistan?', 'The best jewellery shop POS software is the one built for the way a gold shop sells, not for fixed-price items. Check five things: gold rate and making charge on the bill, weights in grams, designs in every size, udhaar and qist, and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best jewellery shop POS software in Pakistan?', 'The best jewellery shop POS software is the one built for the way a gold shop sells, not for fixed-price items. Check five things: gold rate and making charge on the bill, weights in grams, designs in every size, udhaar and qist, and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can the gold rate and making charge be on the bill?', 'Yes. ' + GR + ' Print the bill on a thermal printer or as an A4 invoice with your logo, or send it on WhatsApp as a picture or PDF.'),
         ('Can I keep weights in grams?', 'Yes. Weights are kept in grams on the item and on the bill, so your record matches what is in the safe.'),
         ('Can I keep stock for each design and size?', 'Yes. Use the variant generator: pick the piece, its designs and its sizes, and every item is made in one go with its own code and stock.'),
@@ -146,11 +146,11 @@ c = dict(
         ('Do you have a ready list of jewellery?', 'No. Your shop starts with an empty list and you add the pieces you sell. The variant generator makes every design and size in one go.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
         ('I sell artificial jewellery, not gold. Which page is for me?', 'See our <a href="https://uptrendpos.com/industries/artificial-jewellery-shop-pos-software/">artificial jewellery shop POS software</a>, made for many designs and colours, small tags and fast billing.'),
-        ('How much does jewellery shop POS software cost?', 'It depends on your plan. Premium suits one jewellery shop, Enterprise suits a busy jeweller, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does jewellery shop POS software cost?', 'It depends on your plan. Premium suits one jewellery shop, Enterprise suits a busy jeweller, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('artificial-jewellery-shop-pos-software', 'Artificial Jewellery Shop'), ('watch-shop-pos-software', 'Watch Shop'),
              ('perfume-shop-pos-software', 'Perfume &amp; Attar Shop'), ('cosmetics-store-pos-software', 'Cosmetics &amp; Beauty Store')],
-    final=('Try UpTrendPos in your jewellery shop for 14 days',
+    final=('Try UpTrendPos in your jewellery shop for 7 days',
            'Add your first designs today and make your first bill, or message us and we will set it up with you. Simple jewellery shop POS software, made for Pakistani jewellery and gold shops.'),
 )
 render(c)

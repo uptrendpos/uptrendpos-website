@@ -53,7 +53,7 @@ def a4_doc():
            '<rect x="0" y="70" width="470" height="22" fill="url(#gNavy)"/>',
            t(36, 50, 'Terms and Conditions', 22, 800, '#fff'), t(36, 74, 'UpTrendPos · web, Android and Windows apps', 11.5, 500, '#c9dbf2')]
     y = 132
-    for i, (a, b2) in enumerate([('Free trial', '14 days, every feature to test'), ('Plans and payments', 'Premium, Enterprise, Custom'), ('Cancel and refunds', 'Clear rules, written simply'),
+    for i, (a, b2) in enumerate([('Free trial', '7 days, every feature to test'), ('Plans and payments', 'Premium, Enterprise, Custom'), ('Cancel and refunds', 'Clear rules, written simply'),
                                  ('Working offline', 'Bills saved, synced later'), ('FBR integration', 'Your FBR details, your control'), ('Your data', 'Yours to export any time'),
                                  ('Pakistani law', 'Courts and laws of Pakistan')], 1):
         out += [f'<circle cx="52" cy="{y-5}" r="15" fill="#e8f6ee"/>', f'<path d="M45,{y-5} l5,5 10,-11" fill="none" stroke="#1E8A43" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>',
@@ -119,7 +119,7 @@ def scene_support():
 
 SCENES = {
     'uptrendpos-privacy-policy': ('Your Data, Your Control', 'navy', scene_privacy, [(70, 760, 'Data kept separate', '#2FA455'), (330, 800, 'PIN for every staff login', '#2F7BD9'), (760, 296, 'Export any time', '#FAE814')]),
-    'uptrendpos-terms-and-conditions': ('Terms in Plain Words', 'blue', scene_terms, [(60, 790, '14-day free trial', '#2FA455'), (300, 800, 'Pakistani law', '#FAE814'), (900, 120, 'No hidden charges', '#2F7BD9')]),
+    'uptrendpos-terms-and-conditions': ('Terms in Plain Words', 'blue', scene_terms, [(60, 790, '7-day free trial', '#2FA455'), (300, 800, 'Pakistani law', '#FAE814'), (900, 120, 'No hidden charges', '#2F7BD9')]),
     'uptrendpos-support-help-center': ('UpTrendPos Support', 'green', scene_support, [(60, 780, 'Urdu or English', '#2FA455'), (320, 806, 'WhatsApp, phone, email', '#2F7BD9'), (760, 650, 'Mon to Sat, 10 to 7', '#FAE814')]),
 }
 

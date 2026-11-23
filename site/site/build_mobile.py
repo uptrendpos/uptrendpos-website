@@ -131,7 +131,7 @@ c = dict(
             ('Enterprise', 'A busy phone shop', 'Up to 2 branches and 6 users. Adds qist plans, FBR invoices, barcode labels, profit reports and audit trail.'),
             ('Custom', 'A mobile shop chain', 'Up to 3 branches and 9 users, with every module, including staff attendance, salary and commission.')]),
     faq=('Mobile shop POS software questions', [
-        ('Which is the best mobile shop POS software in Pakistan?', 'The best mobile shop POS software is the one built for phones, not groceries. Check five things: ready product list, IMEI tracking, warranty lookup, qist plans and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best mobile shop POS software in Pakistan?', 'The best mobile shop POS software is the one built for phones, not groceries. Check five things: ready product list, IMEI tracking, warranty lookup, qist plans and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all phone models myself?', 'No. UpTrendPos comes with 700+ mobile and computer products. Search, tick the ones you sell and add them to your shop. If a model is missing, add it yourself in a minute. You set your own prices and stock.'),
         ('Does it save the IMEI of every phone?', 'Yes. Save the IMEI or serial number when the phone comes in on the GRN, and the same IMEI is picked when you sell it. The phone can be traced from the supplier to the customer at any time.'),
         ('How does warranty lookup work?', 'Type or scan the IMEI or serial number of a sold phone. You see when it was sold, the bill number, the customer and the warranty. This helps you handle claims with proof.'),
@@ -140,11 +140,11 @@ c = dict(
         ('Can I sell accessories fast?', 'Yes. Scan the barcode or search the item, or use quick bill and the calculator. Covers, chargers and cables go on the same bill as the phone, and the bill can go on WhatsApp.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
         ('Can I buy used phones from customers?', 'Used phone buy-back is coming soon. Today you can run new phone sales with IMEI, accessories, qist, purchases, suppliers and full accounts in one place.'),
-        ('How much does mobile shop POS software cost?', 'It depends on your plan. Premium suits one mobile shop, Enterprise suits a busy phone shop with qist, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does mobile shop POS software cost?', 'It depends on your plan. Premium suits one mobile shop, Enterprise suits a busy phone shop with qist, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock and IMEIs. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('electronics-store-pos-software', 'Electronics &amp; CCTV Shop'), ('battery-shop-pos-software', 'Battery Shop'),
              ('electrical-store-pos-software', 'Electrical &amp; LED Lighting'), ('watch-shop-pos-software', 'Watch Shop')],
-    final=('Try UpTrendPos in your mobile shop for 14 days',
+    final=('Try UpTrendPos in your mobile shop for 7 days',
            'Pick your phones and accessories from the catalog today and make your first bill, or message us and we will set it up with you. Simple mobile shop POS software, made for Pakistani phone shops.'),
 )
 render(c)

@@ -136,7 +136,7 @@ c = dict(
             ('Enterprise', 'A busy shop', 'Up to 2 branches and 6 users. Adds barcode labels, FBR invoices, qist, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A small chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Artificial jewellery shop POS software questions', [
-        ('Which is the best artificial jewellery shop POS software in Pakistan?', 'The best artificial jewellery shop POS software is the one built for many small pieces in many designs. Check five things: designs and colours as separate items, fast billing by scan or search, small barcode tags, udhaar on a ledger, and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best artificial jewellery shop POS software in Pakistan?', 'The best artificial jewellery shop POS software is the one built for many small pieces in many designs. Check five things: designs and colours as separate items, fast billing by scan or search, small barcode tags, udhaar on a ledger, and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I keep stock for each design and colour?', 'Yes. In our artificial jewellery shop POS software, use the variant generator: pick the piece, its designs and its colours, and every item is made in one go with its own code, stock and price.'),
         ('Can I print barcode labels for small pieces?', 'Yes, on Enterprise and Custom plans. Print small labels with the code, design, colour and price, then scan them at the counter with a USB scanner or the phone camera.'),
         ('How fast is billing in the Eid rush?', 'Scan the tag or search by design, colour or code and the item is on the bill. Hold a bill if a customer is still choosing and serve the next one. Print the bill or send it on WhatsApp.'),
@@ -145,11 +145,11 @@ c = dict(
         ('Do you have a ready list of artificial jewellery?', 'No. Your shop starts with an empty list, you add only what you sell. The variant generator makes every design and colour in one go, and you can also add products from the full UpTrendPos catalog of 38,000+ products by name or category.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar (and qist) need internet so every device shows the same balance.'),
         ('I sell gold jewellery. Which page is for me?', 'See our <a href="https://uptrendpos.com/industries/jewellery-shop-pos-software/">jewellery shop POS software</a> for gold shops. This page is for artificial and imitation jewellery.'),
-        ('How much does artificial jewellery shop POS software cost?', 'It depends on your plan. Premium suits one shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does artificial jewellery shop POS software cost?', 'It depends on your plan. Premium suits one shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('jewellery-shop-pos-software', 'Jewellery &amp; Gold Shop'), ('cosmetics-store-pos-software', 'Cosmetics &amp; Beauty Store'),
              ('perfume-shop-pos-software', 'Perfume &amp; Attar Shop'), ('bag-shop-pos-software', 'Bags &amp; Luggage')],
-    final=('Try UpTrendPos in your artificial jewellery shop for 14 days',
+    final=('Try UpTrendPos in your artificial jewellery shop for 7 days',
            'Add your first designs today and make your first bill, or message us and we will set it up with you. Simple artificial jewellery shop POS software, made for Pakistani imitation jewellery shops.'),
 )
 render(c)

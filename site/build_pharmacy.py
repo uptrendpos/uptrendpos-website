@@ -48,7 +48,7 @@ hero = f'''  <section class="utp-hero" aria-labelledby="utp-h1">
         <h1 id="utp-h1">Pharmacy POS software for <span class="utp-hl">medical stores.</span></h1>
         <p class="utp-lead">UpTrendPos is pharmacy POS software for medical stores in Pakistan. Pick from 17,000+ medicines already loaded, search by salt or brand, sell by box, strip or tablet, and get batch and expiry alerts. Billing keeps running when the internet is off.</p>
         <div class="utp-cta">
-          <a class="utp-btn utp-btn-primary" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="ph_hero_trial">Start 14-day free trial</a>
+          <a class="utp-btn utp-btn-primary" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="ph_hero_trial">Start 7-day free trial</a>
           <a class="utp-btn utp-btn-ghost" href="{wa('Hi, I want a free demo of UpTrendPos for my medical store')}" target="_blank" rel="noopener" data-track="ph_hero_whatsapp"><svg width="20" height="20" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg> Free pharmacy demo</a>
         </div>
         <p class="utp-smart-note">Medicine catalog in every plan · Demo in Urdu or English</p>
@@ -276,7 +276,7 @@ plans = section('', 'utp-plans', 'utp-plan-title',
 ''')
 
 faqs = [
-    ('Which is the best pharmacy POS software in Pakistan?', 'The best pharmacy POS software is the one built for a medical store counter. Check five things: medicines already loaded, salt search, batch and expiry alerts, box-strip-tablet selling and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+    ('Which is the best pharmacy POS software in Pakistan?', 'The best pharmacy POS software is the one built for a medical store counter. Check five things: medicines already loaded, salt search, batch and expiry alerts, box-strip-tablet selling and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
     ('Do I need to type all medicines myself?', 'No. UpTrendPos has a global catalog of 17,000+ medicines in every plan. Search, tick the ones you sell and add them to your pharmacy. If a product is missing, add it yourself in a minute. You then set your own prices and stock. A pharmacy can also add baby, grocery and general-store items from the full UpTrendPos catalog of 38,000+ products.'),
     ('Does the medicine catalog include prices?', 'No. The catalog gives you medicine names, form, strength and salt. You set your own cost, sale price, stock, packing, rack and expiry when stock comes in through a GRN. On your next order, your saved rack and alert levels come back as they were.'),
     ('Can I search medicines by salt or generic name?', 'Yes. Type the salt and you see every brand you have with that salt, with strength, form and stock. You can also search by brand, batch or barcode. This helps when a customer asks for a cheaper brand of the same medicine.'),
@@ -285,7 +285,7 @@ faqs = [
     ('How are prescription and controlled medicines handled?', 'Prescription medicines show a red Rx badge on search and on the bill. Controlled medicines need the cashier to tick "prescription checked" before the bill can be saved. This keeps the counter fast while making sure the check is never skipped.'),
     ('Does it work during load-shedding?', 'Yes. Our pharmacy POS software keeps cash billing running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later, with no double entries. Udhaar sales need internet so every device shows the same khata.'),
     ('Does UpTrendPos support FBR invoices for pharmacies?', 'Yes, on the Enterprise and Custom plans. If your pharmacy is a Tier-1 retailer, add your FBR details once. Each bill then prints an FBR invoice number, QR code and the Re 1 POS fee. Pharmacies not on FBR POS can keep it off.'),
-    ('How much does pharmacy POS software cost?', 'It depends on your plan. Premium suits one medical store, Enterprise suits a busy pharmacy and Custom suits a small chain. Every plan includes the medicine catalog. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+    ('How much does pharmacy POS software cost?', 'It depends on your plan. Premium suits one medical store, Enterprise suits a busy pharmacy and Custom suits a small chain. Every plan includes the medicine catalog. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
     ('Can I run more than one counter or branch?', 'Yes. UpTrendPos pharmacy POS software lets you add counters with separate staff logins, and each branch keeps its own stock, batches and prices. The owner sees every branch from one account. Branch and user limits depend on your plan, and we can quote for more.'),
 ]
 faqsec = section(' utp-alt', 'utp-faq', 'utp-faq-title',
@@ -308,10 +308,10 @@ related = section('', '', 'utp-rel-title',
 final = f'''  <section class="utp-final" aria-labelledby="utp-final-title">
     <div class="utp-wrap">
       <div class="utp-final-box">
-        <h2 id="utp-final-title">Try UpTrendPos in your medical store for 14 days</h2>
+        <h2 id="utp-final-title">Try UpTrendPos in your medical store for 7 days</h2>
         <p>Pick your medicines from the catalog today and make your first bill, or message us and we will set it up with you. Simple pharmacy POS software, made for Pakistani medical stores.</p>
         <div class="utp-cta">
-          <a class="utp-btn utp-btn-primary" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="ph_final_trial">Start 14-day free trial</a>
+          <a class="utp-btn utp-btn-primary" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="ph_final_trial">Start 7-day free trial</a>
           <a class="utp-btn utp-btn-ghost" href="https://uptrendpos.com/contact-us/" data-track="ph_final_contact">Book a free demo</a>
         </div>
         <div class="utp-contact">

@@ -133,7 +133,7 @@ c = dict(
             ('Enterprise', 'A busy shoe shop', 'Up to 2 branches and 6 users. Adds box labels, FBR invoices, staff commission, profit reports and audit trail.'),
             ('Custom', 'A shoe store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Shoe store POS software questions', [
-        ('Which is the best shoe store POS software in Pakistan?', 'The best shoe store POS software is the one built for size runs, not groceries. Check five things: pairs per size, quick item setup, box labels, easy size swaps and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best shoe store POS software in Pakistan?', 'The best shoe store POS software is the one built for size runs, not groceries. Check five things: pairs per size, quick item setup, box labels, easy size swaps and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I see how many pairs are left in each size?', 'Yes. Each size and colour of a design is its own item with its own pairs in stock. Open the design and you see every size, and low stock alerts tell you which sizes to reorder.'),
         ('Do I have to type every size myself?', 'No. Type the article once, pick its colours and sizes, and the variant generator makes every item in one go. A design in 2 colours and 6 sizes becomes 12 items in a minute.'),
         ('Does it come with a ready product list?', 'Yes. 200+ shoe and footwear products are already loaded. Search, tick the ones you sell, add them and set your own stock and price. Designs change every season, so add your own seasonal designs too; the variant generator makes every size and colour in one go.' + ' You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
@@ -142,11 +142,11 @@ c = dict(
         ('Can I sell socks, polish and other small items?', 'Yes. Socks, polish, insoles and laces sell like normal items on the same bill, by barcode or quick search.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
         ('Can salesmen get commission?', 'Yes, on the Enterprise and Custom plans. Set commission rules for each salesman and see the commission report. Each salesman also gets their own login, so every bill shows who sold it.'),
-        ('How much does shoe store POS software cost?', 'It depends on your plan. Premium suits one shoe shop, Enterprise suits a busy shop that needs box labels, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does shoe store POS software cost?', 'It depends on your plan. Premium suits one shoe shop, Enterprise suits a busy shop that needs box labels, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own pairs in stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('clothing-store-pos-software', 'Clothing &amp; Garments'), ('bag-shop-pos-software', 'Bags &amp; Luggage'),
              ('sports-shop-pos-software', 'Sports Goods'), ('undergarments-shop-pos-software', 'Undergarments &amp; Hosiery')],
-    final=('Try UpTrendPos in your shoe shop for 14 days',
+    final=('Try UpTrendPos in your shoe shop for 7 days',
            'Make your first design in every size today and print your first bill, or message us and we will set it up with you. Simple shoe store POS software, made for Pakistani footwear shops.'),
 )
 render(c)

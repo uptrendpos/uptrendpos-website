@@ -140,7 +140,7 @@ c = dict(
             ('Enterprise', 'A busy tyre dealer', 'Up to 2 branches and 6 users. Adds qist with guarantor, FBR invoices, barcode labels, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A tyre chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Tyre shop POS software questions', [
-        ('Which is the best tyre shop POS software in Pakistan?', 'The best tyre shop POS software is the one built for the way a tyre shop sells. Check five things: stock for every size and rim, warranty notes on the bill, udhaar for transporters and mechanics, qist for big orders, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best tyre shop POS software in Pakistan?', 'The best tyre shop POS software is the one built for the way a tyre shop sells. Check five things: stock for every size and rim, warranty notes on the bill, udhaar for transporters and mechanics, qist for big orders, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I keep stock for each tyre size and rim?', 'Yes. Use the variant generator: pick the tyre, its sizes (width and ratio) and its rim sizes, and every item is made in one go with its own code, stock and price.'),
         ('Can I write the warranty on the bill?', 'Yes. Write the warranty note on the sale in your own words. It shows on the thermal receipt or A4 invoice, and on the bill you send on WhatsApp as a picture or PDF.'),
         ('Can I check warranty by the tyre serial number?', 'Not for tyre shops today. Warranty notes are written on the sale, and you find the bill on the customer\'s ledger by name or phone number.'),
@@ -149,11 +149,11 @@ c = dict(
         ('Can I take the old tyre back and give a discount?', 'Old tyre trade-in is coming soon. Today you can give a discount on the bill.'),
         ('Do you have a ready list of tyres?', 'No. Your shop starts with an empty list and you add only the tyres you sell. The variant generator makes every size and rim in one go. You can also add products from the full UpTrendPos catalog of 38,000+ products by name or category.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
-        ('How much does tyre shop POS software cost?', 'It depends on your plan. Premium suits one tyre shop, Enterprise suits a busy dealer, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does tyre shop POS software cost?', 'It depends on your plan. Premium suits one tyre shop, Enterprise suits a busy dealer, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('auto-parts-pos-software', 'Auto Spare Parts'), ('battery-shop-pos-software', 'Battery Shop'),
              ('vehicle-showroom-software', 'Vehicle Showroom'), ('hardware-store-pos-software', 'Hardware &amp; Sanitary')],
-    final=('Try UpTrendPos in your tyre shop for 14 days',
+    final=('Try UpTrendPos in your tyre shop for 7 days',
            'Add your first tyres today and make your first bill, or message us and we will set it up with you. Simple tyre shop POS software, made for Pakistani tyre shops.'),
 )
 render(c)

@@ -143,7 +143,7 @@
       ['Going live without testing', 'shield', 'b', 'Sandbox mode', 'Test bills before production', 'Sandbox mode'],
       ['Two counters, one setup', 'store', 'g', 'Own POS ID per counter', 'Separate FBR details for each', 'POS ID per counter'],
       ['Who changed the bill?', 'doc', 'y', 'Audit trail', 'Deletes and changes logged', 'Audit trail']],
-    pricing: [['Paying before you try', 'check', 'b', '14-day free trial', 'Test every feature first', '14-day trial'],
+    pricing: [['Paying before you try', 'check', 'b', '7-day free trial', 'Test every feature first', '7-day trial'],
       ['Limits on bills', 'doc', 'g', 'Unlimited invoices', 'On every plan', 'Unlimited bills'],
       ['Stuck on a small plan', 'layers', 'y', 'Move up any time', 'Your data stays the same', 'Move up any time'],
       ['Staff commission done by hand', 'users', 'b', 'Staff commission', 'Now on Enterprise and Custom', 'Staff commission'],
@@ -525,8 +525,8 @@
       if (os === 'windows' && L.exe) target = 'exe';
       var smart = document.getElementById('utp-smart'), smartText = document.getElementById('utp-smart-text'), smartNote = document.getElementById('utp-smart-note');
       if (smart && smartText) {
-        if (target === 'apk') { smart.href = L.apk; smartText.textContent = 'Download for Android'; if (smartNote) smartNote.textContent = (meta(L.apkVersion, L.apkSize) || 'Android APK') + ' · 14-day free trial'; }
-        else if (target === 'exe') { smart.href = L.exe; smartText.textContent = 'Download for Windows'; if (smartNote) smartNote.textContent = (meta(L.exeVersion, L.exeSize) || 'Windows 10 / 11') + ' · 14-day free trial'; }
+        if (target === 'apk') { smart.href = L.apk; smartText.textContent = 'Download for Android'; if (smartNote) smartNote.textContent = (meta(L.apkVersion, L.apkSize) || 'Android APK') + ' · 7-day free trial'; }
+        else if (target === 'exe') { smart.href = L.exe; smartText.textContent = 'Download for Windows'; if (smartNote) smartNote.textContent = (meta(L.exeVersion, L.exeSize) || 'Windows 10 / 11') + ' · 7-day free trial'; }
       }
       if (os === 'ios') { var ios = document.getElementById('utp-ios'); if (ios) ios.classList.add('is-rec'); }
       else {

@@ -135,7 +135,7 @@ c = dict(
             ('Enterprise', 'A busy garment shop', 'Up to 2 branches and 6 users. Adds barcode tags, FBR invoices, staff commission, profit reports and audit trail.'),
             ('Custom', 'A garments chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Clothing store POS software questions', [
-        ('Which is the best clothing store POS software in Pakistan?', 'The best clothing store POS software is the one built for sizes and colours, not groceries. Check five things: stock per size and colour, quick item setup, barcode tags, easy exchanges and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best clothing store POS software in Pakistan?', 'The best clothing store POS software is the one built for sizes and colours, not groceries. Check five things: stock per size and colour, quick item setup, barcode tags, easy exchanges and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I keep stock for every size and colour?', 'Yes. Each size and colour of a design is its own item with its own stock and price. When you sell a medium in teal, only that item goes down, so you always know which sizes are left.'),
         ('Do I have to type every size of a design myself?', 'No. Type the article once, pick its colours and sizes, and the variant generator makes every item in one go. A design in 3 colours and 4 sizes becomes 12 items in a minute.'),
         ('Does it come with a ready product list?', 'Yes. 950+ clothing products are already loaded. Search, tick the ones you sell, add them and set your own stock and price. Clothing changes every season, so add your own new designs too; the variant generator makes every size and colour in one go.' + ' You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
@@ -145,10 +145,10 @@ c = dict(
         ('Can I give a discount or run a sale?', 'Yes, you can give a discount on any bill today. Season sale offers, such as a percent off or buy 2 get 1 on chosen dates, are coming soon.'),
         ('Can salesmen get commission?', 'Yes, on the Enterprise and Custom plans. Set commission rules for each salesman and see the commission report. Each salesman also gets their own login, so every bill shows who sold it.'),
         ('I also stitch clothes. Is this the right software?', 'This page is for shops that sell ready-made and unstitched clothes. If most of your work is stitching orders with customer sizes, see our <a href="https://uptrendpos.com/industries/tailor-shop-pos-software/">tailor shop POS software</a>.'),
-        ('How much does clothing store POS software cost?', 'It depends on your plan. Premium suits one clothing shop, Enterprise suits a busy shop that needs barcode tags, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.')]),
+        ('How much does clothing store POS software cost?', 'It depends on your plan. Premium suits one clothing shop, Enterprise suits a busy shop that needs barcode tags, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.')]),
     related=[('tailor-shop-pos-software', 'Tailoring &amp; Boutique'), ('shoe-store-pos-software', 'Shoes &amp; Footwear'),
              ('undergarments-shop-pos-software', 'Undergarments &amp; Hosiery'), ('cosmetics-store-pos-software', 'Cosmetics &amp; Beauty Store')],
-    final=('Try UpTrendPos in your clothing shop for 14 days',
+    final=('Try UpTrendPos in your clothing shop for 7 days',
            'Make your first design in every size today and print your first bill, or message us and we will set it up with you. Simple clothing store POS software, made for Pakistani garment shops.'),
 )
 render(c)

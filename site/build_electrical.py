@@ -132,7 +132,7 @@ c = dict(
             ('Enterprise', 'A busy electrical store', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, staff commission, profit reports and audit trail.'),
             ('Custom', 'An electrical store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Electrical store POS software questions', [
-        ('Which is the best electrical store POS software in Pakistan?', 'The best electrical store POS software is the one built for coils and boxes, not groceries. Check five things: wire by the meter, box to piece selling, A4 quotes, udhaar for electricians and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best electrical store POS software in Pakistan?', 'The best electrical store POS software is the one built for coils and boxes, not groceries. Check five things: wire by the meter, box to piece selling, A4 quotes, udhaar for electricians and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I buy wire by the coil and sell it by the meter?', 'Yes. Set the coil size once, such as 90 meters. When you sell 15 meters, the stock drops by 15 meters, and the cost per meter is worked out for you.'),
         ('Can I sell switches and bulbs from a box one by one?', 'Yes. Set the box or carton size once. Sell by the piece or the full box, and the stock always shows the right number of pieces.'),
         ('Can I give electricians a quotation?', 'Yes. Make an A4 quotation with your logo and send it on WhatsApp. When the electrician comes back, convert it to a sale in one tap.'),
@@ -141,11 +141,11 @@ c = dict(
         ('How do I handle fused bulbs and broken fittings?', 'Record them as damage. The stock goes down and the cost is recorded, so your stock count and profit stay right. Items that go back to the supplier are recorded as a return.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
         ('I also sell solar panels and inverters. Which page is for me?', 'If solar is your main business, see our <a href="https://uptrendpos.com/industries/solar-shop-pos-software/">solar shop POS software</a>, which comes with a ready catalog and serial tracking.'),
-        ('How much does electrical store POS software cost?', 'It depends on your plan. Premium suits one electrical shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does electrical store POS software cost?', 'It depends on your plan. Premium suits one electrical shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('solar-shop-pos-software', 'Solar Shop'), ('electronics-store-pos-software', 'Electronics &amp; CCTV Shop'),
              ('hardware-store-pos-software', 'Hardware &amp; Sanitary'), ('battery-shop-pos-software', 'Battery Shop')],
-    final=('Try UpTrendPos in your electrical shop for 14 days',
+    final=('Try UpTrendPos in your electrical shop for 7 days',
            'Add your first coil and your first box today and make your first bill, or message us and we will set it up with you. Simple electrical store POS software, made for Pakistani electric shops.'),
 )
 render(c)

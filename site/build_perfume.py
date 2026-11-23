@@ -140,7 +140,7 @@ c = dict(
             ('Enterprise', 'A busy perfume shop', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A perfume shop chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Perfume shop POS software questions', [
-        ('Which is the best perfume shop POS software in Pakistan?', 'The best perfume shop POS software is the one built for the way a perfume shop sells. Check five things: a ready product list, stock for every bottle size, loose attar by the ml, tester records, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best perfume shop POS software in Pakistan?', 'The best perfume shop POS software is the one built for the way a perfume shop sells. Check five things: a ready product list, stock for every bottle size, loose attar by the ml, tester records, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all my perfumes myself?', 'No. UpTrendPos has 300+ perfume and attar products already loaded. Search, tick the ones you sell and add them to your shop. If a product is missing, add it yourself in seconds. You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Does the catalog come with prices and stock?', 'No. The catalog gives you the product names and details. You set your own stock and price, so your rates are always your own.'),
         ('Can I keep stock for each fragrance and bottle size?', 'Yes. The variant generator takes your fragrances and bottle sizes and makes every item in one go. Each item has its own stock and price, so 50 ml and 100 ml of the same oud never mix.'),
@@ -149,11 +149,11 @@ c = dict(
         ('Can I scan barcodes on perfume bottles?', 'Yes. Use a USB barcode scanner or your phone camera. The item and its fixed price come on the bill. Barcode label printing for your own bottles is on Enterprise and Custom plans.'),
         ('Can regular buyers and shops buy on udhaar?', 'Yes. The unpaid part goes on the customer ledger as udhaar. Every later payment sits on the same ledger, and you can send a statement as PDF, print or WhatsApp.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
-        ('How much does perfume shop POS software cost?', 'It depends on your plan. Premium suits one perfume shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does perfume shop POS software cost?', 'It depends on your plan. Premium suits one perfume shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('cosmetics-store-pos-software', 'Cosmetics &amp; Beauty Store'), ('jewellery-shop-pos-software', 'Jewellery &amp; Gold Shop'),
              ('watch-shop-pos-software', 'Watch Shop'), ('bag-shop-pos-software', 'Bags &amp; Luggage')],
-    final=('Try UpTrendPos in your perfume shop for 14 days',
+    final=('Try UpTrendPos in your perfume shop for 7 days',
            'Pick your products from the 300+ catalog today and make your first bill, or message us and we will set it up with you. Simple perfume shop POS software, made for Pakistani perfume and attar shops.'),
 )
 render(c)

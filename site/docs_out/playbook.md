@@ -84,7 +84,7 @@ Status label decides wording (LIVE = present tense; LAUNCH = "New / with the lau
 | Restaurant order | Order (counter / waiter / QR) -> Kitchen ticket -> Ready -> Bill | Late orders change colour on the Order Control board | LAUNCH additions |
 | Repair job | Job card -> Add parts + labour -> Ready -> Invoice -> Warranty | Parts used leave stock; warranty is registered with the sale | LAUNCH |
 | Salon booking | Booking or walk-in token -> In service -> Done -> Bill | Staff commission and no-show rate tracked | LAUNCH |
-| Free trial | Business details -> Category -> Plan -> 14-day trial -> Buy | Data is never deleted; buying opens everything as it was | LAUNCH |
+| Free trial | Business details -> Category -> Plan -> 7-day trial -> Buy | Data is never deleted; buying opens everything as it was | LAUNCH |
 | Online store order | Customer orders -> Confirm by WhatsApp -> Pack -> Courier -> Delivered | COD money tracked until it reaches your bank (Cash Truth) | NEXT - "Coming soon" |
 | Order booker / van sale | Route day -> Order booked -> Load sheet -> Deliver -> Day-end settlement | Field cash collected offline, settled at day end | NEXT - "Coming soon" |
 

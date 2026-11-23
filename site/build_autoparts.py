@@ -135,7 +135,7 @@ c = dict(
             ('Enterprise', 'A busy auto parts store', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, staff commission, profit reports and audit trail.'),
             ('Custom', 'An auto parts chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Auto parts POS software questions', [
-        ('Which is the best auto parts POS software in Pakistan?', 'The best auto parts POS software is the one built for thousands of parts with codes, not a short grocery list. Check five things: search by name or code, supplier ledgers, udhaar for mechanics, a demand list and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best auto parts POS software in Pakistan?', 'The best auto parts POS software is the one built for thousands of parts with codes, not a short grocery list. Check five things: search by name or code, supplier ledgers, udhaar for mechanics, a demand list and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I find a part by its code?', 'Yes. Save each part with its own code. Type the code or a few letters of the name, or scan the barcode, and the part shows with its price and stock.'),
         ('Can it tell me which part fits which vehicle?', 'No. UpTrendPos finds parts by name, part code or barcode. You can put the vehicle name in the part name, such as "Clutch Plate 70cc", so a search for "70cc" shows those parts.'),
         ('Does this auto parts shop software keep udhaar for mechanics?', 'Yes. Every mechanic or workshop gets a khata. Credit sales and payments go on the ledger, and you can send the statement on WhatsApp.'),
@@ -144,11 +144,11 @@ c = dict(
         ('Can I sell loose oil by the litre and plugs one by one?', 'Yes. Set the drum or box size once. Sell by the litre or piece, and the stock always shows the right amount.'),
         ('Do you have a ready list of auto parts?', 'No. Your shop starts with an empty list and you add the parts you sell, with their codes. The variant generator makes every grade and pack size of an oil in one go.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
-        ('How much does auto parts POS software cost?', 'It depends on your plan. Premium suits one auto parts shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>. If you sell bikes or cars, see our <a href="https://uptrendpos.com/industries/vehicle-showroom-software/">vehicle showroom software</a>.'),
+        ('How much does auto parts POS software cost?', 'It depends on your plan. Premium suits one auto parts shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>. If you sell bikes or cars, see our <a href="https://uptrendpos.com/industries/vehicle-showroom-software/">vehicle showroom software</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('tyre-shop-pos-software', 'Tyre Shop'), ('battery-shop-pos-software', 'Battery Shop'),
              ('vehicle-showroom-software', 'Vehicle Showroom'), ('hardware-store-pos-software', 'Hardware &amp; Sanitary')],
-    final=('Try UpTrendPos in your auto parts shop for 14 days',
+    final=('Try UpTrendPos in your auto parts shop for 7 days',
            'Add your first parts today and make your first bill, or message us and we will set it up with you. Simple auto parts POS software, made for Pakistani spare parts shops.'),
 )
 render(c)

@@ -208,11 +208,11 @@
         if (target === 'apk') {
           smart.href = L.apk;
           smartText.textContent = 'Download for Android';
-          if (smartNote) smartNote.textContent = (meta(L.apkVersion, L.apkSize) || 'Android APK') + ' · 14-day free trial';
+          if (smartNote) smartNote.textContent = (meta(L.apkVersion, L.apkSize) || 'Android APK') + ' · 7-day free trial';
         } else if (target === 'exe') {
           smart.href = L.exe;
           smartText.textContent = 'Download for Windows';
-          if (smartNote) smartNote.textContent = (meta(L.exeVersion, L.exeSize) || 'Windows 10 / 11') + ' · 14-day free trial';
+          if (smartNote) smartNote.textContent = (meta(L.exeVersion, L.exeSize) || 'Windows 10 / 11') + ' · 7-day free trial';
         }
       }
       if (os === 'ios') {

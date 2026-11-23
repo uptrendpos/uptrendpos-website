@@ -94,7 +94,7 @@ def render(c):
         <h1 id="utp-h1">{c['h1']}</h1>
         <p class="utp-lead">{c['lead']}</p>
         <div class="utp-cta">
-          <a class="utp-btn utp-btn-primary" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="{k}_hero_trial">Start 14-day free trial</a>
+          <a class="utp-btn utp-btn-primary" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="{k}_hero_trial">Start 7-day free trial</a>
           <a class="utp-btn utp-btn-ghost" href="{wa(c['wa_demo'])}" target="_blank" rel="noopener" data-track="{k}_hero_whatsapp">{WA_ICON} {c['demo_btn']}</a>
         </div>
         <p class="utp-smart-note">{c['smart_note']}</p>
@@ -199,7 +199,7 @@ def render(c):
         <h2 id="utp-final-title">{fn[0]}</h2>
         <p>{fn[1]}</p>
         <div class="utp-cta">
-          <a class="utp-btn utp-btn-primary" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="{k}_final_trial">Start 14-day free trial</a>
+          <a class="utp-btn utp-btn-primary" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="{k}_final_trial">Start 7-day free trial</a>
           <a class="utp-btn utp-btn-ghost" href="https://uptrendpos.com/contact-us/" data-track="{k}_final_contact">Book a free demo</a>
         </div>
         <div class="utp-contact">

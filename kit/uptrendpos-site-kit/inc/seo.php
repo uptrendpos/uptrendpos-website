@@ -79,7 +79,7 @@ function utpk_llms_txt() {
 	$txt .= "## Main pages\n";
 	$core = array(
 		array( '/', 'Home', 'POS software in Pakistan: overview, features, plans, FAQ' ),
-		array( '/pos-software-pricing/', 'Pricing', 'Premium, Enterprise and Custom plans in PKR, 14-day free trial, plan comparison' ),
+		array( '/pos-software-pricing/', 'Pricing', 'Premium, Enterprise and Custom plans in PKR, 7-day free trial, plan comparison' ),
 		array( '/download-pos-software/', 'Download', 'Windows app, Android APK and web app' ),
 		array( '/fbr-pos-integration/', 'FBR POS integration', 'How FBR invoice numbers and QR codes work in UpTrendPos' ),
 		array( '/industries/', 'Industries', 'POS software by business type' ),
@@ -104,7 +104,7 @@ function utpk_llms_txt() {
 		$txt .= "\n## Business types\n" . $types;
 	}
 	$txt .= "\n## Policies\n- [Privacy Policy](" . home_url( '/privacy-policy/' ) . ")\n- [Terms and Conditions](" . home_url( '/terms-and-conditions/' ) . ")\n";
-	$txt .= "\n## Facts\n- Free trial: 14 days. No free plan.\n- Plans (monthly, PKR): Premium 1,000 (1 branch, 3 users), Enterprise 2,000 (2 branches, 6 users), Custom 5,000 (3 branches, 9 users). Unlimited invoices on all plans. Yearly billing: 10% off the first year.\n- Ready product catalogs (no prices or stock; the shop ticks what it sells and sets its own price): pharmacy 17,000+ medicines, grocery 7,000+, beauty and cosmetics 5,500+, crockery and household 2,000+, electronics, solar and CCTV 1,100+, toys and gifts 1,000+, clothing 950+, mobile and computer 700+, bags 680+, undergarments 400+, baby and diaper 350+, perfume 300+, sports 250+, shoes 200+, stationery 200+, watches 150+. Any shop can add products from the full UpTrendPos catalog of 38,000+ products by name or category.\n- FBR invoices, installments, barcode labels, staff commission, profit and loss and audit trail: Enterprise and Custom plans. Staff attendance and salaries: Custom plan.\n- Web app: " . $b['app'] . "\n";
+	$txt .= "\n## Facts\n- Free trial: 7 days. No free plan.\n- Plans (monthly, PKR): Premium 1,000 (1 branch, 3 users), Enterprise 2,000 (2 branches, 6 users), Custom 5,000 (3 branches, 9 users). Unlimited invoices on all plans. Yearly billing: 10% off the first year.\n- Ready product catalogs (no prices or stock; the shop ticks what it sells and sets its own price): pharmacy 17,000+ medicines, grocery 7,000+, beauty and cosmetics 5,500+, crockery and household 2,000+, electronics, solar and CCTV 1,100+, toys and gifts 1,000+, clothing 950+, mobile and computer 700+, bags 680+, undergarments 400+, baby and diaper 350+, perfume 300+, sports 250+, shoes 200+, stationery 200+, watches 150+. Any shop can add products from the full UpTrendPos catalog of 38,000+ products by name or category.\n- FBR invoices, installments, barcode labels, staff commission, profit and loss and audit trail: Enterprise and Custom plans. Staff attendance and salaries: Custom plan.\n- Web app: " . $b['app'] . "\n";
 	return $txt;
 }
 

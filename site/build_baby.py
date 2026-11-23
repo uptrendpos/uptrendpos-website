@@ -133,7 +133,7 @@ c = dict(
             ('Enterprise', 'A busy baby store', 'Up to 2 branches and 6 users. Adds barcode labels, FBR invoices, staff commission, profit reports and audit trail.'),
             ('Custom', 'A baby store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Baby store POS software questions', [
-        ('Which is the best baby store POS software in Pakistan?', 'The best baby store POS software is the one built for packs and sizes, not just bills. Check five things: pack and piece selling, stock for every diaper size, batch and expiry alerts, barcode billing and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best baby store POS software in Pakistan?', 'The best baby store POS software is the one built for packs and sizes, not just bills. Check five things: pack and piece selling, stock for every diaper size, batch and expiry alerts, barcode billing and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I sell diapers by the pack and by the piece?', 'Yes. Set the pack size once, such as 40 diapers. Sell a full pack or 5 loose pieces on the same bill. Stock is counted in pieces, so packs and loose pieces always add up.'),
         ('Can I keep stock for every diaper size?', 'Yes. Each size is its own item with its own stock and price. The variant generator makes all sizes of a product in one go, and low stock alerts show which sizes to reorder.'),
         ('How does this diaper shop software track expiry?', 'Enter the batch and expiry date when baby food, formula or wipes come in. The dashboard shows expiring and expired items, and the batch-wise report lists every batch with its date. Sell the oldest stock first, or return it to the supplier before it becomes a loss.'),
@@ -142,11 +142,11 @@ c = dict(
         ('How do I handle damaged packs?', 'Record torn or damaged packs as damage. The stock goes down and the cost is recorded, so your stock count and profit stay right.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
         ('Can I give regular families udhaar?', 'Yes. Every customer can have a khata. Credit sales and payments go on the ledger, and you can send the statement on WhatsApp.'),
-        ('How much does baby store POS software cost?', 'It depends on your plan. Premium suits one baby store, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does baby store POS software cost?', 'It depends on your plan. Premium suits one baby store, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock and batches. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('cosmetics-store-pos-software', 'Cosmetics &amp; Beauty Store'), ('pharmacy-pos-software', 'Pharmacy &amp; Medical Store'),
              ('grocery-store-pos-software', 'Grocery &amp; Kiryana Store'), ('toy-shop-pos-software', 'Toys &amp; Gift Shop')],
-    final=('Try UpTrendPos in your baby store for 14 days',
+    final=('Try UpTrendPos in your baby store for 7 days',
            'Add your first diapers by pack and piece today and make your first bill, or message us and we will set it up with you. Simple baby store POS software, made for Pakistani baby shops.'),
 )
 render(c)

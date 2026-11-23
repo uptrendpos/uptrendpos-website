@@ -140,7 +140,7 @@ c = dict(
             ('Enterprise', 'A busy watch shop', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, qist, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A watch shop chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Watch shop POS software questions', [
-        ('Which is the best watch shop POS software in Pakistan?', 'The best watch shop POS software is the one built for the way a watch shop sells. Check five things: a ready product list, stock for every model and colour, warranty notes on the sale, barcode billing, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best watch shop POS software in Pakistan?', 'The best watch shop POS software is the one built for the way a watch shop sells. Check five things: a ready product list, stock for every model and colour, warranty notes on the sale, barcode billing, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all my watches myself?', 'No. UpTrendPos has 150+ watch products already loaded. Search, tick the ones you sell and add them to your shop. If a product is missing, add it yourself in seconds. You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Does the catalog come with prices and stock?', 'No. The catalog gives you the product names and details. You set your own stock and price, so your rates are always your own.'),
         ('Can I keep stock for each model and dial colour?', 'Yes. The variant generator takes your models and colours and makes every item in one go. Each item has its own stock and price, so the black and the blue dial of the same model never mix.'),
@@ -149,11 +149,11 @@ c = dict(
         ('Can I scan barcodes on watch boxes?', 'Yes. Use a USB barcode scanner or your phone camera. The item and its fixed price come on the bill. Barcode label printing for pieces with no barcode is on Enterprise and Custom plans.'),
         ('Can regular buyers and shops buy on udhaar?', 'Yes. The unpaid part goes on the customer ledger as udhaar. Every later payment sits on the same ledger, and you can send a statement as PDF, print or WhatsApp. Customer installments (qist) with a guarantor are on Enterprise and Custom plans.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
-        ('How much does watch shop POS software cost?', 'It depends on your plan. Premium suits one watch shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does watch shop POS software cost?', 'It depends on your plan. Premium suits one watch shop, Enterprise suits a busy shop, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('jewellery-shop-pos-software', 'Jewellery &amp; Gold Shop'), ('mobile-shop-pos-software', 'Mobile &amp; Computer Shop'),
              ('perfume-shop-pos-software', 'Perfume &amp; Attar Shop'), ('bag-shop-pos-software', 'Bags &amp; Luggage')],
-    final=('Try UpTrendPos in your watch shop for 14 days',
+    final=('Try UpTrendPos in your watch shop for 7 days',
            'Pick your products from the 150+ catalog today and make your first bill, or message us and we will set it up with you. Simple watch shop POS software, made for Pakistani watch shops.'),
 )
 render(c)

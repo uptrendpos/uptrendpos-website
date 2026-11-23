@@ -139,7 +139,7 @@ c = dict(
             ('Enterprise', 'A busy glass dealer', 'Up to 2 branches and 6 users. Adds FBR invoices, qist with guarantor, barcode labels, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A glass shop chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Glass shop POS software questions', [
-        ('Which is the best glass shop POS software in Pakistan?', 'The best glass shop POS software is the one built for the way a glass shop works. Check five things: A4 quotations that turn into a sale, square feet and foot units, advance on the customer ledger, udhaar for contractors, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best glass shop POS software in Pakistan?', 'The best glass shop POS software is the one built for the way a glass shop works. Check five things: A4 quotations that turn into a sale, square feet and foot units, advance on the customer ledger, udhaar for contractors, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Can I send a quotation before the final bill?', 'Yes. Make an A4 quotation with your logo and send it on WhatsApp. When the customer agrees, convert it to a sale in one tap, so you do not type the items again.'),
         ('Can I sell glass by the square foot?', 'Yes. Set the unit to square feet for glass, feet for aluminium sections and pieces for fittings. All three can be on one bill, and stock drops in the unit you sell.'),
         ('Does it work out square feet from width and height?', 'No. You enter the square feet on the bill yourself. UpTrendPos does not calculate sizes or plan cutting from a sheet.'),
@@ -148,11 +148,11 @@ c = dict(
         ('What happens when a sheet breaks?', 'Record it as a damage entry, so stock stays right. If the sheet came faulty from the supplier, return it to the supplier and the supplier balance updates.'),
         ('Do you have a ready list of glass and aluminium items?', 'No. Your shop starts with an empty list and you add only what you sell. The variant generator makes, for example, every thickness in every shade in one go. You can also add products from the full UpTrendPos catalog of 38,000+ products by name or category.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
-        ('How much does glass shop POS software cost?', 'It depends on your plan. Premium suits one glass shop, Enterprise suits a busy dealer, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does glass shop POS software cost?', 'It depends on your plan. Premium suits one glass shop, Enterprise suits a busy dealer, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('hardware-store-pos-software', 'Hardware &amp; Sanitary'), ('paint-store-pos-software', 'Paint Store'),
              ('furniture-shop-pos-software', 'Furniture Shop'), ('electrical-store-pos-software', 'Electrical &amp; LED')],
-    final=('Try UpTrendPos in your glass shop for 14 days',
+    final=('Try UpTrendPos in your glass shop for 7 days',
            'Add your first glass and aluminium items today and send your first quote, or message us and we will set it up with you. Simple glass shop POS software, made for Pakistani glass and aluminium shops.'),
 )
 render(c)

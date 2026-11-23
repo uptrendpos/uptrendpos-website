@@ -37,7 +37,7 @@
 | Counters (devices) | 2 | more | most |
 | Cloud storage for photos and documents | 2 GB | 10 GB | 50 GB |
 | FBR Digital Invoicing | - | Included | Included |
-| Free trial | 14 days, all Premium features | 14 days, all Enterprise features | 14 days, all Custom features (or on request) |
+| Free trial | 7 days, all Premium features | 7 days, all Enterprise features | 7 days, all Custom features (or on request) |
 
 - **Each plan has its own free trial.** The old single "demo" is gone. During the trial the shop sees exactly the features of the plan it chose, so what they test is what they buy.
 - Reminders come before the trial ends. If the shop does not buy, the account pauses. **Data is never deleted**; buying the plan opens everything again as it was.

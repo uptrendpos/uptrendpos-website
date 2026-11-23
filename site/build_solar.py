@@ -146,7 +146,7 @@ c = dict(
             ('Enterprise', 'A busy solar dealer', 'Up to 2 branches and 6 users. Adds qist plans, FBR invoices, barcode labels, profit reports and audit trail.'),
             ('Custom', 'A solar business with branches', 'Up to 3 branches and 9 users, with every module, including staff attendance, salary and commission.')]),
     faq=('Solar shop POS software questions', [
-        ('Which is the best solar shop POS software in Pakistan?', 'The best solar shop POS software is the one built for costly units with serials and long warranties. Check five things: ready product list, serial tracking, warranty lookup, qist plans and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best solar shop POS software in Pakistan?', 'The best solar shop POS software is the one built for costly units with serials and long warranties. Check five things: ready product list, serial tracking, warranty lookup, qist plans and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all solar products myself?', 'No. UpTrendPos comes with 1,100+ solar, electronics and CCTV products. Search, tick the ones you sell and add them to your shop. If a model is missing, add it yourself in a minute. You set your own prices and stock.'),
         ('Does it save the serial number of every inverter and battery?', 'Yes. Save the serial number when the unit comes in on the GRN, and the same serial is picked when you sell it. Panels, inverters and batteries can be traced from the supplier to the customer at any time.'),
         ('How does warranty lookup work?', 'Type or scan the serial number of a sold unit. You see when it was sold, the bill number, the customer and the warranty. This helps you handle claims years after the sale.'),
@@ -155,11 +155,11 @@ c = dict(
         ('Can I sell wire by the meter?', 'Yes. Set the unit as meter for DC and AC wire, and sell any length on the bill. Structures can be sold by the set and small parts by the piece, all on the same bill.'),
         ('Does this solar shop software work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
         ('Can I sell to installers on udhaar?', 'Yes. Open a khata for each installer or regular buyer. Sales on udhaar and part payments go into his khata, and you can send the statement as a PDF or on WhatsApp at any time.'),
-        ('How much does solar shop POS software cost?', 'It depends on your plan. Premium suits one solar shop, Enterprise suits a busy dealer with qist, and Custom suits a business with branches. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does solar shop POS software cost?', 'It depends on your plan. Premium suits one solar shop, Enterprise suits a busy dealer with qist, and Custom suits a business with branches. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock and serials. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('electronics-store-pos-software', 'Electronics, Appliances &amp; CCTV'), ('battery-shop-pos-software', 'Battery Shop'),
              ('electrical-store-pos-software', 'Electrical &amp; LED Lighting'), ('hardware-store-pos-software', 'Hardware &amp; Sanitary')],
-    final=('Try UpTrendPos in your solar shop for 14 days',
+    final=('Try UpTrendPos in your solar shop for 7 days',
            'Pick your panels, inverters and batteries from the catalog today and make your first quote, or message us and we will set it up with you. Simple solar shop POS software, made for Pakistani solar businesses.'),
     custom=dict(items=items, quote=quote), order=ORDER,
 )

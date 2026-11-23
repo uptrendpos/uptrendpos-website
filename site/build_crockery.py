@@ -140,7 +140,7 @@ c = dict(
             ('Enterprise', 'A busy crockery store', 'Up to 2 branches and 6 users. Adds FBR invoices, barcode labels, qist, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A household store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Crockery shop POS software questions', [
-        ('Which is the best crockery shop POS software in Pakistan?', 'The best crockery shop POS software is the one built for the way a crockery shop sells. Check five things: a ready product list, carton, set and piece units, breakage records, barcode billing, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best crockery shop POS software in Pakistan?', 'The best crockery shop POS software is the one built for the way a crockery shop sells. Check five things: a ready product list, carton, set and piece units, breakage records, barcode billing, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all my products myself?', 'No. UpTrendPos has 2,000+ crockery and household products already loaded. Search, tick the ones you sell and add them to your shop. If a product is missing, add it yourself in seconds. You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Does the catalog come with prices and stock?', 'No. The catalog gives you the product names and details. You set your own stock and price, so your rates are always your own.'),
         ('Can I sell a carton, a set and a single piece of the same item?', 'Yes. Set the units once, like a carton of 48, a set of 6 and a piece. Pick the unit on the bill. Stock always stays in the selling unit, so every sale drops the right count.'),
@@ -149,11 +149,11 @@ c = dict(
         ('Can I print barcode labels for sets with no barcode?', 'Yes, on Enterprise and Custom plans. Print a label for each item and unit, then scan it at the counter. On every plan you can scan a barcode that is already on the box, with a USB scanner or your phone camera.'),
         ('Can hotels, caterers and families buy on udhaar?', 'Yes. The unpaid part goes on the customer ledger as udhaar. Every later payment sits on the same ledger, and you can send a statement as PDF, print or WhatsApp. Customer installments (qist) with a guarantor are on Enterprise and Custom plans.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
-        ('How much does crockery shop POS software cost?', 'It depends on your plan. Premium suits one crockery shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does crockery shop POS software cost?', 'It depends on your plan. Premium suits one crockery shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('grocery-store-pos-software', 'Grocery &amp; Kiryana'), ('furniture-shop-pos-software', 'Furniture'),
              ('toy-shop-pos-software', 'Toy Shop'), ('hardware-store-pos-software', 'Hardware &amp; Sanitary')],
-    final=('Try UpTrendPos in your crockery shop for 14 days',
+    final=('Try UpTrendPos in your crockery shop for 7 days',
            'Pick your products from the 2,000+ catalog today and make your first bill, or message us and we will set it up with you. Simple crockery shop POS software, made for Pakistani crockery and household shops.'),
 )
 render(c)

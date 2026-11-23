@@ -135,7 +135,7 @@ c = dict(
             ('Enterprise', 'A busy beauty store', 'Up to 2 branches and 6 users. Adds barcode labels, FBR invoices, staff commission, profit reports and audit trail.'),
             ('Custom', 'A beauty store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Cosmetics store POS software questions', [
-        ('Which is the best cosmetics store POS software in Pakistan?', 'The best cosmetics store POS software is the one built for beauty stock, not groceries. Check five things: ready product list, stock for every shade, batch and expiry alerts, barcode billing and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best cosmetics store POS software in Pakistan?', 'The best cosmetics store POS software is the one built for beauty stock, not groceries. Check five things: ready product list, stock for every shade, batch and expiry alerts, barcode billing and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all beauty products myself?', 'No. UpTrendPos comes with 5,500+ makeup, skin care and hair care products. Search, tick the ones you sell and add them to your shop. If a product is missing, add it yourself in a minute. You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Does the catalog come with prices and stock?', 'No. The catalog gives you the product names and details. You set your own cost, sale price and stock when stock comes in through a GRN, so your prices are always your own.'),
         ('Can I keep stock for every shade?', 'Yes. Each shade or size is its own item with its own stock and price. The variant generator makes all shades of a product in one go, and low stock alerts show which shades to reorder.'),
@@ -144,11 +144,11 @@ c = dict(
         ('Some imported items have no barcode. What do I do?', 'Search the item by name or shade and add it to the bill. On the Enterprise and Custom plans you can also print your own barcode stickers for these items.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
         ('Can a salon use it?', 'Yes, to sell beauty products from the salon counter with full stock and accounts. Booking and service tickets for salons are coming soon.'),
-        ('How much does cosmetics store POS software cost?', 'It depends on your plan. Premium suits one cosmetics shop, Enterprise suits a busy beauty store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does cosmetics store POS software cost?', 'It depends on your plan. Premium suits one cosmetics shop, Enterprise suits a busy beauty store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can I run more than one counter or branch?', 'Yes. Add counters with separate staff logins and cash sessions, and each branch keeps its own stock and batches. The owner sees every branch from one account. Limits depend on your plan.')]),
     related=[('pharmacy-pos-software', 'Pharmacy &amp; Medical Store'), ('baby-store-pos-software', 'Baby &amp; Diaper Store'),
              ('perfume-shop-pos-software', 'Perfume &amp; Attar Shop'), ('clothing-store-pos-software', 'Clothing &amp; Garments')],
-    final=('Try UpTrendPos in your beauty store for 14 days',
+    final=('Try UpTrendPos in your beauty store for 7 days',
            'Pick your products from the 5,500+ catalog today and make your first bill, or message us and we will set it up with you. Simple cosmetics store POS software, made for Pakistani beauty shops.'),
 )
 render(c)

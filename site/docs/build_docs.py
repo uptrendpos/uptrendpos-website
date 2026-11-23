@@ -117,7 +117,7 @@ def plans():
         lis = ''.join(f'<li>{E(x)}</li>' for x in items)
         cards += f'<article class="plan{rec}">{"<span class=badge>Most shops pick this</span>" if rec else ""}<h3>{n}</h3><p class="for">{E(f)}</p><ul class="ticks">{lis}</ul></article>'
     return f'''<section class="sec" id="plans"><p class="eyebrow">Plans</p><h2>Plans at a glance</h2>
-<p class="intro">Every plan has unlimited invoices, works offline and runs on Windows, Android and the web. Tools for your business type come with every plan. Prices are on the pricing page of uptrendpos.com, and every new shop gets a 14-day free trial.</p>
+<p class="intro">Every plan has unlimited invoices, works offline and runs on Windows, Android and the web. Tools for your business type come with every plan. Prices are on the pricing page of uptrendpos.com, and every new shop gets a 7-day free trial.</p>
 <div class="plans">{cards}</div></section>'''
 
 

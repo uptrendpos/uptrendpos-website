@@ -141,7 +141,7 @@ c = dict(
             ('Enterprise', 'A busy book and stationery store', 'Up to 2 branches and 6 users. Adds barcode labels, FBR invoices, qist, staff commission, profit dashboard and audit trail.'),
             ('Custom', 'A stationery store chain', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Stationery shop POS software questions', [
-        ('Which is the best stationery shop POS software in Pakistan?', 'The best stationery shop POS software is the one built for the way a stationery shop sells. Check five things: a ready product list, box and piece units, A4 quotes for schools, udhaar on a ledger, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best stationery shop POS software in Pakistan?', 'The best stationery shop POS software is the one built for the way a stationery shop sells. Check five things: a ready product list, box and piece units, A4 quotes for schools, udhaar on a ledger, and offline billing in load-shedding. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Do I need to type all my items myself?', 'No. UpTrendPos has 200+ stationery products already loaded. Search, tick the ones you sell and add them to your shop. If a product is missing, add it yourself in seconds. You can also add any product from the full UpTrendPos catalog of 38,000+ products, by name or category.'),
         ('Does the catalog come with prices and stock?', 'No. The catalog gives you the product names and details. You set your own stock and price, so your rates are always your own.'),
         ('Can I sell pens by the box and by the piece?', 'Yes. Set units like carton, box, dozen, ream and piece. Sell one pen to a student and a full box to an office on the same bill, and stock stays right in the selling unit.'),
@@ -150,11 +150,11 @@ c = dict(
         ('Can I sell books as well as stationery?', 'Yes. Add books as products and sort them by category, like class, subject or story books. Bill them with a barcode or by name, next to pens and notebooks on the same bill.'),
         ('Can I print barcode labels for items with no barcode?', 'Yes, on Enterprise and Custom plans. Print a label for each item and stick it on the item or the shelf, then scan it at the counter. On every plan you can scan a barcode that is already on the item, with a USB scanner or your phone camera.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar needs internet so every device shows the same balance.'),
-        ('How much does stationery shop POS software cost?', 'It depends on your plan. Premium suits one stationery shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does stationery shop POS software cost?', 'It depends on your plan. Premium suits one stationery shop, Enterprise suits a busy store, and Custom suits a small chain. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Can a parent return or exchange an item?', 'Yes. Make the return or exchange on the same bill. The invoice number stays the same, the returned item goes back into stock, and the new item goes out.')]),
     related=[('toy-shop-pos-software', 'Toys &amp; Gift Shop'), ('sports-shop-pos-software', 'Sports Goods'),
              ('crockery-shop-pos-software', 'Crockery &amp; Household'), ('grocery-store-pos-software', 'Grocery &amp; Kiryana')],
-    final=('Try UpTrendPos in your stationery shop for 14 days',
+    final=('Try UpTrendPos in your stationery shop for 7 days',
            'Pick your products from the 200+ catalog today and make your first bill, or message us and we will set it up with you. Simple stationery shop POS software, made for Pakistani stationery and book shops.'),
 )
 render(c)

@@ -239,7 +239,7 @@ faqs = [
     ('What is the penalty for not integrating?', 'The penalty is Rs 500,000 for the first default, then Rs 1 million, Rs 2 million and Rs 3 million for later defaults. A non-integrated Tier-1 retailer also loses 60% of adjustable input tax, and FBR can seal the shop. Check the latest rules on fbr.gov.pk.'),
     ('Is UpTrendPos approved by FBR?', 'UpTrendPos is POS software with FBR POS integration built in. It uses the official FBR system with the details FBR gives you, and FBR rules route integration through a licensed integrator such as PRAL. We do not claim to be FBR or an FBR department.'),
     ('How can my customer check an FBR bill?', 'The customer scans the QR code on the bill with FBR\'s Tax Asaan app. The app shows whether the invoice was reported to FBR. This builds trust, because the buyer can see that the sales tax on the bill is real and recorded.'),
-    ('How much does FBR POS integration cost?', 'It is included in the UpTrendPos Enterprise and Custom plans. FBR does not charge for integration itself, and PRAL offers its integration service free. See the <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a> for plan prices and a 14-day free trial.'),
+    ('How much does FBR POS integration cost?', 'It is included in the UpTrendPos Enterprise and Custom plans. FBR does not charge for integration itself, and PRAL offers its integration service free. See the <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a> for plan prices and a 7-day free trial.'),
     ('Can I use FBR on more than one counter or branch?', 'Yes. Register every counter in IRIS, then add each counter\'s FBR details in UpTrendPos. Each branch keeps its own stock and FBR setup, and the owner sees all branches from one account. Branch and user limits depend on your plan.'),
     ('I am not Tier-1. Do I need this?', 'Not for the Tier-1 rule. But if you are registered for sales tax, other FBR rules such as digital invoicing may apply to you. You can also turn on the Local GST line to show sales tax on bills without FBR reporting. Ask us what fits your shop.'),
 ]
@@ -256,7 +256,7 @@ final = f'''  <section class="utp-final" aria-labelledby="utp-final-title">
         <p>Send us your Tier-1 result or your FBR details on WhatsApp. We set up UpTrendPos with you, test in Sandbox and check your first live FBR bill.</p>
         <div class="utp-cta">
           <a class="utp-btn utp-btn-primary" href="{wa('Hi, I want FBR POS integration with UpTrendPos')}" target="_blank" rel="noopener" data-track="fbr_final_whatsapp">{WA_SVG} Get FBR setup help</a>
-          <a class="utp-btn utp-btn-ghost" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="fbr_final_trial">Start 14-day free trial</a>
+          <a class="utp-btn utp-btn-ghost" href="https://live.uptrendpos.com/" target="_blank" rel="noopener" data-track="fbr_final_trial">Start 7-day free trial</a>
         </div>
         <div class="utp-contact">
           <a href="tel:+923192223292" data-track="fbr_final_call">Call 0319 2223292</a>

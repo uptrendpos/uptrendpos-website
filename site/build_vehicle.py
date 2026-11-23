@@ -139,7 +139,7 @@ c = dict(
             ('Enterprise', 'A busy showroom on qist', 'Up to 2 branches and 6 users. Adds qist plans with guarantor, FBR invoices, barcode labels, staff commission, profit reports and audit trail.'),
             ('Custom', 'A dealer with branches', 'Up to 3 branches and 9 users, with every module, including staff attendance and salary.')]),
     faq=('Vehicle showroom software questions', [
-        ('Which is the best vehicle showroom software in Pakistan?', 'The best vehicle showroom software is the one built for units, not groceries. Check five things: chassis number tracking, warranty lookup, qist with a guarantor, A4 quotes and invoices, and offline billing. UpTrendPos does all five, and you can test it free for 14 days.'),
+        ('Which is the best vehicle showroom software in Pakistan?', 'The best vehicle showroom software is the one built for units, not groceries. Check five things: chassis number tracking, warranty lookup, qist with a guarantor, A4 quotes and invoices, and offline billing. UpTrendPos does all five, and you can test it free for 7 days.'),
         ('Is this motorcycle showroom software too?', 'Yes. Turn on the Motorcycles group and add each model with its engine cc, start type, wheels and brakes. Model years and colours become separate items, each with its own units and chassis numbers.'),
         ('Can I sell electric bikes and scooters?', 'Yes. The Electric Bikes and Scooters group has fields for battery type, battery capacity, range per charge, motor power, charging time and battery warranty.'),
         ('Does it work for a car showroom?', 'Yes. The Cars and SUVs group has fields for trim, transmission, fuel type, engine cc, seats and local or imported. You can sell new, used and reconditioned cars.'),
@@ -148,11 +148,11 @@ c = dict(
         ('Can I give a buyer a quotation first?', 'Yes. Make an A4 quotation with the unit and accessories and send it on WhatsApp. When the buyer comes back, convert it to a sale in one tap.'),
         ('Does it track registration and documents?', 'Not yet. Registration status and document hand-over tracking are coming soon. Today you can run units, chassis numbers, qist, warranty, purchases and full accounts in one place.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
-        ('How much does vehicle showroom software cost?', 'It depends on your plan. Premium suits a small dealer, Enterprise suits a showroom that sells on qist, and Custom suits a dealer with branches. Pay monthly or yearly after a 14-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
+        ('How much does vehicle showroom software cost?', 'It depends on your plan. Premium suits a small dealer, Enterprise suits a showroom that sells on qist, and Custom suits a dealer with branches. Pay monthly or yearly after a 7-day free trial. See all prices on our <a href="https://uptrendpos.com/pos-software-pricing/">pricing page</a>.'),
         ('Do you have a ready list of bike and car models?', 'No. Your showroom starts with an empty list and you add the models you sell. The variant generator makes every model year and colour in one go, so setup is fast.')]),
     related=[('auto-parts-pos-software', 'Auto Spare Parts'), ('tyre-shop-pos-software', 'Tyre Shop'),
              ('battery-shop-pos-software', 'Battery Shop'), ('solar-shop-pos-software', 'Solar Shop')],
-    final=('Try UpTrendPos in your showroom for 14 days',
+    final=('Try UpTrendPos in your showroom for 7 days',
            'Add your first model in every year and colour today and make your first quote, or message us and we will set it up with you. Simple vehicle showroom software, made for Pakistani dealers.'),
 )
 render(c)
