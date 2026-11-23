@@ -3,11 +3,9 @@
  * Business-type card ribbon ("arc"): tall cards on a gently curved, endlessly moving track
  * (design reference: the industry cards under the ondial.ai hero, saved 11 Nov 2026).
  *
- * Added on output, so no page code changes are needed and new pages get it on their own:
- * - Home: inside the "30+ types of shops" section, between the heading and the full list
- * - Industries hub: right under the hero
- * - Every live business-type page: before "Related" (or before the final call to action)
- * Cards = live business-type pages only (each page's featured image, short name, one line).
+ * 1.6.5 (Abdul, 23 Nov 2026): HOME PAGE ONLY, right under the hero. Hub and business-type pages no longer get it.
+ * Cards = live business-type pages only. Picture = uploads/uptrendpos-arc-<slug>.webp (600x840 card art; replace the
+ * file with a real photo of the same name any time), else the page's featured image.
  *
  * @package UpTrendPos_Site_Kit
  */
@@ -43,9 +41,15 @@ function utpk_arc_cards() {
 		if ( ! $t || ! in_array( $slug, $live, true ) ) {
 			continue;
 		}
-		$id    = utpk_find_page( $slug );
-		$thumb = $id ? (int) get_post_thumbnail_id( $id ) : 0;
-		$src   = $thumb ? wp_get_attachment_image_src( $thumb, 'medium_large' ) : false;
+		list( $updir, $upurl ) = utpk_uploads();
+		$art = 'uptrendpos-arc-' . $slug . '.webp';
+		if ( is_file( $updir . '/' . $art ) ) {
+			$src = array( $upurl . '/' . $art . '?v=' . (int) filemtime( $updir . '/' . $art ), 600, 840 );
+		} else {
+			$id    = utpk_find_page( $slug );
+			$thumb = $id ? (int) get_post_thumbnail_id( $id ) : 0;
+			$src   = $thumb ? wp_get_attachment_image_src( $thumb, 'medium_large' ) : false;
+		}
 		if ( ! $src ) {
 			continue; // a card without a picture looks broken: wait until the page has its featured image
 		}
@@ -79,14 +83,14 @@ function utpk_arc_html( $skip = '' ) {
 		return '';
 	}
 	$li = '';
-	foreach ( $cards as $c ) {
+	foreach ( $cards as $i => $c ) {
 		$li .= '<li class="utp-arc-card g-' . esc_attr( $c['group'] ) . '"><a href="' . esc_url( $c['url'] ) . '" data-page="' . esc_attr( $c['slug'] ) . '" data-track="arc_' . esc_attr( $c['slug'] ) . '">'
+			. '<img class="utp-arc-bg" src="' . esc_url( $c['img'] ) . '" width="' . (int) $c['w'] . '" height="' . (int) $c['h'] . '" ' . ( $i < 6 ? 'fetchpriority="low"' : 'loading="lazy"' ) . ' decoding="async" alt="' . esc_attr( 'UpTrendPos for ' . $c['name'] ) . '">'
 			. '<span class="utp-arc-t">' . esc_html( $c['title'] ) . '</span>'
-			. '<span class="utp-arc-img"><img src="' . esc_url( $c['img'] ) . '" width="' . (int) $c['w'] . '" height="' . (int) $c['h'] . '" loading="lazy" decoding="async" alt="' . esc_attr( 'UpTrendPos for ' . $c['name'] ) . '"></span>'
-			. '<span class="utp-arc-c">' . esc_html( $c['line'] ) . '</span>'
+			. '<span class="utp-arc-c">' . esc_html( 'POS software for ' . $c['title'] ) . '</span>'
 			. '</a></li>';
 	}
-	return '<div class="utp-arc" data-arc><ul class="utp-arc-track">' . $li . '</ul></div>';
+	return '<div class="utp-arc" data-arc aria-label="UpTrendPos business types"><ul class="utp-arc-track">' . $li . '</ul></div>';
 }
 
 /** Section wrapper used on the hub and the business-type pages. */
@@ -105,40 +109,18 @@ function utpk_insert_arc( $html ) {
 	if ( false !== strpos( $html, 'class="utp-arc' ) || false === strpos( $html, 'class="utp ' ) && false === strpos( $html, 'class="utp"' ) ) {
 		return $html;
 	}
-	$slug = utpk_current_slug();
-	$hub  = utpk_brand()['hub_slug'];
-
-	if ( is_front_page() ) {
-		$at = strpos( $html, 'id="utp-industries"' );
-		$at = false === $at ? false : strpos( $html, '<div class="utp-ind">', $at );
-		if ( false !== $at ) {
-			$arc = utpk_arc_html();
-			return '' === $arc ? $html : substr_replace( $html, '</div>' . $arc . '<div class="utp-wrap utp-arc-after">', $at, 0 );
-		}
+	// 1.6.6: the output buffer can run after the main query is reset, so also detect the Home page code itself
+	if ( ! is_front_page() && false === strpos( $html, 'id="utp-home"' ) ) {
 		return $html;
 	}
-
-	if ( $slug === $hub ) {
-		$at = strpos( $html, '<section class="utp-hero"' );
-		$at = false === $at ? false : strpos( $html, '</section>', $at );
-		if ( false !== $at ) {
-			$sec = utpk_arc_section( '', 'Business types', 'Ready setups for every shop', 'Each card opens the full setup for that business: fields, units, reports and the daily flow.' );
-			return '' === $sec ? $html : substr_replace( $html, $sec, $at + strlen( '</section>' ), 0 );
-		}
+	$at = strpos( $html, '<section class="utp-hero"' );
+	$at = false === $at ? false : strpos( $html, '</section>', $at );
+	if ( false === $at ) {
 		return $html;
 	}
-
-	if ( $slug && utpk_industry( $slug ) ) {
-		$sec = utpk_arc_section( $slug, 'More business types', 'UpTrendPos for other shops too', 'Run more than one kind of business? Each one gets its own ready setup.' );
-		if ( '' === $sec ) {
-			return $html;
-		}
-		foreach ( array( '<section class="utp-sec utp-alt" aria-labelledby="utp-rel-title"', '<section class="utp-final"' ) as $mark ) {
-			$at = strpos( $html, $mark );
-			if ( false !== $at ) {
-				return substr_replace( $html, $sec, $at, 0 );
-			}
-		}
+	$arc = utpk_arc_html();
+	if ( '' === $arc ) {
+		return $html;
 	}
-	return $html;
+	return substr_replace( $html, '<section class="utp-arc-sec utp-arc-home" aria-label="Business types">' . $arc . '</section>', $at + strlen( '</section>' ), 0 );
 }

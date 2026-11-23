@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.6.4
+Version: 1.6.6
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,13 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.6.6 (23 Nov 2026) =
+* Home ribbon: also detects the Home page by its page code (is_front_page() is not reliable inside the output buffer).
+
+= 1.6.5 (23 Nov 2026) =
+* Business-type card ribbon v2: Home page only (right under the hero), concave 3D curve, full-bleed card art (uploads/uptrendpos-arc-<slug>.webp), Bebas Neue titles. Removed from the Industries hub and business-type pages. Media cleanup never removes uptrendpos-arc-*.webp.
+* Urdu overview page /pos-software-urdu/: core page, Noto Nastaliq Urdu font (only on that page), RTL styles, scroll reveal, counters, reading progress bar; footer link "Urdu" when live.
+
 = 1.6.4 (23 Nov 2026) =
 * Free trial is now 7 days (header badge, menu drawer, footer, page animations, download button note, llms.txt).
 * New POST /utpk/v1/replace: plain-text find and replace (no HTML) across every UpTrendPos page and blog post, with a dry run. Used for site-wide fact changes such as the trial length or prices.

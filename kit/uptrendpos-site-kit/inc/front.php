@@ -66,6 +66,15 @@ add_action( 'wp_head', function () {
 	foreach ( array( 400, 500, 600, 700, 800 ) as $w ) {
 		$faces .= "@font-face{font-family:'Poppins';font-style:normal;font-weight:{$w};font-display:swap;src:url(" . esc_url( $f . 'poppins-latin-' . $w . '-normal.woff2' ) . ") format('woff2')}";
 	}
+	if ( is_front_page() || 'home' === utpk_current_slug() ) { // 1.6.5 card ribbon titles
+		$faces .= "@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url(" . esc_url( $f . 'bebas-neue-latin-400-normal.woff2' ) . ") format('woff2')}";
+	}
+	if ( 'pos-software-urdu' === utpk_current_slug() ) { // 1.6.5 Urdu page: Noto Nastaliq Urdu (SIL OFL), Arabic-script subset only
+		echo '<link rel="preload" href="' . esc_url( $f . 'noto-nastaliq-urdu-arabic-400-normal.woff2' ) . '" as="font" type="font/woff2" crossorigin>' . "\n";
+		foreach ( array( 400, 700 ) as $w ) {
+			$faces .= "@font-face{font-family:'Noto Nastaliq Urdu';font-style:normal;font-weight:{$w};font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+200C-200F,U+2010-2011,U+204F,U+25CC,U+FB50-FDFF,U+FE70-FEFF;src:url(" . esc_url( $f . 'noto-nastaliq-urdu-arabic-' . $w . '-normal.woff2' ) . ") format('woff2')}";
+		}
+	}
 	echo '<style id="utpk-fonts">' . $faces . '</style>' . "\n"; // phpcs:ignore WordPress.Security.EscapeOutput
 	echo '<meta name="theme-color" content="#0A1838">' . "\n";
 	if ( ! has_site_icon() ) {
@@ -392,6 +401,9 @@ function utpk_footer_html() {
 		$company[] = array( '/fbr-pos-integration/', 'FBR POS integration' );
 	}
 	$company[] = array( '/contact-us/', 'Contact us' );
+	if ( utpk_is_live( 'pos-software-urdu' ) ) {
+		$company[] = array( '/pos-software-urdu/', 'اردو میں پڑھیں' );
+	}
 	foreach ( $company as $c ) {
 		$f .= '<li><a href="' . utpk_u( $c[0] ) . '">' . esc_html( $c[1] ) . '</a></li>';
 	}

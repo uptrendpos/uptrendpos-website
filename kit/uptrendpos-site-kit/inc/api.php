@@ -493,7 +493,7 @@ function utpk_api_cleanup( WP_REST_Request $r ) {
 	);
 	$by   = array();
 	foreach ( $rows as $row ) {
-		if ( preg_match( UTPK_IMG_RE, $row->file ) ) {
+		if ( preg_match( UTPK_IMG_RE, $row->file ) && 0 !== strpos( $row->file, 'uptrendpos-arc-' ) ) { // 1.6.5: Home ribbon card art is used by code, never cleaned
 			$by[ $row->file ] = $row;
 		}
 	}

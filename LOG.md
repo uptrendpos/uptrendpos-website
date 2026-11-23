@@ -28,3 +28,8 @@
 - Site Kit 1.6.4 (built on 1.6.3 security/blog release): header badge, menu drawer, footer CTA, page animations, download note and llms.txt now say 7-day; new POST /utpk/v1/replace (plain text only, dry run first) for site-wide fact changes.
 - /replace run on live: 38 pages + 2 blog posts, 189 changes ("14-day" -> "7-day", "14-Day" -> "7-Day", "14 days" -> "7 days"). Rank Math descriptions updated. DB re-scan: 0 left.
 - Sources synced: site/ builders, core pages, FACTS.md, asset repo pages/. Repo kit/ now matches the live plugin (includes inc/security.php from 1.6.3).
+
+## 2026-11-23 - Home card ribbon v2 + Urdu overview page (Abdul)
+- Site Kit 1.6.5/1.6.6: card ribbon only on Home (right under the hero), concave 3D curve, full-bleed card art `uploads/uptrendpos-arc-<slug>.webp` (600x840, generator site/arc/gen.py + render.js; replace any file with a real photo of the same name), Bebas Neue titles. Removed from the Industries hub and business-type pages. Media cleanup skips uptrendpos-arc-*.
+- 1.6.6: Home detected by its page code too (is_front_page() was false inside the output buffer, which is why the old ribbon never showed on Home).
+- New Urdu page /pos-software-urdu/ (core page, id 3186): long animated RTL overview (hero, counters, what is, problems, 8 business groups with Abdul's Urdu images uptrendpos-ur-*.webp, 12 features + Enterprise/Custom tools, offline, steps, plans 1,000/2,000/5,000, FAQ, contact). Font Noto Nastaliq Urdu (SIL OFL, self-hosted, loaded only on that page). Source site/urdu/build_urdu.py. Footer link "اردو میں پڑھیں". No language switcher.

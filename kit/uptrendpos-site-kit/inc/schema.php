@@ -176,6 +176,7 @@ function utpk_short_name( $post_id ) {
 		'download-pos-software' => 'Download',
 		'about-uptrendpos'      => 'About UpTrendPos',
 		'contact-us'            => 'Contact Us',
+		'pos-software-urdu'     => 'اردو',
 	);
 	$name = (string) get_post_field( 'post_name', $post_id );
 	return isset( $names[ $name ] ) ? $names[ $name ] : trim( wp_strip_all_tags( get_the_title( $post_id ) ) );

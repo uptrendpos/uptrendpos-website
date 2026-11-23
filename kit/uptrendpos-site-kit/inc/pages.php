@@ -103,6 +103,7 @@ function utpk_core_page_list() {
 		'download-pos-software' => 'Download POS Software',
 		'fbr-pos-integration'   => 'FBR POS Integration',
 		'industries'            => 'Industries',
+		'pos-software-urdu'     => 'POS Software in Urdu',
 		'pos-software-pricing'  => 'POS Software Pricing Plans',
 		'privacy-policy'        => 'Privacy Policy',
 		'support'               => 'Support',
