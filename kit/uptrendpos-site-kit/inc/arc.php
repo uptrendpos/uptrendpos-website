@@ -113,8 +113,11 @@ function utpk_insert_arc( $html ) {
 	if ( ! is_front_page() && false === strpos( $html, 'id="utp-home"' ) ) {
 		return $html;
 	}
-	$at = strpos( $html, '<section class="utp-hero"' );
-	$at = false === $at ? false : strpos( $html, '</section>', $at );
+	// 1.6.7: the page cache minifier writes "<section\nclass=", so match any whitespace
+	if ( ! preg_match( '#<section\s+class="utp-hero"#', $html, $m, PREG_OFFSET_CAPTURE ) ) {
+		return $html;
+	}
+	$at = strpos( $html, '</section>', $m[0][1] );
 	if ( false === $at ) {
 		return $html;
 	}

@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.6.6
+Version: 1.6.7
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,9 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.6.7 (23 Nov 2026) =
+* Home ribbon: hero found with any whitespace ("<section\nclass=" after HTML minify).
+
 = 1.6.6 (23 Nov 2026) =
 * Home ribbon: also detects the Home page by its page code (is_front_page() is not reliable inside the output buffer).
 
