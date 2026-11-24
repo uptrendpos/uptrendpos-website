@@ -300,7 +300,8 @@
    "grocery-store-pos-software",
    "hardware-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-24"
  },
  {
   "order": 20,
