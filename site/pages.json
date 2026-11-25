@@ -1233,5 +1233,70 @@
   "sec": "fertilizer shop software, pesticide shop billing software, agri shop POS Pakistan",
   "builder": "build_fertilizer.py",
   "images": "gen_fertilizer.py"
+ },
+ {
+  "n": "veterinary-store-pos-software",
+  "src": "pages/website_veterinary_v1.html",
+  "url": "/industries/veterinary-store-pos-software/",
+  "stage": "veterinary",
+  "stage_items": [
+   [
+    "Medicine expires on the shelf",
+    "cal",
+    "t",
+    "Batch and expiry",
+    "Alerts before a loss",
+    "Expiry"
+   ],
+   [
+    "Strips and pieces mixed up",
+    "layers",
+    "g",
+    "Box, strip, piece",
+    "One stock, always right",
+    "Units"
+   ],
+   [
+    "Farmer udhaar in a diary",
+    "book",
+    "y",
+    "Farmer ledger",
+    "Statements on WhatsApp",
+    "Udhaar"
+   ],
+   [
+    "Counter rush",
+    "scan",
+    "b",
+    "Barcode billing",
+    "Bill ready in seconds",
+    "Barcode"
+   ],
+   [
+    "Supplier dues unclear",
+    "doc",
+    "g",
+    "Supplier ledger",
+    "Balance due at a glance",
+    "Suppliers"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "b",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Veterinary Store POS Software in Pakistan | UpTrendPos",
+  "desc": "Veterinary store POS software for Pakistani animal medicine stores: box, strip and piece units, expiry alerts and udhaar for dairy and poultry farmers.",
+  "kw": "veterinary store POS software",
+  "sec": "veterinary store software, vet medicine shop billing software, veterinary shop POS Pakistan",
+  "builder": "build_veterinary.py",
+  "images": "gen_veterinary.py"
  }
 ]
