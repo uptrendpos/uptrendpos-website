@@ -1280,6 +1280,9 @@ body.blog nav.pagination,body.archive nav.pagination{display:flex;justify-conten
   .utp-nav .utn-cta>.utn-lang{padding:0 11px}
 }
 
+/* 1.6.9: on a right-to-left page the full-width trick must pull from the right side */
+html[dir="rtl"] .utp{margin-left:0;margin-right:calc(50% - var(--utp-vw,100vw) / 2)}
+
 /* ================= 1.6.8 Urdu copy of Home (/ur/): right to left, Jameel Noori Nastaleeq ================= */
 .utp.utp-urdu{--ur:'Jameel Noori Nastaleeq','Poppins','Noto Nastaliq Urdu',system-ui,sans-serif;direction:rtl;text-align:right;font-family:var(--ur)}
 .utp.utp-urdu h1,.utp.utp-urdu h2,.utp.utp-urdu h3,.utp.utp-urdu h4,.utp.utp-urdu p,.utp.utp-urdu a,.utp.utp-urdu li,.utp.utp-urdu span,.utp.utp-urdu summary,.utp.utp-urdu button,.utp.utp-urdu figcaption,.utp.utp-urdu td,.utp.utp-urdu th,.utp.utp-urdu strong,.utp.utp-urdu small,.utp.utp-urdu caption{font-family:var(--ur)}

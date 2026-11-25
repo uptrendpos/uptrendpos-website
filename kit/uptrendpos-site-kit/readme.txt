@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.6.8
+Version: 1.6.9
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,9 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.6.9 (25 Nov 2026) =
+* /ur/: page block no longer shifts left on right-to-left pages (full-width margin from the right).
+
 = 1.6.8 (25 Nov 2026) =
 * Removed the Home business-type card ribbon (code, CSS, JS, Bebas Neue) and the old /pos-software-urdu/ page support (Noto Nastaliq). /pos-software-urdu and /urdu now 301 to /ur/.
 * New: /ur/ = Urdu copy of Home. RTL (lang="ur-PK" dir="rtl"), header and footer in Urdu, Jameel Noori Nastaleeq self-hosted as a 146 KB glyph subset (shaped with HarfBuzz, checked glyph-for-glyph), hreflang en-PK / ur-PK / x-default between Home and /ur/, WebPage inLanguage ur-PK.
