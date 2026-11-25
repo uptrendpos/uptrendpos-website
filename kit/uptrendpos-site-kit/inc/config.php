@@ -70,13 +70,12 @@ function utpk_defaults() {
 		'auto_seo'       => 1,  // fill Rank Math from the page code on every save
 		'auto_thumb'     => 1,  // featured image from the first picture in the page design
 		'auto_lists'     => 1,  // Home + Industries hub business lists completed from data/industries.json
-		'arc'            => 1,  // moving business-type cards on Home, the Industries hub and every business-type page
 		'auto_pages'     => 1,  // draft pages made for business types / core pages that have no page yet
 		'apk'            => 'https://uptrendpos.com/downloadapk/app-release.apk',
 		'apk_version'    => '',
 		'apk_size'       => '',
 		'apk_min'        => '',
-		'exe'            => 'https://uptrendpos.com/wp-content/uploads/UpTrendPOS_Setup_1.0.0.zip',
+		'exe'            => '', // 1.6.8: the file in /downloaddesktop/ is used; the old media-library zip was removed
 		'exe_version'    => '',
 		'exe_size'       => '',
 		'updated'        => '',
@@ -266,3 +265,68 @@ function utpk_page_image( $post_id, $fresh = false ) {
 	}
 	return '';
 }
+
+/* =========================================================================
+ * 1.6.8 Download files: the newest file in the /downloadapk/ and /downloaddesktop/
+ * folders of the site (uploaded with the file manager, not the media library).
+ * A file found there always wins over the link saved in the settings.
+ * ========================================================================= */
+
+function utpk_download_files() {
+	static $out = null;
+	if ( null !== $out ) {
+		return $out;
+	}
+	$cached = get_transient( 'utpk_dl_files' );
+	if ( is_array( $cached ) ) {
+		return $out = $cached;
+	}
+	$out  = array();
+	$dirs = array(
+		'apk' => array( 'downloadapk', array( 'apk' ) ),
+		'exe' => array( 'downloaddesktop', array( 'exe', 'msi', 'msix', 'zip' ) ),
+	);
+	foreach ( $dirs as $key => $d ) {
+		$dir = trailingslashit( ABSPATH . $d[0] );
+		if ( ! is_dir( $dir ) ) {
+			continue;
+		}
+		$best = '';
+		$time = 0;
+		foreach ( (array) scandir( $dir ) as $f ) {
+			$ext = strtolower( pathinfo( (string) $f, PATHINFO_EXTENSION ) );
+			if ( '.' === $f[0] || ! in_array( $ext, $d[1], true ) || ! is_file( $dir . $f ) ) {
+				continue;
+			}
+			$m = (int) filemtime( $dir . $f );
+			if ( $m >= $time ) {
+				$time = $m;
+				$best = $f;
+			}
+		}
+		if ( '' !== $best ) {
+			$out[ $key ] = array(
+				'url'  => home_url( '/' . $d[0] . '/' . rawurlencode( $best ) ),
+				'file' => $best,
+				'size' => size_format( (int) filesize( $dir . $best ), 1 ),
+				'date' => wp_date( 'j M Y', $time ),
+			);
+		}
+	}
+	set_transient( 'utpk_dl_files', $out, HOUR_IN_SECONDS );
+	return $out;
+}
+
+/* Link, size and date for one app ('apk' or 'exe'): the folder file first, then the settings. */
+function utpk_download( $key ) {
+	$f   = utpk_download_files();
+	$opt = (string) utpk_opt( $key );
+	if ( ! empty( $f[ $key ] ) ) {
+		$size = (string) utpk_opt( $key . '_size' );
+		return array( 'url' => $f[ $key ]['url'], 'size' => '' !== $size ? $size : $f[ $key ]['size'], 'date' => $f[ $key ]['date'], 'file' => $f[ $key ]['file'] );
+	}
+	return array( 'url' => $opt, 'size' => (string) utpk_opt( $key . '_size' ), 'date' => '', 'file' => '' );
+}
+add_action( 'update_option_utpk', function () {
+	delete_transient( 'utpk_dl_files' );
+} );

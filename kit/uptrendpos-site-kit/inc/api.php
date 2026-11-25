@@ -152,6 +152,7 @@ function utpk_fetch_asset( $url, $max ) {
 /* ---------------- GET /status ---------------- */
 
 function utpk_api_status() {
+	delete_transient( 'utpk_dl_files' ); // 1.6.8: always look at the download folders again
 	$types = array();
 	foreach ( utpk_industries()['types'] as $t ) {
 		$id      = utpk_find_page( $t['slug'] );
@@ -168,6 +169,7 @@ function utpk_api_status() {
 		'version'     => UTPK_VERSION,
 		'time'        => time(),
 		'last_backup' => utpk_last_backup(),
+		'downloads'   => array( 'apk' => utpk_download( 'apk' ), 'exe' => utpk_download( 'exe' ) ), // 1.6.8
 		'types'       => $types,
 	);
 }
@@ -249,7 +251,7 @@ function utpk_api_page( WP_REST_Request $r ) {
 	if ( ! $id ) {
 		$hub    = get_page_by_path( utpk_brand()['hub_slug'] );
 		$parent = isset( utpk_core_page_list()[ $slug ] ) ? 0 : ( $hub ? (int) $hub->ID : 0 );
-		$name   = $slug;
+		$name   = utpk_core_page_list()[ $slug ] ?? $slug; // 1.6.8: core pages get their real title, not the slug
 		foreach ( utpk_industries()['types'] as $t ) {
 			if ( $t['slug'] === $slug ) {
 				$name = $t['name'];
@@ -493,7 +495,7 @@ function utpk_api_cleanup( WP_REST_Request $r ) {
 	);
 	$by   = array();
 	foreach ( $rows as $row ) {
-		if ( preg_match( UTPK_IMG_RE, $row->file ) && 0 !== strpos( $row->file, 'uptrendpos-arc-' ) ) { // 1.6.5: Home ribbon card art is used by code, never cleaned
+		if ( preg_match( UTPK_IMG_RE, $row->file ) ) {
 			$by[ $row->file ] = $row;
 		}
 	}

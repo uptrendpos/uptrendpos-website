@@ -137,6 +137,8 @@ function utpk_redirects() {
 		'/contact'                            => '/contact-us/',
 		'/fbr'                                => '/fbr-pos-integration/',
 		'/fbr-integration'                    => '/fbr-pos-integration/',
+		'/pos-software-urdu'                  => '/ur/', // 1.6.8: old Urdu overview page, replaced by the Urdu copy of Home
+		'/urdu'                               => '/ur/',
 	);
 }
 

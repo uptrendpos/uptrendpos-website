@@ -66,15 +66,7 @@ add_action( 'wp_head', function () {
 	foreach ( array( 400, 500, 600, 700, 800 ) as $w ) {
 		$faces .= "@font-face{font-family:'Poppins';font-style:normal;font-weight:{$w};font-display:swap;src:url(" . esc_url( $f . 'poppins-latin-' . $w . '-normal.woff2' ) . ") format('woff2')}";
 	}
-	if ( is_front_page() || 'home' === utpk_current_slug() ) { // 1.6.5 card ribbon titles
-		$faces .= "@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url(" . esc_url( $f . 'bebas-neue-latin-400-normal.woff2' ) . ") format('woff2')}";
-	}
-	if ( 'pos-software-urdu' === utpk_current_slug() ) { // 1.6.5 Urdu page: Noto Nastaliq Urdu (SIL OFL), Arabic-script subset only
-		echo '<link rel="preload" href="' . esc_url( $f . 'noto-nastaliq-urdu-arabic-400-normal.woff2' ) . '" as="font" type="font/woff2" crossorigin>' . "\n";
-		foreach ( array( 400, 700 ) as $w ) {
-			$faces .= "@font-face{font-family:'Noto Nastaliq Urdu';font-style:normal;font-weight:{$w};font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+200C-200F,U+2010-2011,U+204F,U+25CC,U+FB50-FDFF,U+FE70-FEFF;src:url(" . esc_url( $f . 'noto-nastaliq-urdu-arabic-' . $w . '-normal.woff2' ) . ") format('woff2')}";
-		}
-	}
+	$faces .= utpk_ur_font_faces( $f ); // 1.6.8: Jameel Noori Nastaleeq on /ur/, a tiny label subset elsewhere
 	echo '<style id="utpk-fonts">' . $faces . '</style>' . "\n"; // phpcs:ignore WordPress.Security.EscapeOutput
 	echo '<meta name="theme-color" content="#0A1838">' . "\n";
 	if ( ! has_site_icon() ) {
@@ -98,13 +90,13 @@ function utpk_js_config() {
 		'img'    => UTPK_URL . 'assets/img/',
 		'motion' => (bool) utpk_opt( 'motion' ),
 		'links'  => array(
-			'apk'           => (string) utpk_opt( 'apk' ),
+			'apk'           => utpk_download( 'apk' )['url'],
 			'apkVersion'    => (string) utpk_opt( 'apk_version' ),
-			'apkSize'       => (string) utpk_opt( 'apk_size' ),
+			'apkSize'       => utpk_download( 'apk' )['size'],
 			'apkMinAndroid' => (string) utpk_opt( 'apk_min' ),
-			'exe'           => (string) utpk_opt( 'exe' ),
+			'exe'           => utpk_download( 'exe' )['url'],
 			'exeVersion'    => (string) utpk_opt( 'exe_version' ),
-			'exeSize'       => (string) utpk_opt( 'exe_size' ),
+			'exeSize'       => utpk_download( 'exe' )['size'],
 			'updated'       => (string) utpk_opt( 'updated' ),
 		),
 	);
@@ -182,6 +174,7 @@ function utpk_sprite() {
 		'ball'     => '<circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/><path d="M12 3v4M21 10l-5 0M15 21l-.5-6.5M9 21l.5-6.5M3 10h5"/>',
 		'book'     => '<path d="M4 4h11a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><path d="M8 8h6M8 12h6"/>',
 		'leaf'     => '<path d="M5 21c0-9 6-15 16-16-1 10-7 16-16 16zM5 21l8-8"/>',
+		'globe'    => '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3c-2.5 2.6-3.8 5.6-3.8 9s1.3 6.4 3.8 9"/>',
 		'paw'      => '<circle cx="7" cy="10" r="2"/><circle cx="17" cy="10" r="2"/><circle cx="9.5" cy="5.5" r="2"/><circle cx="14.5" cy="5.5" r="2"/><path d="M12 12c-3 0-5 3.5-5 5.5 0 1.5 1.2 2.5 2.7 2.5.9 0 1.5-.5 2.3-.5s1.4.5 2.3.5c1.5 0 2.7-1 2.7-2.5 0-2-2-5.5-5-5.5z"/>',
 	);
 	$fill = array(
@@ -339,7 +332,7 @@ function utpk_header_html() {
 		$h .= '<li><a href="' . utpk_u( '/' . $n[0] . '/' ) . '"' . $on . '>' . esc_html( $n[1] ) . '</a></li>';
 	}
 	$h .= '</ul></nav>';
-	$h .= '<div class="utn-cta"><a class="utn-wa" href="' . esc_url( $demo ) . '" target="_blank" rel="noopener" aria-label="Free demo on WhatsApp" data-track="nav_whatsapp">' . utpk_ic( 'wa', 22 ) . '</a>';
+	$h .= '<div class="utn-cta">' . utpk_ur_switch_html() . '<a class="utn-wa" href="' . esc_url( $demo ) . '" target="_blank" rel="noopener" aria-label="Free demo on WhatsApp" data-track="nav_whatsapp">' . utpk_ic( 'wa', 22 ) . '</a>';
 	$h .= '<a class="utn-btn" href="' . esc_url( $b['app'] ) . '" target="_blank" rel="noopener" data-track="nav_trial">Start free trial</a>';
 	$h .= '<button class="utn-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="utn-drawer"><span></span></button></div>';
 	$h .= '</div>';
@@ -359,11 +352,12 @@ function utpk_header_html() {
 		}
 		$h .= '<a class="utn-dl" href="' . utpk_u( '/' . $n[0] . '/' ) . '">' . esc_html( $n[1] ) . utpk_ic( 'arrow', 16 ) . '</a>';
 	}
+	$h .= utpk_ur_switch_html( 'utn-lang-d' );
 	$h .= '<div class="utn-dcta"><a class="utn-btn" href="' . esc_url( $b['app'] ) . '" target="_blank" rel="noopener" data-track="drawer_trial">Start 7-day free trial</a>';
 	$h .= '<a class="utn-btn line" href="' . esc_url( $demo ) . '" target="_blank" rel="noopener" data-track="drawer_whatsapp">' . utpk_ic( 'wa', 18 ) . 'Free demo on WhatsApp</a></div>';
 	$h .= '<p class="utn-dnote">Call <a href="tel:' . esc_attr( $b['phone_tel'] ) . '">' . esc_html( $b['phone_show'] ) . '</a> · Mon to Sat, 10 am to 7 pm</p></div>';
 	$h .= '</header>';
-	return $h;
+	return utpk_is_ur() ? utpk_ur_tr( $h ) : $h;
 }
 
 /* =========================================================================
@@ -401,9 +395,6 @@ function utpk_footer_html() {
 		$company[] = array( '/fbr-pos-integration/', 'FBR POS integration' );
 	}
 	$company[] = array( '/contact-us/', 'Contact us' );
-	if ( utpk_is_live( 'pos-software-urdu' ) ) {
-		$company[] = array( '/pos-software-urdu/', 'اردو میں پڑھیں' );
-	}
 	foreach ( $company as $c ) {
 		$f .= '<li><a href="' . utpk_u( $c[0] ) . '">' . esc_html( $c[1] ) . '</a></li>';
 	}
@@ -429,7 +420,7 @@ function utpk_footer_html() {
 		$f .= '<li><a href="' . esc_url( get_permalink( $blog ) ) . '">Blog</a></li>';
 	}
 	$f .= '</ul></div></div></footer>';
-	return $f;
+	return utpk_is_ur() ? utpk_ur_tr( $f ) : $f;
 }
 
 add_action( 'wp_body_open', function () {
@@ -559,9 +550,6 @@ function utpk_output_pass( $html ) {
 	}
 	if ( utpk_opt( 'auto_lists' ) ) {
 		$html = utpk_fill_industry_lists( $html );
-	}
-	if ( utpk_opt( 'arc' ) && function_exists( 'utpk_insert_arc' ) ) {
-		$html = utpk_insert_arc( $html );
 	}
 	if ( utpk_opt( 'gate' ) ) {
 		$html = utpk_gate_html( $html );

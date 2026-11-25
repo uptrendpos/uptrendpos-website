@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.6.7
+Version: 1.6.8
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,15 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.6.8 (25 Nov 2026) =
+* Removed the Home business-type card ribbon (code, CSS, JS, Bebas Neue) and the old /pos-software-urdu/ page support (Noto Nastaliq). /pos-software-urdu and /urdu now 301 to /ur/.
+* New: /ur/ = Urdu copy of Home. RTL (lang="ur-PK" dir="rtl"), header and footer in Urdu, Jameel Noori Nastaleeq self-hosted as a 146 KB glyph subset (shaped with HarfBuzz, checked glyph-for-glyph), hreflang en-PK / ur-PK / x-default between Home and /ur/, WebPage inLanguage ur-PK.
+* New: language switch in the header and mobile menu ("اردو" on English pages, "English" on /ur/), shown once /ur/ is live.
+* Download links: the newest file in /downloadapk/ (.apk) and /downloaddesktop/ (.exe/.msi/.msix/.zip) is used automatically (link + size), also in schema and /status.
+* Mobile vertical now "Mobile, Computer & Printer Shop".
+* Compact sizes and even spacing on every page (headings, hero, sections, buttons).
+* /page: new core pages get their real title.
+
 = 1.6.7 (23 Nov 2026) =
 * Home ribbon: hero found with any whitespace ("<section\nclass=" after HTML minify).
 

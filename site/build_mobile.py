@@ -5,9 +5,9 @@ K = 'mobile shop POS software'
 c = dict(
     key='mb', file='website_mobile_shop_v1.html', root='utp-mb', root_id='utp-mobile-shop', focus=K,
     secondary=['mobile shop software', 'computer shop', 'IMEI'],
-    crumb='Mobile &amp; Computer Shop', kicker='Mobile &amp; computer shop',
-    h1='Mobile shop POS software for <span class="utp-hl">phone and computer shops.</span>',
-    lead=('UpTrendPos is mobile shop POS software for phone and computer shops in Pakistan. Start with 700+ products already loaded, save the IMEI or serial number of every phone '
+    crumb='Mobile, Computer &amp; Printer Shop', kicker='Mobile, computer &amp; printer shop',
+    h1='Mobile shop POS software for <span class="utp-hl">phone, computer and printer shops.</span>',
+    lead=('UpTrendPos is mobile shop POS software for phone, computer and printer shops in Pakistan. Start with 700+ products already loaded, save the IMEI or serial number of every phone '
           'from purchase to sale, sell on cash or qist, and check any phone\'s warranty in seconds.'),
     wa_demo='Hi, I want a free demo of UpTrendPos for my mobile shop', demo_btn='Free mobile shop demo',
     smart_note='Product catalog ready on day one · Demo in Urdu or English',
@@ -121,7 +121,7 @@ c = dict(
     segments=('Mobile shop POS software for every kind of phone business',
               'From a small accessories counter to a big phone shop in a plaza, UpTrendPos mobile shop POS software fits the way you work.',
               [('phone', 'g', 'Mobile phone shop', 'New phones with IMEI, accessories and qist plans on one counter.'),
-               ('laptop', 'b', 'Computer and laptop shop', 'Laptops and parts with serial numbers, plus mouse, keyboards and cables.'),
+               ('laptop', 'b', 'Computer, laptop and printer shop', 'Laptops, printers and parts with serial numbers, plus toner, ink, mouse and cables.'),
                ('headset', 'y', 'Accessories counter', 'Covers, chargers and cables sold fast with quick bill and barcode.'),
                ('cal', 't', 'Qist phone dealer', 'Phones on monthly plans, with advance, markup and due dates.' + plan('Enterprise+')),
                ('store', 'n', 'Shop in a mobile plaza', 'Many staff, cash sessions per shift and FBR bills where needed.'),
@@ -137,6 +137,7 @@ c = dict(
         ('How does warranty lookup work?', 'Type or scan the IMEI or serial number of a sold phone. You see when it was sold, the bill number, the customer and the warranty. This helps you handle claims with proof.'),
         ('Can I sell phones on qist?', 'Yes, on the Enterprise and Custom plans. Set the advance, the markup and the number of months. The plan shows every monthly due, and markup income is kept apart until it is earned.'),
         ('Can this mobile shop software also run a computer shop?', 'Yes. Laptops, tablets and parts work the same way, with serial numbers instead of IMEIs. Mouse, keyboards, cables and other accessories sell like normal items with quick bill.'),
+        ('Can I sell printers, toner and ink too?', 'Yes. A printer is saved with its serial number, so you can look up the sale, the bill and the warranty later, just like a laptop. Toner, ink cartridges and paper sell as normal items, by piece or by pack, on the same bill.'),
         ('Can I sell accessories fast?', 'Yes. Scan the barcode or search the item, or use quick bill and the calculator. Covers, chargers and cables go on the same bill as the phone, and the bill can go on WhatsApp.'),
         ('Does it work during load-shedding?', 'Yes. Cash billing keeps running on the Windows and Android apps when the internet or light goes. Bills save on the device and sync on their own later. Udhaar and qist need internet so every device shows the same balance.'),
         ('Can I buy used phones from customers?', 'Used phone buy-back is coming soon. Today you can run new phone sales with IMEI, accessories, qist, purchases, suppliers and full accounts in one place.'),

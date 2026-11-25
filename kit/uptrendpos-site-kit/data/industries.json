@@ -53,8 +53,8 @@
      },
      {
       "slug": "mobile-shop-pos-software",
-      "label": "Mobile & Computer",
-      "line": "700+ products, IMEI"
+      "label": "Mobile, Computer & Printer",
+      "line": "700+ products, IMEI, printers"
      },
      {
       "slug": "electronics-store-pos-software",
@@ -262,12 +262,12 @@
   },
   {
    "slug": "mobile-shop-pos-software",
-   "name": "Mobile & Computer Shop",
-   "audience": "Mobile and computer shop owners",
+   "name": "Mobile, Computer & Printer Shop",
+   "audience": "Mobile, computer and printer shop owners",
    "group": "electronics",
    "icon": "phone",
-   "line": "700+ products, IMEI, qist",
-   "short": "Mobile & Computer"
+   "line": "700+ products, IMEI, printers and qist",
+   "short": "Mobile, Computer & Printer"
   },
   {
    "slug": "battery-shop-pos-software",

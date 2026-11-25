@@ -120,7 +120,7 @@ function utpk_schema_software() {
 		'featureList'            => array( 'Offline billing with auto sync', 'Barcode billing', 'Sell by carton, pack, piece or kg', 'Udhaar khata (customer ledger)', 'Stock, low stock and expiry alerts', 'Purchase orders, GRN and supplier ledger', 'Bills and reports on WhatsApp as picture or PDF', 'Thermal printing from an Android phone by USB Type-C', 'Quotations with convert to sale', 'Double-entry accounts and profit reports', 'Multi-branch stock and prices', 'FBR invoice number and QR code' ),
 		'offers'                 => $offers,
 	);
-	$dl = array_values( array_filter( array( (string) utpk_opt( 'exe' ), (string) utpk_opt( 'apk' ) ) ) );
+	$dl = array_values( array_filter( array( utpk_download( 'exe' )['url'], utpk_download( 'apk' )['url'] ) ) );
 	if ( $dl ) {
 		$node['downloadUrl'] = count( $dl ) > 1 ? $dl : $dl[0];
 	}
@@ -176,7 +176,7 @@ function utpk_short_name( $post_id ) {
 		'download-pos-software' => 'Download',
 		'about-uptrendpos'      => 'About UpTrendPos',
 		'contact-us'            => 'Contact Us',
-		'pos-software-urdu'     => 'اردو',
+		'ur'                    => 'اردو',
 	);
 	$name = (string) get_post_field( 'post_name', $post_id );
 	return isset( $names[ $name ] ) ? $names[ $name ] : trim( wp_strip_all_tags( get_the_title( $post_id ) ) );
@@ -272,7 +272,7 @@ function utpk_schema_apply( $data ) {
 			$wp                = $data[ $webpage_key ];
 			$wp['about']       = array( '@id' => utpk_home() . '#software' );
 			$wp['publisher']   = array( '@id' => utpk_home() . '#organization' );
-			$wp['inLanguage']  = 'en-PK';
+			$wp['inLanguage']  = utpk_is_ur() ? 'ur-PK' : 'en-PK';
 			$reviewer          = utpk_schema_reviewer();
 			if ( isset( $reviewer['@type'] ) ) {
 				$data['UtpReviewer'] = $reviewer;
