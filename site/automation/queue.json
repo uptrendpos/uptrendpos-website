@@ -316,7 +316,8 @@
    "meat-shop-pos-software",
    "grocery-store-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-25"
  },
  {
   "order": 21,
