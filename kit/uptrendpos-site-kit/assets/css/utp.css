@@ -1339,3 +1339,26 @@ body.utp-ur-mode .utp-foot p,body.utp-ur-mode .utp-foot li{line-height:1.95;font
 body.utp-ur-mode .utp-foot .uf-h{font-size:18px;font-weight:400}
 body.utp-ur-mode .utp-foot .uf-btn{font-family:'Jameel Noori Nastaleeq','Poppins',sans-serif;font-weight:400;font-size:18px}
 body.utp-ur-mode .utp-foot .uf-contact a[href^="https://maps"],body.utp-ur-mode .utp-foot .uf-contact a[href^="tel"],body.utp-ur-mode .utp-foot .uf-contact a[href^="mailto"]{direction:ltr;unicode-bidi:isolate;font-family:'Poppins',system-ui,sans-serif}
+
+/* ================= 1.7.0 RTL mirror for every page template (Urdu twins under /ur/) ================= */
+.utp.utp-urdu .utp-feat li,.utp.utp-urdu .utp-plan-list li,.utp.utp-urdu .utp-checks li{padding-left:0;padding-right:28px}
+.utp.utp-urdu .utp-feat li::before,.utp.utp-urdu .utp-plan-list li::before,.utp.utp-urdu .utp-checks li::before{left:auto;right:0;top:8px}
+.utp.utp-urdu .utp-steps-sm li{padding-left:0;padding-right:32px}
+.utp.utp-urdu .utp-steps-sm li::before{left:auto;right:0;top:6px}
+.utp.utp-urdu .utp-rep li::before{left:auto;right:18px}
+.utp.utp-urdu .utp-crumb li+li::before{transform:scaleX(-1)}
+.utp.utp-urdu .utp-cmp tbody th,.utp.utp-urdu .utp-cmp thead th:first-child,.utp.utp-urdu .utp-vs th,.utp.utp-urdu .utp-vs td,.utp.utp-urdu .utp-doc-table th,.utp.utp-urdu .utp-doc-table td{text-align:right}
+.utp.utp-urdu .utp-ptag{margin-left:0;margin-right:4px}
+.utp.utp-urdu .utp-row em{margin-left:0;margin-right:6px}
+.utp.utp-urdu .utp-count{margin-left:0;margin-right:auto}
+.utp.utp-urdu .utp-hero-img{margin-left:0;margin-right:auto}
+.utp.utp-urdu .utp-map-btn,.utp.utp-urdu .utp-map-btn:visited{left:auto;right:14px}
+.utp.utp-urdu .utp-arrow{transform:scaleX(-1)}
+.utp.utp-urdu .utp-doc-n{margin-left:10px}
+.utp.utp-urdu .utp-toc ol a,.utp.utp-urdu .utp-toc-h,.utp.utp-urdu .utp-short-h{font-family:var(--ur)}
+.utp.utp-urdu .utp-toc ol a{font-size:16px;line-height:1.8}
+.utp.utp-urdu .utp-ticks li,.utp.utp-urdu .utp-chips a,.utp.utp-urdu .utp-p-steps li{font-family:var(--ur)}
+.utp.utp-urdu .utp-fact strong,.utp.utp-urdu .utp-fact span,.utp.utp-urdu .utp-node strong,.utp.utp-urdu .utp-node span{font-family:var(--ur);line-height:1.8}
+.utp.utp-urdu .utp-marquee li,.utp.utp-urdu .utp-strip li{font-family:var(--ur)}
+.utp.utp-urdu input,.utp.utp-urdu textarea,.utp.utp-urdu select{direction:rtl;text-align:right}
+.utp.utp-urdu .utp-seg button,.utp.utp-urdu .utp-tabs button,.utp.utp-urdu .utp-chip{font-family:var(--ur);font-size:16px}

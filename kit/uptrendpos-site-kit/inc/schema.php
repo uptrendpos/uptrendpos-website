@@ -147,7 +147,7 @@ function utpk_schema_faq_items( $post_id ) {
 }
 
 function utpk_is_hub( $post_id ) {
-	return $post_id && 'page' === get_post_type( $post_id ) && utpk_brand()['hub_slug'] === get_post_field( 'post_name', $post_id ) && ! wp_get_post_parent_id( $post_id );
+	return $post_id && 'page' === get_post_type( $post_id ) && utpk_brand()['hub_slug'] === get_post_field( 'post_name', $post_id ) && ( ! wp_get_post_parent_id( $post_id ) || utpk_ur_is_twin( $post_id ) );
 }
 
 function utpk_industry_slug_of( $post_id ) {
@@ -159,6 +159,12 @@ function utpk_industry_slug_of( $post_id ) {
 }
 
 function utpk_short_name( $post_id ) {
+	if ( utpk_ur_is_twin( $post_id ) ) {
+		return trim( wp_strip_all_tags( get_the_title( $post_id ) ) ); // 1.7.0: Urdu pages use their Urdu title
+	}
+	if ( utpk_ur_home_id() === (int) $post_id ) {
+		return 'ہوم';
+	}
 	$slug = utpk_industry_slug_of( $post_id );
 	if ( '' !== $slug ) {
 		$t = utpk_industry( $slug );
@@ -188,6 +194,9 @@ function utpk_schema_breadcrumb( $post_id ) {
 		return array();
 	}
 	$trail = array( array( 'Home', utpk_home() ) );
+	if ( utpk_ur_is_twin( $post_id ) ) {
+		$trail = array(); // 1.7.0: Urdu trail starts at /ur/ (its first ancestor)
+	}
 	foreach ( array_reverse( get_post_ancestors( $post_id ) ) as $anc ) {
 		$trail[] = array( utpk_short_name( $anc ), get_permalink( $anc ) );
 	}
@@ -210,7 +219,7 @@ function utpk_schema_hub_list( $post_id ) {
 			continue;
 		}
 		$t       = utpk_industry( $p->post_name );
-		$items[] = array( '@type' => 'ListItem', 'position' => count( $items ) + 1, 'name' => $t ? $t['name'] : wp_strip_all_tags( get_the_title( $p->ID ) ), 'url' => get_permalink( $p->ID ) );
+		$items[] = array( '@type' => 'ListItem', 'position' => count( $items ) + 1, 'name' => ( $t && ! utpk_ur_is_twin( $p->ID ) ) ? $t['name'] : wp_strip_all_tags( get_the_title( $p->ID ) ), 'url' => get_permalink( $p->ID ) );
 	}
 	if ( ! $items ) {
 		return array();

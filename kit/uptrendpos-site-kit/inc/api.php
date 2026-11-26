@@ -27,6 +27,9 @@ add_action( 'rest_api_init', function () {
 	register_rest_route( $ns, '/backup', array( 'methods' => 'POST', 'callback' => 'utpk_api_backup', 'permission_callback' => 'utpk_api_can' ) );
 	register_rest_route( $ns, '/media-cleanup', array( 'methods' => 'POST', 'callback' => 'utpk_api_cleanup', 'permission_callback' => 'utpk_api_can' ) );
 	register_rest_route( $ns, '/replace', array( 'methods' => 'POST', 'callback' => 'utpk_api_replace', 'permission_callback' => 'utpk_api_can' ) );
+	register_rest_route( $ns, '/source', array( 'methods' => 'GET', 'callback' => 'utpk_api_source', 'permission_callback' => 'utpk_api_can' ) ); // 1.7.0
+	register_rest_route( $ns, '/font', array( 'methods' => 'POST', 'callback' => 'utpk_api_font', 'permission_callback' => 'utpk_api_can' ) ); // 1.7.0
+	register_rest_route( $ns, '/check', array( 'methods' => 'GET', 'callback' => 'utpk_api_check', 'permission_callback' => 'utpk_api_can' ) ); // 1.7.0
 	register_rest_route( $ns, '/self-update', array( 'methods' => 'POST', 'callback' => 'utpk_api_self_update', 'permission_callback' => 'utpk_api_can_update' ) );
 } );
 
@@ -151,6 +154,18 @@ function utpk_fetch_asset( $url, $max ) {
 
 /* ---------------- GET /status ---------------- */
 
+function utpk_api_urdu_list() {
+	$out = array();
+	if ( utpk_ur_home_id() ) {
+		$out[] = array( 'en' => 'home', 'id' => utpk_ur_home_id(), 'status' => 'publish', 'url' => get_permalink( utpk_ur_home_id() ) );
+	}
+	$ids = get_posts( array( 'post_type' => 'page', 'post_status' => array( 'publish', 'draft', 'pending', 'private' ), 'numberposts' => -1, 'fields' => 'ids', 'suppress_filters' => true, 'meta_key' => '_utpk_lang', 'meta_value' => 'ur' ) );
+	foreach ( $ids as $id ) {
+		$out[] = array( 'en' => (string) get_post_meta( $id, '_utpk_en', true ), 'id' => (int) $id, 'status' => get_post_status( $id ), 'url' => get_permalink( $id ), 'title' => get_the_title( $id ) );
+	}
+	return $out;
+}
+
 function utpk_api_status() {
 	delete_transient( 'utpk_dl_files' ); // 1.6.8: always look at the download folders again
 	$types = array();
@@ -170,6 +185,8 @@ function utpk_api_status() {
 		'time'        => time(),
 		'last_backup' => utpk_last_backup(),
 		'downloads'   => array( 'apk' => utpk_download( 'apk' ), 'exe' => utpk_download( 'exe' ) ), // 1.6.8
+		'urdu'        => utpk_api_urdu_list(), // 1.7.0
+		'urdu_font'   => array( 'url' => utpk_ur_font_url(), 'version' => (string) get_option( 'utpk_ur_font_ver', '' ) ),
 		'types'       => $types,
 	);
 }
@@ -225,6 +242,10 @@ function utpk_api_media( WP_REST_Request $r ) {
 
 /* ---------------- POST /page {slug, html, publish} ---------------- */
 
+function utpk_page_code_ok( $html ) {
+	return ! ( strlen( $html ) > 409600 || ! preg_match( '#^\s*<div class="utp[ "]#', $html ) || false === strpos( $html, 'data-seo-title="' ) || preg_match( '#<script|<style|<!--|<iframe|<form|<object|<embed|javascript:|\son[a-z]+\s*=#i', $html ) );
+}
+
 function utpk_api_page( WP_REST_Request $r ) {
 	$slug = sanitize_title( (string) $r->get_param( 'slug' ) );
 	$html = (string) $r->get_param( 'html' );
@@ -235,6 +256,15 @@ function utpk_api_page( WP_REST_Request $r ) {
 		}
 	}
 	$pub  = (bool) $r->get_param( 'publish' );
+	if ( 'ur' === $r->get_param( 'lang' ) && 'home' !== $slug && 'ur' !== $slug ) {
+		if ( ! utpk_page_code_ok( $html ) ) {
+			return new WP_Error( 'utpk_html', 'The page code is not valid UpTrendPos page code.', array( 'status' => 400 ) );
+		}
+		return utpk_api_page_ur( $r, $slug, $html, $pub ); // 1.7.0: Urdu twin under /ur/
+	}
+	if ( 'ur' === $r->get_param( 'lang' ) ) {
+		$slug = 'ur'; // the Urdu copy of Home is the core page /ur/
+	}
 	$ok   = isset( utpk_core_page_list()[ $slug ] );
 	// 1.6.2: the front page (slug "home") may be written too, so site-wide facts such as plan prices stay editable through this route
 	$ok   = $ok || ( 'home' === $slug && (int) get_option( 'page_on_front' ) === utpk_find_page( 'home' ) );
@@ -244,10 +274,56 @@ function utpk_api_page( WP_REST_Request $r ) {
 	if ( ! $ok ) {
 		return new WP_Error( 'utpk_slug', 'Only business-type pages and main UpTrendPos pages can be written.', array( 'status' => 400 ) );
 	}
-	if ( strlen( $html ) > 409600 || ! preg_match( '#^\s*<div class="utp[ "]#', $html ) || false === strpos( $html, 'data-seo-title="' ) || preg_match( '#<script|<style|<!--|<iframe|<form|<object|<embed|javascript:|\son[a-z]+\s*=#i', $html ) ) {
+	if ( ! utpk_page_code_ok( $html ) ) {
 		return new WP_Error( 'utpk_html', 'The page code is not valid UpTrendPos page code.', array( 'status' => 400 ) );
 	}
 	$id = utpk_find_page( $slug );
+	return utpk_api_page_write( $id, $slug, $html, $pub );
+}
+
+/* 1.7.0 Urdu twin: slug = the English slug; title = the Urdu page name. Business types sit under
+   the Urdu industries hub (publish it first), every other page under /ur/. */
+function utpk_api_page_ur( WP_REST_Request $r, $slug, $html, $pub ) {
+	$core = utpk_core_page_list();
+	$type = false;
+	foreach ( utpk_industries()['types'] as $t ) {
+		$type = $type || $t['slug'] === $slug;
+	}
+	if ( ( ! isset( $core[ $slug ] ) && ! $type ) || 'ur' === $slug ) {
+		return new WP_Error( 'utpk_slug', 'Only business-type pages and main UpTrendPos pages can get an Urdu page.', array( 'status' => 400 ) );
+	}
+	if ( ! utpk_find_page( $slug ) || 'publish' !== get_post_status( utpk_find_page( $slug ) ) ) {
+		return new WP_Error( 'utpk_en', 'The English page must be live first.', array( 'status' => 400 ) );
+	}
+	if ( false === strpos( $html, 'utp-urdu' ) || false === strpos( $html, 'dir="rtl"' ) || false === strpos( $html, 'lang="ur"' ) ) {
+		return new WP_Error( 'utpk_html', 'Urdu page code needs class utp-urdu, lang="ur" and dir="rtl" on the page block.', array( 'status' => 400 ) );
+	}
+	$id = utpk_ur_find( $slug );
+	if ( ! $id ) {
+		$title = trim( wp_strip_all_tags( (string) $r->get_param( 'title' ) ) );
+		if ( '' === $title || ! preg_match( '/[\x{0600}-\x{06FF}]/u', $title ) ) {
+			return new WP_Error( 'utpk_title', 'Send the Urdu page name as title.', array( 'status' => 400 ) );
+		}
+		$parent = $type ? utpk_ur_find( utpk_brand()['hub_slug'] ) : utpk_ur_home_id();
+		if ( ! $parent || 'publish' !== get_post_status( $parent ) ) {
+			return new WP_Error( 'utpk_parent', $type ? 'Publish the Urdu industries hub (/ur/industries/) first.' : 'The Urdu Home page /ur/ is not live.', array( 'status' => 400 ) );
+		}
+		$id = utpk_create_draft( $slug, $title, $parent, utpk_find_page( $slug ) );
+		if ( $id ) {
+			update_post_meta( $id, '_utpk_lang', 'ur' );
+			update_post_meta( $id, '_utpk_en', $slug );
+			if ( get_post_field( 'post_name', $id ) !== $slug ) {
+				wp_update_post( array( 'ID' => $id, 'post_name' => $slug ) );
+			}
+		}
+		if ( ! $id ) {
+			return new WP_Error( 'utpk_page', 'The Urdu page could not be made.', array( 'status' => 500 ) );
+		}
+	}
+	return utpk_api_page_write( $id, $slug, $html, $pub );
+}
+
+function utpk_api_page_write( $id, $slug, $html, $pub ) {
 	if ( ! $id ) {
 		$hub    = get_page_by_path( utpk_brand()['hub_slug'] );
 		$parent = isset( utpk_core_page_list()[ $slug ] ) ? 0 : ( $hub ? (int) $hub->ID : 0 );
@@ -362,6 +438,9 @@ function utpk_api_replace( WP_REST_Request $r ) {
 		if ( $id ) {
 			$ids[ $id ] = $slug;
 		}
+	}
+	foreach ( (array) get_posts( array( 'post_type' => 'page', 'post_status' => array( 'publish', 'draft' ), 'numberposts' => -1, 'fields' => 'ids', 'suppress_filters' => true, 'meta_key' => '_utpk_lang', 'meta_value' => 'ur' ) ) as $pid ) {
+		$ids[ (int) $pid ] = 'ur/' . get_post_field( 'post_name', $pid ); // 1.7.0: Urdu pages too
 	}
 	$front = (int) get_option( 'page_on_front' );
 	if ( $front ) {
@@ -556,4 +635,155 @@ function utpk_api_cleanup( WP_REST_Request $r ) {
 		utpk_purge_caches();
 	}
 	return $report;
+}
+
+/* ---------------- 1.7.0 POST /font {"file":"fonts/jameel-noori-nastaleeq-ur.woff2"} ---------------- */
+
+/* Installs the Urdu page-text font subset from the asset repo into uploads/utpk/.
+   The daily Urdu run rebuilds it from the text of every Urdu page, so new words never fall back. */
+function utpk_api_font( WP_REST_Request $r ) {
+	$file = (string) ( $r->get_param( 'file' ) ? $r->get_param( 'file' ) : 'fonts/jameel-noori-nastaleeq-ur.woff2' );
+	if ( ! preg_match( '#^fonts/[a-z0-9-]+\.woff2$#', $file ) ) {
+		return new WP_Error( 'utpk_font', 'Only fonts/<name>.woff2 from the asset repo.', array( 'status' => 400 ) );
+	}
+	$body = utpk_fetch_asset( trailingslashit( (string) utpk_opt( 'asset_source' ) ) . $file, 1572864 );
+	if ( is_wp_error( $body ) ) {
+		return $body;
+	}
+	if ( 'wOF2' !== substr( $body, 0, 4 ) || strlen( $body ) < 10000 ) {
+		return new WP_Error( 'utpk_font', 'The file is not a WOFF2 font.', array( 'status' => 400 ) );
+	}
+	$up  = wp_upload_dir( null, false );
+	$dir = trailingslashit( $up['basedir'] ) . 'utpk';
+	if ( ! wp_mkdir_p( $dir ) ) {
+		return new WP_Error( 'utpk_font', 'Could not make the font folder.', array( 'status' => 500 ) );
+	}
+	$path = $dir . '/jameel-noori-nastaleeq-ur.woff2';
+	if ( false === file_put_contents( $path, $body ) ) { // phpcs:ignore WordPress.WP.AlternativeFunctions
+		return new WP_Error( 'utpk_font', 'Could not save the font.', array( 'status' => 500 ) );
+	}
+	$ver = substr( md5( $body ), 0, 10 );
+	update_option( 'utpk_ur_font_ver', $ver, false );
+	utpk_purge_caches();
+	return array( 'installed' => true, 'bytes' => strlen( $body ), 'version' => $ver, 'url' => utpk_ur_font_url() );
+}
+
+/* ---------------- 1.7.0 GET /check?path=/ur/industries/ ---------------- */
+
+/* Loads one page of this site fresh (cache bypassed) and reports what search engines and visitors get:
+   status, speed, head SEO, hreflang, language, headings, links, images, NAP and security headers. */
+function utpk_api_check( WP_REST_Request $r ) {
+	$path = '/' . ltrim( (string) $r->get_param( 'path' ), '/' );
+	if ( preg_match( '#[\s<>"\\]|\.\.#', $path ) || 0 === strpos( $path, '//' ) ) {
+		return new WP_Error( 'utpk_path', 'Send a site path like /ur/ or /industries/grocery-store-pos-software/.', array( 'status' => 400 ) );
+	}
+	$url = home_url( $path );
+	$t0  = microtime( true );
+	$res = wp_remote_get( add_query_arg( 'utpk_check', time(), $url ), array( 'timeout' => 30, 'redirection' => 0, 'headers' => array( 'Cache-Control' => 'no-cache' ), 'user-agent' => 'UpTrendPos-SiteKit-Check/' . UTPK_VERSION ) );
+	$ms  = (int) round( ( microtime( true ) - $t0 ) * 1000 );
+	if ( is_wp_error( $res ) ) {
+		return new WP_Error( 'utpk_check', 'The page could not be loaded: ' . $res->get_error_message(), array( 'status' => 502 ) );
+	}
+	$code = (int) wp_remote_retrieve_response_code( $res );
+	$html = (string) wp_remote_retrieve_body( $res );
+	$hdr  = wp_remote_retrieve_headers( $res );
+	$one  = function ( $re ) use ( $html ) {
+		return preg_match( $re, $html, $m ) ? html_entity_decode( trim( $m[1] ), ENT_QUOTES, 'UTF-8' ) : '';
+	};
+	$all  = function ( $re ) use ( $html ) {
+		preg_match_all( $re, $html, $m );
+		return $m[1];
+	};
+	$alts = array();
+	preg_match_all( '#<link\s[^>]*hreflang=["\']([^"\']+)["\'][^>]*href=["\']([^"\']+)["\']#i', $html, $hl, PREG_SET_ORDER );
+	foreach ( $hl as $h ) {
+		$alts[ $h[1] ] = $h[2];
+	}
+	$body  = preg_replace( '#<(script|style)\b.*?</\1>#is', '', $html );
+	$h1    = $all( '#<h1\b[^>]*>(.*?)</h1>#is' );
+	$imgs  = $all( '#(<img\b[^>]*>)#i' );
+	$noalt = 0;
+	$nowebp = 0;
+	foreach ( $imgs as $im ) {
+		if ( ! preg_match( '#\salt=["\'][^"\']+["\']#i', $im ) ) {
+			$noalt++;
+		}
+		if ( preg_match( '#\ssrc=["\'][^"\']+\.(jpe?g|png)(\?|["\'])#i', $im ) ) {
+			$nowebp++;
+		}
+	}
+	$home  = untrailingslashit( home_url() );
+	$hrefs = $all( '#<a\b[^>]*\shref=["\']([^"\'#][^"\']*)["\']#i' );
+	$int   = 0;
+	$to_ur = 0;
+	$to_en = array();
+	foreach ( $hrefs as $h ) {
+		$h = html_entity_decode( $h );
+		if ( 0 !== strpos( $h, $home ) && ( '' === $h || '/' !== $h[0] || 0 === strpos( $h, '//' ) ) ) {
+			continue;
+		}
+		$p = (string) wp_parse_url( 0 === strpos( $h, $home ) ? substr( $h, strlen( $home ) ) : $h, PHP_URL_PATH );
+		if ( preg_match( '#^/(wp-|downloadapk|downloaddesktop|feed)#', $p ) ) {
+			continue;
+		}
+		$int++;
+		if ( 0 === strpos( $p, '/ur/' ) ) {
+			$to_ur++;
+		} else {
+			$to_en[] = '' === $p ? '/' : $p;
+		}
+	}
+	$sec = array();
+	foreach ( array( 'strict-transport-security', 'x-content-type-options', 'x-frame-options', 'referrer-policy', 'permissions-policy', 'content-security-policy' ) as $k ) {
+		$sec[ $k ] = isset( $hdr[ $k ] ) ? ( is_array( $hdr[ $k ] ) ? implode( ', ', $hdr[ $k ] ) : (string) $hdr[ $k ] ) : '';
+	}
+	$text = wp_strip_all_tags( $body );
+	return array(
+		'url'          => $url,
+		'status'       => $code,
+		'location'     => (string) wp_remote_retrieve_header( $res, 'location' ),
+		'ms'           => $ms,
+		'html_kb'      => round( strlen( $html ) / 1024, 1 ),
+		'lang'         => $one( '#<html\b[^>]*\slang=["\']([^"\']+)#i' ),
+		'dir'          => $one( '#<html\b[^>]*\sdir=["\']([^"\']+)#i' ),
+		'title'        => $one( '#<title[^>]*>(.*?)</title>#is' ),
+		'description'  => $one( '#<meta\s+name=["\']description["\']\s+content=["\']([^"\']*)#i' ),
+		'robots'       => $one( '#<meta\s+name=["\']robots["\']\s+content=["\']([^"\']*)#i' ),
+		'canonical'    => $one( '#<link\s+rel=["\']canonical["\']\s+href=["\']([^"\']*)#i' ),
+		'og_locale'    => $one( '#<meta\s+property=["\']og:locale["\']\s+content=["\']([^"\']*)#i' ),
+		'hreflang'     => $alts,
+		'h1'           => array_map( function ( $x ) { return trim( wp_strip_all_tags( html_entity_decode( $x, ENT_QUOTES, 'UTF-8' ) ) ); }, $h1 ),
+		'h2_count'     => count( $all( '#<h2\b[^>]*>(.*?)</h2>#is' ) ),
+		'jsonld_types' => array_values( array_unique( $all( '#"@type"\s*:\s*"([A-Za-z]+)"#' ) ) ),
+		'images'       => count( $imgs ),
+		'images_no_alt'=> $noalt,
+		'images_not_webp' => $nowebp,
+		'css_files'    => count( $all( '#<link\b[^>]*rel=["\']stylesheet["\'][^>]*href=["\']([^"\']+)#i' ) ),
+		'js_files'     => count( $all( '#<script\b[^>]*\ssrc=["\']([^"\']+)#i' ) ),
+		'font_preload' => count( $all( '#<link\b[^>]*rel=["\']preload["\'][^>]*as=["\']font["\'][^>]*href=["\']([^"\']+)#i' ) ) + count( $all( '#<link\b[^>]*rel=["\']preload["\'][^>]*href=["\']([^"\']+\.woff2[^"\']*)#i' ) ),
+		'links_internal' => $int,
+		'links_to_ur'  => $to_ur,
+		'links_to_en'  => array_values( array_unique( $to_en ) ),
+		'nap'          => array( 'name' => false !== strpos( $text, 'UpTrendPos' ), 'phone' => false !== strpos( $text, '0319 2223292' ) || false !== strpos( $html, '923192223292' ), 'city' => false !== strpos( $text, 'Sahiwal' ) || false !== strpos( $text, 'ساہیوال' ) ),
+		'security'     => $sec,
+		'urdu_chars'   => preg_match_all( '/[\x{0600}-\x{06FF}]/u', $text ),
+		'latin_words'  => preg_match_all( '/\b[A-Za-z]{4,}\b/', $text ),
+	);
+}
+
+/* ---------------- 1.7.0 GET /source?slug=<slug>&lang=en|ur ---------------- */
+
+/* Only the page code (HTML widget) of one UpTrendPos page, so a translation run reads 40 KB, not the whole post. */
+function utpk_api_source( WP_REST_Request $r ) {
+	$slug = sanitize_title( (string) $r->get_param( 'slug' ) );
+	$ur   = 'ur' === $r->get_param( 'lang' );
+	if ( 'home' === $slug ) {
+		$id = $ur ? utpk_ur_home_id() : (int) get_option( 'page_on_front' );
+	} else {
+		$id = $ur ? utpk_ur_find( $slug ) : utpk_find_page( $slug );
+	}
+	if ( ! $id ) {
+		return new WP_Error( 'utpk_source', 'No such page.', array( 'status' => 404 ) );
+	}
+	return array( 'slug' => $slug, 'lang' => $ur ? 'ur' : 'en', 'id' => (int) $id, 'status' => get_post_status( $id ), 'url' => get_permalink( $id ), 'title' => get_the_title( $id ), 'html' => (string) utpk_page_html( $id ) );
 }

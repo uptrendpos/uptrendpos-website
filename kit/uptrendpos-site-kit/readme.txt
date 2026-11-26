@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.6.9
+Version: 1.7.0
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,14 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.7.0 (26 Nov 2026) =
+* Urdu twins of every page: /ur/<path>/ (core pages under /ur/, business types under /ur/industries/), page meta _utpk_lang=ur + _utpk_en=<English slug>. English lookups skip twins.
+* POST /page {"lang":"ur","slug":"<English slug>","title":"<Urdu name>"} makes/updates the twin (needs utp-urdu, lang="ur", dir="rtl"); business types need the Urdu hub first.
+* On Urdu pages every link to an English page with a live twin goes to the twin; hreflang en-PK/ur-PK/x-default and the language switch work per page pair.
+* POST /font installs the Jameel Noori page-text subset from the asset repo (uploads/utpk/); GET /source returns one page's code; GET /check loads a page fresh and reports status, speed, head SEO, hreflang, links, images, NAP and security headers. /status lists Urdu pages and the font.
+* Schema: Urdu breadcrumbs from /ur/, Urdu hub as CollectionPage, Urdu names. /replace also covers Urdu pages.
+* RTL mirror CSS for every page template (lists, tables, breadcrumbs, steps, docs).
+
 = 1.6.9 (25 Nov 2026) =
 * /ur/: page block no longer shifts left on right-to-left pages (full-width margin from the right).
 

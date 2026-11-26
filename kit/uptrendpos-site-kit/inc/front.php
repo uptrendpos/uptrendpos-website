@@ -557,6 +557,9 @@ function utpk_output_pass( $html ) {
 	if ( utpk_opt( 'alt' ) ) {
 		$html = utpk_alt_fill_html( $html );
 	}
+	if ( utpk_is_ur() ) {
+		$html = utpk_ur_links( $html ); // 1.7.0: Urdu pages link to Urdu pages
+	}
 	return $html;
 }
 

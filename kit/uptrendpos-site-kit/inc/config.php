@@ -179,6 +179,7 @@ function utpk_is_live( $slug ) {
 
 function utpk_flush_live() {
 	delete_transient( 'utpk_live' );
+	delete_transient( 'utpk_ur_twins' ); // 1.7.0
 }
 add_action( 'save_post_page', 'utpk_flush_live' );
 add_action( 'deleted_post', 'utpk_flush_live' );

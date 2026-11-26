@@ -112,7 +112,7 @@ function utpk_core_page_list() {
 }
 
 function utpk_find_page( $slug ) {
-	$found = get_posts( array( 'post_type' => 'page', 'name' => $slug, 'post_status' => array( 'publish', 'draft', 'pending', 'private', 'future' ), 'numberposts' => 1, 'fields' => 'ids', 'suppress_filters' => true ) );
+	$found = get_posts( array( 'post_type' => 'page', 'name' => $slug, 'post_status' => array( 'publish', 'draft', 'pending', 'private', 'future' ), 'numberposts' => 1, 'fields' => 'ids', 'suppress_filters' => true, 'meta_query' => array( array( 'key' => '_utpk_lang', 'compare' => 'NOT EXISTS' ) ) ) ); // 1.7.0: Urdu twins (/ur/...) share the post_name
 	return $found ? (int) $found[0] : 0;
 }
 
