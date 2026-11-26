@@ -1298,5 +1298,70 @@
   "sec": "veterinary store software, vet medicine shop billing software, veterinary shop POS Pakistan",
   "builder": "build_veterinary.py",
   "images": "gen_veterinary.py"
+ },
+ {
+  "n": "vape-shop-pos-software",
+  "src": "pages/website_vape_v1.html",
+  "url": "/industries/vape-shop-pos-software/",
+  "stage": "vape",
+  "stage_items": [
+   [
+    "Too many flavours to count",
+    "layers",
+    "g",
+    "Variant generator",
+    "Every flavour and size",
+    "Variants"
+   ],
+   [
+    "Packs and pieces mixed up",
+    "box",
+    "b",
+    "Pack or piece",
+    "One stock, always right",
+    "Units"
+   ],
+   [
+    "Cash short at closing",
+    "clock",
+    "y",
+    "Cash session",
+    "Each shift closes its drawer",
+    "Cash"
+   ],
+   [
+    "Evening rush",
+    "scan",
+    "b",
+    "Barcode billing",
+    "Bill ready in seconds",
+    "Barcode"
+   ],
+   [
+    "Supplier dues unclear",
+    "doc",
+    "g",
+    "Supplier ledger",
+    "Balance due at a glance",
+    "Suppliers"
+   ],
+   [
+    "Load-shedding stops billing",
+    "offline",
+    "t",
+    "Bills keep running",
+    "Sync when back online",
+    "Offline"
+   ]
+  ],
+  "cap": "",
+  "label": "",
+  "upd": true,
+  "title": "Vape Shop POS Software in Pakistan | UpTrendPos",
+  "desc": "Vape shop POS software for Pakistani vape and pan shops: flavours and sizes as variants, pack and piece billing, and a cash session for every shift.",
+  "kw": "vape shop POS software",
+  "sec": "vape shop software, pan shop billing software, vape shop POS Pakistan",
+  "builder": "build_vape.py",
+  "images": "gen_vape.py"
  }
 ]
