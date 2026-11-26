@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.7.1
+Version: 1.7.2
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,9 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.7.2 (26 Nov 2026) =
+* GET /source: md5 + bytes, fields=md5 (no html), pad=1 (reply saved to a file by the connector).
+
 = 1.7.1 (26 Nov 2026) =
 * /check: internal link count fixed (regex delimiter), image notes list; Urdu pages get og:locale ur_PK.
 * Urdu pages: bigger small text (15-18px) for Nastaleeq, card/list arrows point left, bundled font subset now covers the Urdu industries hub.

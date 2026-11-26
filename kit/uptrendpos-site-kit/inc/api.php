@@ -789,5 +789,13 @@ function utpk_api_source( WP_REST_Request $r ) {
 	if ( ! $id ) {
 		return new WP_Error( 'utpk_source', 'No such page.', array( 'status' => 404 ) );
 	}
-	return array( 'slug' => $slug, 'lang' => $ur ? 'ur' : 'en', 'id' => (int) $id, 'status' => get_post_status( $id ), 'url' => get_permalink( $id ), 'title' => get_the_title( $id ), 'html' => (string) utpk_page_html( $id ) );
+	$html = (string) utpk_page_html( $id );
+	$out  = array( 'slug' => $slug, 'lang' => $ur ? 'ur' : 'en', 'id' => (int) $id, 'status' => get_post_status( $id ), 'url' => get_permalink( $id ), 'title' => get_the_title( $id ), 'md5' => md5( $html ), 'bytes' => strlen( $html ) );
+	if ( 'md5' !== $r->get_param( 'fields' ) ) {
+		$out['html'] = $html;
+	}
+	if ( $r->get_param( 'pad' ) ) {
+		$out['pad'] = str_repeat( '.', 90000 ); // 1.7.2: makes the connector save the reply to a file, so the page code is read from disk, never retyped
+	}
+	return $out;
 }
