@@ -1,0 +1,258 @@
+[
+ {
+  "order": 1,
+  "slug": "industries",
+  "kind": "core",
+  "status": "published",
+  "published": "2026-11-26",
+  "url": "https://uptrendpos.com/ur/industries/",
+  "note": "pipeline test, published by hand"
+ },
+ {
+  "order": 2,
+  "slug": "pos-software-pricing",
+  "kind": "core",
+  "status": "queued"
+ },
+ {
+  "order": 3,
+  "slug": "fbr-pos-integration",
+  "kind": "core",
+  "status": "queued"
+ },
+ {
+  "order": 4,
+  "slug": "download-pos-software",
+  "kind": "core",
+  "status": "queued"
+ },
+ {
+  "order": 5,
+  "slug": "about-uptrendpos",
+  "kind": "core",
+  "status": "queued"
+ },
+ {
+  "order": 6,
+  "slug": "contact-us",
+  "kind": "core",
+  "status": "queued",
+  "note": "English page has a Google Maps <iframe>; the site refuses iframes in page code, so the Urdu page keeps the \"Get directions\" button and drops the map frame (check: iframe count 1 -> 0 is expected)."
+ },
+ {
+  "order": 7,
+  "slug": "grocery-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 8,
+  "slug": "pharmacy-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 9,
+  "slug": "mobile-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 10,
+  "slug": "electronics-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 11,
+  "slug": "solar-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 12,
+  "slug": "clothing-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 13,
+  "slug": "cosmetics-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 14,
+  "slug": "shoe-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 15,
+  "slug": "baby-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 16,
+  "slug": "tailor-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 17,
+  "slug": "jewellery-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 18,
+  "slug": "hardware-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 19,
+  "slug": "auto-parts-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 20,
+  "slug": "meat-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 21,
+  "slug": "crockery-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 22,
+  "slug": "paint-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 23,
+  "slug": "electrical-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 24,
+  "slug": "battery-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 25,
+  "slug": "furniture-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 26,
+  "slug": "tyre-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 27,
+  "slug": "glass-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 28,
+  "slug": "perfume-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 29,
+  "slug": "watch-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 30,
+  "slug": "bag-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 31,
+  "slug": "undergarments-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 32,
+  "slug": "artificial-jewellery-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 33,
+  "slug": "vehicle-showroom-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 34,
+  "slug": "toy-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 35,
+  "slug": "sports-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 36,
+  "slug": "stationery-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 37,
+  "slug": "fertilizer-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 38,
+  "slug": "veterinary-store-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 39,
+  "slug": "vape-shop-pos-software",
+  "kind": "type",
+  "status": "queued"
+ },
+ {
+  "order": 40,
+  "slug": "support",
+  "kind": "core",
+  "status": "queued"
+ },
+ {
+  "order": 41,
+  "slug": "privacy-policy",
+  "kind": "core",
+  "status": "queued"
+ },
+ {
+  "order": 42,
+  "slug": "terms-and-conditions",
+  "kind": "core",
+  "status": "queued"
+ }
+]
