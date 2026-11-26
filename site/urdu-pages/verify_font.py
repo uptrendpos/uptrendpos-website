@@ -3,11 +3,13 @@ import re, sys, uharfbuzz as hb
 from fontTools.ttLib import TTFont
 from fontTools.pens.hashPointPen import HashPointPen
 full_p, sub_p, text_p = sys.argv[1:4]
-S = TTFont(sub_p); S.flavor = None; S.save(sub_p + '.ttf')
-F, S = TTFont(full_p), TTFont(sub_p + '.ttf')
+import tempfile, os
+tmp = os.path.join(tempfile.gettempdir(), 'jnn-sub-check.ttf')
+S = TTFont(sub_p); S.flavor = None; S.save(tmp)
+F, S = TTFont(full_p), TTFont(tmp)
 def gh(T, name):
     gs = T.getGlyphSet(); p = HashPointPen(gs[name].width, gs); gs[name].drawPoints(p); return p.hash
-fonts = [(hb.Font(hb.Face(hb.Blob.from_file_path(full_p))), F), (hb.Font(hb.Face(hb.Blob.from_file_path(sub_p + '.ttf'))), S)]
+fonts = [(hb.Font(hb.Face(hb.Blob.from_file_path(full_p))), F), (hb.Font(hb.Face(hb.Blob.from_file_path(tmp))), S)]
 runs = set(r.strip() for r in re.findall(r'[؀-ۿݐ-ݿﭐ-﷿ﹰ-﻿‌‍ ]+', open(text_p, encoding='utf-8').read()) if r.strip())
 bad = 0
 for r in runs:
