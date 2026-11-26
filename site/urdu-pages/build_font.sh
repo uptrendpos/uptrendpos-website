@@ -2,7 +2,7 @@
 # Rebuild the Jameel Noori Nastaleeq page-text subset from EVERY Urdu page + the header/footer words.
 # Output: $ASSETS/fonts/jameel-noori-nastaleeq-ur.woff2 (then POST /utpk/v1/font installs it on the site).
 set -euo pipefail
-HERE="$(cd "$(dirname "$0")" && pwd)"
+HERE="$(cd "$(dirname "$0")" && pwd -P)"
 ASSETS="${ASSETS:-/home/claude/assets}"
 KIT="${KIT:-$HERE/../../kit/uptrendpos-site-kit}"
 W="${TMPDIR:-/tmp}/jnn-build"; mkdir -p "$W"

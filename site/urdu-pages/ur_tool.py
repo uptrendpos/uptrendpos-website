@@ -19,7 +19,7 @@ title, placeholder, data-seo-*) are units too.
 import json, re, sys, os, html as H, datetime
 from bs4 import BeautifulSoup, NavigableString, Tag, Comment
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.dirname(os.path.realpath(__file__))
 QUEUE = os.path.join(HERE, 'queue.json')
 
 INLINE = {'a', 'span', 'strong', 'em', 'b', 'i', 'small', 'bdi', 'time', 'br', 'code', 'sup', 'sub', 'mark', 'abbr', 'u', 's', 'img', 'svg', 'kbd', 'q', 'cite', 'del', 'ins'}
