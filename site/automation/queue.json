@@ -332,6 +332,7 @@
    "toy-shop-pos-software",
    "crockery-shop-pos-software"
   ],
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-26"
  }
 ]
