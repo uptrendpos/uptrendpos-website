@@ -1362,3 +1362,14 @@ body.utp-ur-mode .utp-foot .uf-contact a[href^="https://maps"],body.utp-ur-mode 
 .utp.utp-urdu .utp-marquee li,.utp.utp-urdu .utp-strip li{font-family:var(--ur)}
 .utp.utp-urdu input,.utp.utp-urdu textarea,.utp.utp-urdu select{direction:rtl;text-align:right}
 .utp.utp-urdu .utp-seg button,.utp.utp-urdu .utp-tabs button,.utp.utp-urdu .utp-chip{font-family:var(--ur);font-size:16px}
+/* 1.7.1 Nastaleeq needs bigger small text: every small label on Urdu pages reads at 15-17px */
+.utp.utp-urdu :is(.utp-band small,.utp-best,.utp-bill-note,.utp-brandcard p,.utp-check-msg,.utp-chip,.utp-chips a,.utp-chips span,.utp-ctext small,.utp-desc,.utp-doc-contact p,.utp-doc-end>p,.utp-doc-meta li,.utp-doc-table table,.utp-fact span,.utp-fcard p,.utp-feat.sm li,.utp-fgroup-foot,.utp-final-note,.utp-fix,.utp-form-slot>p,.utp-hw-card p,.utp-hwlist p,.utp-ios,.utp-jump a,.utp-meta,.utp-mini,.utp-mini-chips li,.utp-more-h,.utp-node span,.utp-note,.utp-p-steps li,.utp-pain li>p,.utp-partner small,.utp-pill,.utp-plan-for,.utp-plans-foot,.utp-rep span,.utp-req,.utp-reviewed .rv-tx,.utp-reviewed li,.utp-risk-src,.utp-row,.utp-seg button,.utp-showcase figcaption,.utp-stats small,.utp-step p,.utp-tag,.utp-tcard span,.utp-ticker li,.utp-tip,.utp-toc-help,.utp-total,.utp-count,.utp-crumb ol,.utp-kicker,.utp-smart-note){font-size:16px!important;line-height:1.9;font-family:var(--ur)}
+.utp.utp-urdu :is(.utp-tcard strong,.utp-fact strong,.utp-node strong,.utp-hw-card strong,.utp-mini strong){font-size:18px;font-weight:400;line-height:1.8}
+.utp.utp-urdu :is(.utp-eyebrow,.utp-toc-h,.utp-pill,.utp-tag){font-size:15px!important}
+.utp.utp-urdu .utp-tgroup-head h3{font-size:22px!important}
+.utp.utp-urdu a.utp-tcard{padding:16px 16px 16px 50px}
+.utp.utp-urdu a.utp-tcard::after{right:auto;left:16px;transform:scaleX(-1)}
+.utp.utp-urdu a.utp-tcard:hover::after{transform:scaleX(-1) translateX(3px)}
+.utp.utp-urdu .utp-ind-list a::after{transform:scaleX(-1)}
+.utp.utp-urdu .utp-ind-list a:hover::after{transform:scaleX(-1) translateX(3px)}
+.utp.utp-urdu .utp-ind-list a,.utp.utp-urdu .utp-ind-list span{font-size:17px;font-weight:400}

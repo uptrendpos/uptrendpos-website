@@ -704,16 +704,19 @@ function utpk_api_check( WP_REST_Request $r ) {
 	$imgs  = $all( '#(<img\b[^>]*>)#i' );
 	$noalt = 0;
 	$nowebp = 0;
+	$bad    = array();
 	foreach ( $imgs as $im ) {
 		if ( ! preg_match( '#\salt=["\'][^"\']+["\']#i', $im ) ) {
 			$noalt++;
+			$bad[] = 'no alt: ' . substr( $im, 0, 160 );
 		}
-		if ( preg_match( '#\ssrc=["\'][^"\']+\.(jpe?g|png)(\?|["\'])#i', $im ) ) {
+		if ( preg_match( '#\ssrc=["\']([^"\']+\.(jpe?g|png))(\?|["\'])#i', $im, $src ) ) {
 			$nowebp++;
+			$bad[] = 'not webp: ' . $src[1];
 		}
 	}
 	$home  = untrailingslashit( home_url() );
-	$hrefs = $all( '#<a\b[^>]*\shref=["\']([^"\'#][^"\']*)["\']#i' );
+	$hrefs = $all( '~<a\b[^>]*\shref=["\']([^"\'#][^"\']*)["\']~i' );
 	$int   = 0;
 	$to_ur = 0;
 	$to_en = array();
@@ -758,6 +761,7 @@ function utpk_api_check( WP_REST_Request $r ) {
 		'images'       => count( $imgs ),
 		'images_no_alt'=> $noalt,
 		'images_not_webp' => $nowebp,
+		'image_notes'  => array_slice( $bad, 0, 12 ),
 		'css_files'    => count( $all( '#<link\b[^>]*rel=["\']stylesheet["\'][^>]*href=["\']([^"\']+)#i' ) ),
 		'js_files'     => count( $all( '#<script\b[^>]*\ssrc=["\']([^"\']+)#i' ) ),
 		'font_preload' => count( $all( '#<link\b[^>]*rel=["\']preload["\'][^>]*as=["\']font["\'][^>]*href=["\']([^"\']+)#i' ) ) + count( $all( '#<link\b[^>]*rel=["\']preload["\'][^>]*href=["\']([^"\']+\.woff2[^"\']*)#i' ) ),

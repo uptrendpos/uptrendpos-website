@@ -1,5 +1,5 @@
 === UpTrendPos Site Kit ===
-Version: 1.7.0
+Version: 1.7.1
 Requires at least: 6.3
 Requires PHP: 7.4
 License: GPL-2.0-or-later
@@ -33,6 +33,10 @@ One plugin for the whole uptrendpos.com front end. It replaces the two WPCode sn
 4. Purge the cache. Nothing else to paste anywhere.
 
 == Changelog ==
+= 1.7.1 (26 Nov 2026) =
+* /check: internal link count fixed (regex delimiter), image notes list; Urdu pages get og:locale ur_PK.
+* Urdu pages: bigger small text (15-18px) for Nastaleeq, card/list arrows point left, bundled font subset now covers the Urdu industries hub.
+
 = 1.7.0 (26 Nov 2026) =
 * Urdu twins of every page: /ur/<path>/ (core pages under /ur/, business types under /ur/industries/), page meta _utpk_lang=ur + _utpk_en=<English slug>. English lookups skip twins.
 * POST /page {"lang":"ur","slug":"<English slug>","title":"<Urdu name>"} makes/updates the twin (needs utp-urdu, lang="ur", dir="rtl"); business types need the Urdu hub first.

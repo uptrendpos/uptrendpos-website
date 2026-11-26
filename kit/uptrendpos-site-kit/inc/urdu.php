@@ -150,6 +150,11 @@ add_filter( 'language_attributes', function ( $out ) {
 	return false === strpos( $out, 'lang=' ) ? trim( $out . ' lang="ur-PK" dir="rtl"' ) : $out;
 }, 20 );
 
+/* Open Graph locale for Urdu pages (Rank Math). */
+add_filter( 'rank_math/opengraph/facebook/og_locale', function ( $l ) {
+	return utpk_is_ur() ? 'ur_PK' : $l;
+} );
+
 add_filter( 'body_class', function ( $c ) {
 	if ( utpk_is_ur() ) {
 		$c[] = 'utp-ur-mode';
