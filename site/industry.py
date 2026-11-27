@@ -209,6 +209,7 @@ def render(c):
         </div>
         <div class="utp-contact">
           <a href="tel:+923192223292" data-track="{k}_final_call">Call 0319 2223292</a>
+          <a href="tel:+923151777384" data-track="{k}_final_call_2">Call 0315 1777384</a>
           <a href="mailto:sales@uptrendpos.com" data-track="{k}_final_email">sales@uptrendpos.com</a>
         </div>
       </div>

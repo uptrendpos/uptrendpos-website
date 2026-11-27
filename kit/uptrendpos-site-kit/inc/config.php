@@ -20,6 +20,9 @@ function utpk_brand() {
 		'phone_tel'     => '+923192223292',
 		'phone_show'    => '0319 2223292',
 		'wa'            => '923192223292',
+		'phone2'        => '+92-315-1777384', // 1.7.3: second number (Abdul, 27 Nov 2026); the first stays the main one
+		'phone2_tel'    => '+923151777384',
+		'phone2_show'   => '0315 1777384',
 		'email'         => 'sales@uptrendpos.com',
 		'street'        => 'House No 193/A, Umer Block, Shadab Town',
 		'city'          => 'Sahiwal',

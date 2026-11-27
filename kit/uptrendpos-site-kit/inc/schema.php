@@ -66,6 +66,14 @@ function utpk_schema_org() {
 			),
 			array(
 				'@type'             => 'ContactPoint',
+				'telephone'         => $b['phone2'],
+				'contactType'       => 'sales',
+				'email'             => $b['email'],
+				'availableLanguage' => array( 'en', 'ur' ),
+				'areaServed'        => $b['country'],
+			),
+			array(
+				'@type'             => 'ContactPoint',
 				'telephone'         => $b['phone'],
 				'contactType'       => 'customer support',
 				'email'             => $b['email'],

@@ -303,6 +303,7 @@ function utpk_header_html() {
 	$h  = '<header class="utp-nav' . ( utpk_current_has_hero() ? ( utpk_current_dark_hero() ? ' is-dark' : ' is-light' ) : ' is-solid is-static' ) . '" id="utp-nav">';
 	$h .= '<div class="utn-top"><div class="utn-top-in"><div class="l">';
 	$h .= '<a href="' . esc_url( 'https://wa.me/' . $b['wa'] ) . '" target="_blank" rel="noopener" data-track="top_whatsapp">' . utpk_ic( 'wa', 15 ) . esc_html( $b['phone_show'] ) . '</a>';
+	$h .= '<a class="hide-m" href="tel:' . esc_attr( $b['phone2_tel'] ) . '" data-track="top_call_2">' . utpk_ic( 'phone', 15 ) . esc_html( $b['phone2_show'] ) . '</a>';
 	$h .= '<a class="hide-m" href="mailto:' . esc_attr( $b['email'] ) . '">' . utpk_ic( 'mail', 15 ) . esc_html( $b['email'] ) . '</a>';
 	$h .= '</div><div class="r"><span class="utn-badge hide-m"><i></i>Works offline · 7-day free trial</span>';
 	$h .= '<a href="' . esc_url( $b['app'] ) . '" target="_blank" rel="noopener" data-track="top_login">' . utpk_ic( 'user', 15 ) . 'Login</a></div></div></div>';
@@ -355,7 +356,7 @@ function utpk_header_html() {
 	$h .= utpk_ur_switch_html( 'utn-lang-d' );
 	$h .= '<div class="utn-dcta"><a class="utn-btn" href="' . esc_url( $b['app'] ) . '" target="_blank" rel="noopener" data-track="drawer_trial">Start 7-day free trial</a>';
 	$h .= '<a class="utn-btn line" href="' . esc_url( $demo ) . '" target="_blank" rel="noopener" data-track="drawer_whatsapp">' . utpk_ic( 'wa', 18 ) . 'Free demo on WhatsApp</a></div>';
-	$h .= '<p class="utn-dnote">Call <a href="tel:' . esc_attr( $b['phone_tel'] ) . '">' . esc_html( $b['phone_show'] ) . '</a> · Mon to Sat, 10 am to 7 pm</p></div>';
+	$h .= '<p class="utn-dnote">Call <a href="tel:' . esc_attr( $b['phone_tel'] ) . '">' . esc_html( $b['phone_show'] ) . '</a> or <a href="tel:' . esc_attr( $b['phone2_tel'] ) . '">' . esc_html( $b['phone2_show'] ) . '</a> · Mon to Sat, 10 am to 7 pm</p></div>';
 	$h .= '</header>';
 	return utpk_is_ur() ? utpk_ur_tr( $h ) : $h;
 }
@@ -409,6 +410,7 @@ function utpk_footer_html() {
 	$f .= '<div class="uf-col uf-contact"><p class="uf-h">Get in touch</p><ul>';
 	$f .= '<li>' . utpk_ic( 'pin', 18 ) . '<a href="' . esc_url( $b['map'] ) . '" target="_blank" rel="noopener" data-track="footer_map">' . esc_html( $b['street'] . ', ' . $b['city'] . ' ' . $b['postcode'] . ', ' . $b['country_name'] ) . '</a></li>';
 	$f .= '<li>' . utpk_ic( 'phone', 18 ) . '<a href="tel:' . esc_attr( $b['phone_tel'] ) . '">' . esc_html( $b['phone_show'] ) . '</a></li>';
+	$f .= '<li>' . utpk_ic( 'phone', 18 ) . '<a href="tel:' . esc_attr( $b['phone2_tel'] ) . '" data-track="footer_call_2">' . esc_html( $b['phone2_show'] ) . '</a></li>';
 	$f .= '<li>' . utpk_ic( 'mail', 18 ) . '<a href="mailto:' . esc_attr( $b['email'] ) . '">' . esc_html( $b['email'] ) . '</a></li>';
 	$f .= '<li>' . utpk_ic( 'clock', 18 ) . '<span>Monday to Saturday, 10 am to 7 pm</span></li>';
 	$f .= '</ul><p class="uf-note">Support in Urdu and English on WhatsApp, phone and email.</p></div></div>';

@@ -260,6 +260,7 @@ final = f'''  <section class="utp-final" aria-labelledby="utp-final-title">
         </div>
         <div class="utp-contact">
           <a href="tel:+923192223292" data-track="fbr_final_call">Call 0319 2223292</a>
+          <a href="tel:+923151777384" data-track="fbr_final_call_2">Call 0315 1777384</a>
           <a href="mailto:sales@uptrendpos.com" data-track="fbr_final_email">sales@uptrendpos.com</a>
         </div>
         <p class="utp-final-note">UpTrendPos is a software company. We are not FBR and we do not give tax advice. FBR rules can change, so check <a href="https://www.fbr.gov.pk/" target="_blank" rel="noopener">fbr.gov.pk</a> or your tax advisor for your case.</p>

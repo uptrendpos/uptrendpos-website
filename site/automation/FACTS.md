@@ -20,7 +20,9 @@ Write ONLY what is on this list or in the queue entry's `specials`. If a feature
 - Offline-first: Windows and Android keep billing without internet and sync later. Say: "Cash bills work offline. Udhaar (and qist) need internet, so every device shows the same balance."
 - Backup and restore; each shop's data kept separate.
 - Windows, Android and web (live.uptrendpos.com). 7-day free trial.
-- Free trial (Abdul, 27 Nov 2026): 7 days, no fee. In the trial the shop can pick any of the 3 plans (Premium, Enterprise or Custom) and it runs free for 7 days. After 7 days the shop buys a plan to keep using UpTrendPos (the plan it tried or any other, monthly or yearly). No setup or any other fee.
+- Free trial (Abdul, 27 Nov 2026): 7 days, no fee. In the trial the shop can pick any of the 3 plans (Premium, Enterprise or Custom) and it runs free for 7 days. After 7 days the shop buys a plan to keep using UpTrendPos (the plan it tried or any other, monthly or yearly). The trial itself has no fee.
+- Installation fee (Abdul, 27 Nov 2026): paid plans have a one-time installation and training fee, non-refundable once paid. It is stated only on the Terms page; do not write it on industry, pricing or other pages unless Abdul asks.
+- Phone (Abdul, 27 Nov 2026): main number 0319 2223292 (call and WhatsApp, always first); second number 0315 1777384 is shown next to it wherever the main number is shown (tel:+923151777384). WhatsApp buttons use the main number.
 
 ## Plan tags (use `plan('Enterprise+')` exactly)
 - Enterprise+ (Enterprise and Custom): FBR invoice number + QR code (Re 1 POS fee added on its own, each counter its own FBR details), barcode label printing, customer installments (qist) incl. guarantor, profit dashboard, audit trail, staff commission rules and report, bills without the UpTrendPos badge.
@@ -31,7 +33,7 @@ Write ONLY what is on this list or in the queue entry's `specials`. If a feature
 Season sale offers / promotions, loyalty points, special price lists per customer group, stock transfer between branches, salon/service booking, repair job cards, registration/documents tracking, second serial per unit, buy-back / trade-in, delivery scheduling.
 
 ## Never write
-- Installation / setup charges or any fee besides plan prices (decision 29 Oct 2026).
+- Installation / setup charges or any fee besides plan prices on industry, pricing or other marketing pages (decision 29 Oct 2026; the Terms page states the one-time installation and training fee, 27 Nov 2026).
 - "Free plan", "free forever", "unlimited offline", "certified", "FBR approved", "licensed integrator", "Pakistan's first / No. 1", customer counts, iOS app.
 - Competitor names (ElOERP, Sada Hisab, any other) or comparisons by name. AGR / AGR Soft.
 - Real product brand names in copy or mockups (use generic names). Health claims. Anything that targets minors.

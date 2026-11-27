@@ -263,6 +263,7 @@ function utpk_ur_map() {
 		'>Start 7-day free trial<'                             => '><bdi>7</bdi> دن مفت آزمائیں<',
 		'</svg>Free demo on WhatsApp</a>'                      => '</svg>واٹس ایپ پر مفت ڈیمو</a>',
 		'<p class="utn-dnote">Call <a'                         => '<p class="utn-dnote">کال کریں: <a',
+		'</a> or <a href="tel:'                               => '</a> یا <a href="tel:',
 		'</a> · Mon to Sat, 10 am to 7 pm</p>'                 => '</a> · پیر تا ہفتہ، صبح <bdi>10</bdi> سے شام <bdi>7</bdi> بجے</p>',
 		'text=Hi%2C%20I%20want%20a%20free%20demo%20of%20UpTrendPos' => 'text=Assalam%20o%20Alaikum%2C%20mujhe%20UpTrendPos%20ka%20free%20demo%20chahiye',
 		// footer

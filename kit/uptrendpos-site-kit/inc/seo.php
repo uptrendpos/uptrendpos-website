@@ -75,7 +75,7 @@ add_filter( 'language_attributes', function ( $out ) {
 function utpk_llms_txt() {
 	$b   = utpk_brand();
 	$txt = "# UpTrendPos\n\n> UpTrendPos is POS and accounting software for Pakistani shops. It runs on Windows, Android and the web, keeps billing offline during load-shedding and syncs later, and covers billing, stock, udhaar khata (customer credit), purchases, double-entry accounts, installments (qist), multi-branch control and FBR invoices with QR code. Made by the UpTrendPos team in Sahiwal, Punjab, Pakistan.\n\n";
-	$txt .= "Contact: " . $b['phone_show'] . " (call or WhatsApp), " . $b['email'] . ". Office: " . $b['street'] . ', ' . $b['city'] . ' ' . $b['postcode'] . ", Pakistan. Support Monday to Saturday, 10:00 to 19:00 PKT, in Urdu and English.\n\n";
+	$txt .= "Contact: " . $b['phone_show'] . " (call or WhatsApp) or " . $b['phone2_show'] . " (call), " . $b['email'] . ". Office: " . $b['street'] . ', ' . $b['city'] . ' ' . $b['postcode'] . ", Pakistan. Support Monday to Saturday, 10:00 to 19:00 PKT, in Urdu and English.\n\n";
 	$txt .= "## Main pages\n";
 	$core = array(
 		array( '/', 'Home', 'POS software in Pakistan: overview, features, plans, FAQ' ),
