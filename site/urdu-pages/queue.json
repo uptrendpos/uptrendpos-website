@@ -20,7 +20,9 @@
   "order": 3,
   "slug": "fbr-pos-integration",
   "kind": "core",
-  "status": "queued"
+  "status": "published",
+  "published": "2026-11-28",
+  "url": "https://uptrendpos.com/ur/fbr-pos-integration/"
  },
  {
   "order": 4,
