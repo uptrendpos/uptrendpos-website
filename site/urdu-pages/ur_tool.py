@@ -286,6 +286,10 @@ def cmd_check(en, ur):
         errs.append('must start with <div class="utp')
     if re.search(r'<script|<style|<!--|<iframe|<form|<object|<embed|javascript:|\son[a-z]+\s*=', raw, re.I):
         errs.append('forbidden markup (script/style/comment/iframe/form/on*=) - the site refuses it')
+    # 27 Nov 2026 (Abdul): every page image must be WebP; fix the English twin via /media first
+    nonwebp = sorted(set(re.findall(r'<img[^>]+src="([^"]+\.(?:png|jpe?g|gif|bmp))"', raw, re.I)))
+    if nonwebp:
+        errs.append('non-WebP images (upload WebP with /media and swap src): ' + ', '.join(nonwebp))
     r = root_of(u)
     if 'utp-urdu' not in r.get('class', []) or r.get('lang') != 'ur' or r.get('dir') != 'rtl':
         errs.append('root needs class utp-urdu, lang="ur", dir="rtl"')

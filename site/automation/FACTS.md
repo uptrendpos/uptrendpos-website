@@ -20,6 +20,7 @@ Write ONLY what is on this list or in the queue entry's `specials`. If a feature
 - Offline-first: Windows and Android keep billing without internet and sync later. Say: "Cash bills work offline. Udhaar (and qist) need internet, so every device shows the same balance."
 - Backup and restore; each shop's data kept separate.
 - Windows, Android and web (live.uptrendpos.com). 7-day free trial.
+- Free trial (Abdul, 27 Nov 2026): 7 days, no fee. In the trial the shop can pick any of the 3 plans (Premium, Enterprise or Custom) and it runs free for 7 days. After 7 days the shop buys a plan to keep using UpTrendPos (the plan it tried or any other, monthly or yearly). No setup or any other fee.
 
 ## Plan tags (use `plan('Enterprise+')` exactly)
 - Enterprise+ (Enterprise and Custom): FBR invoice number + QR code (Re 1 POS fee added on its own, each counter its own FBR details), barcode label printing, customer installments (qist) incl. guarantor, profit dashboard, audit trail, staff commission rules and report, bills without the UpTrendPos badge.

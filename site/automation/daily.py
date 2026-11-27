@@ -71,6 +71,9 @@ def gates(p, page_html):
     for f in set(imgs):
         if not re.fullmatch(r'uptrendpos-[a-z0-9]+(-[a-z0-9]+)*\.webp', f) or re.search(r'-\d{1,2}\.webp$', f):
             errs.append(f'bad image name {f}')
+    # 27 Nov 2026 (Abdul): no PNG/JPEG on any page, WebP only
+    for f in sorted(set(re.findall(r'<img[^>]+src="([^"]+\.(?:png|jpe?g|gif|bmp))"', page_html, re.I))):
+        errs.append(f'non-WebP image {f}')
     return errs, dict(words=words, kw=n, density=round(dens, 2), faqs=page_html.count('<summary>'), images=sorted(set(imgs)))
 
 

@@ -46,7 +46,11 @@ asset repo `/home/claude/assets`. Tool: `T=/home/claude/site/urdu-pages/ur_tool.
 1. `python3 $T check <slug>.en.html <slug>.ur.html` -> "ok": true. It checks: page-code rules, Urdu root, SEO title 25-70
    and description 100-165 chars in Urdu, one H1, same h2/h3/section/details/a/img/li/table counts, same links, same ids,
    every English number present, no English words left outside <bdi> (except the glossary list), mostly-Urdu text,
-   forbidden phrases, Urdu stage items. Fix and re-run until ok (max 3 rounds).
+   forbidden phrases, Urdu stage items.
+   It also fails on any PNG/JPEG image (WebP only, Abdul 27 Nov 2026). The daily run may not write English pages or media, so
+   it publishes nothing for that slug and reports the image for Abdul. Manual fix (with Abdul): convert to WebP
+   (uptrendpos-<words>.webp, no digits at the end), push to the asset repo img/, backup, POST /utpk/v1/media, swap the src in
+   the English page (republish it), then the Urdu page. Fix and re-run until ok (max 3 rounds).
 2. Read the Urdu text once more as a shop owner: every sentence clear and correct? Fix anything awkward.
 3. Visual check: `node /home/claude/site/urdu-pages/preview.js <slug>.ur.html /home/claude/ur/<slug>` -> must report
    no errors, scrollWidth = viewport (1440 and 390), empty `overflow`, empty `smallUrdu`. Open both screenshots
@@ -76,7 +80,7 @@ Then `python3 $T mark <slug> <url>`, append a line to `/home/claude/uptrendpos-w
 GET /utpk/v1/check for: `/`, `/ur/`, `/pos-software-pricing/`, `/contact-us/`, the new Urdu page, and 2 other pages
 (rotate through the queue list). Report anything wrong: status not 200, missing/duplicate H1, title or description
 missing or too long, canonical not self, robots not index, missing hreflang on a pair, NAP false, a security header missing,
-images without alt (except the decorative logo), non-WebP images, ms > 1500 (slow), html_kb > 250.
+images without alt (except the decorative logo), non-WebP images (always listed first in the report, with the page and the file), ms > 1500 (slow), html_kb > 250.
 GET /utpk/v1/status: last_backup recent, downloads apk/exe found, urdu_font version set.
 Do NOT fix site settings yourself; list issues for Abdul with the page and the fix.
 
